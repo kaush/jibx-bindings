@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
+    <mapping abstract="true" type-name="pidf:contact" class="org.dellroad.jibxbindings.pidf.Contact">
+        <value name="priority" field="priority" style="attribute"/>
+        <value field="uri" style="text"
+          serializer="org.dellroad.jibxbindings.URIFormat.serialize"
+          deserializer="org.dellroad.jibxbindings.URIFormat.deserialize"/>
+    </mapping>
+</binding>
