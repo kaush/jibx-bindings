@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
+    <mapping abstract="true" type-name="pidf:note" class="org.dellroad.jibxbindings.pidf.Note">
+        <value name="lang" field="lang" style="attribute" ns="http://www.w3.org/XML/1998/namespace" usage="optional"/>
+        <value field="content" style="text"/>
+    </mapping>
+</binding>

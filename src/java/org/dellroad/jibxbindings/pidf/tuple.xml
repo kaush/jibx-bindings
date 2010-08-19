@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
+    <mapping abstract="true" type-name="pidf:tuple" class="org.dellroad.jibxbindings.pidf.Tuple">
+        <value name="id" field="id" style="attribute"/>
+        <structure field="status" map-as="org.dellroad.jibxbindings.pidf.Status"/>
+        <structure field="contact" map-as="org.dellroad.jibxbindings.pidf.Contact" usage="optional"/>
+        <collection field="notes" item-type="org.dellroad.jibxbindings.pidf.Note"/>
+        <value name="timestamp" field="timestamp" usage="optional"/>
+    </mapping>
+</binding>

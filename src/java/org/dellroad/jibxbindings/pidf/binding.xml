@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding name="pidf" package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
+
+    <!-- Set default namespace -->
+    <namespace uri="urn:ietf:params:xml:ns:pidf" default="elements" prefix="pidf"/>
+
+    <!-- Include abstract mappings -->
+    <include path="presence.xml"/>
+    <include path="tuple.xml"/>
+    <include path="note.xml"/>
+    <include path="status.xml"/>
+    <include path="contact.xml"/>
+
+    <!-- <presence> element -->
+    <mapping name="presence" class="org.dellroad.jibxbindings.pidf.Presence">
+        <structure map-as="pidf:presence"/>
+    </mapping>
+
+    <!-- <tuple> element -->
+    <mapping name="tuple" class="org.dellroad.jibxbindings.pidf.Tuple">
+        <structure map-as="pidf:tuple"/>
+    </mapping>
+
+    <!-- <note> element -->
+    <mapping name="note" class="org.dellroad.jibxbindings.pidf.Note">
+        <structure map-as="pidf:note"/>
+    </mapping>
+
+    <!-- <status> element -->
+    <mapping name="status" class="org.dellroad.jibxbindings.pidf.Status">
+        <structure map-as="pidf:status"/>
+    </mapping>
+
+    <!-- <contact> element -->
+    <mapping name="contact" class="org.dellroad.jibxbindings.pidf.Contact">
+        <structure map-as="pidf:contact"/>
+    </mapping>
+</binding>
