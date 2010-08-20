@@ -11,12 +11,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * PIDF {@code <tuple>} element.
+ */
 public class Tuple {
 
     private String id;
     private Status status;
     private Contact contact;
-    private List<Note> notes = new ArrayList<Note>();
+    private List<LangContent> notes = new ArrayList<LangContent>();
     private Date timestamp;
 
     public String getId() {
@@ -40,10 +43,10 @@ public class Tuple {
         this.contact = contact;
     }
 
-    public List<Note> getNotes() {
+    public List<LangContent> getNotes() {
         return this.notes;
     }
-    public void setNotes(List<Note> notes) {
+    public void setNotes(List<LangContent> notes) {
         this.notes = notes;
     }
 

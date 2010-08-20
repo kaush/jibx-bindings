@@ -9,6 +9,9 @@ package org.dellroad.jibxbindings.pidf;
 
 import java.net.URI;
 
+/**
+ * PIDF {@code <contact>} element.
+ */
 public class Contact {
 
     private URI uri;

@@ -3,7 +3,7 @@
 <!-- $Id$ -->
 <binding name="pidf" package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
 
-    <!-- Set default namespace -->
+    <!-- Set default namespace for all elements we define -->
     <namespace uri="urn:ietf:params:xml:ns:pidf" default="elements" prefix="pidf"/>
 
     <!-- Include abstract mappings -->
@@ -24,7 +24,7 @@
     </mapping>
 
     <!-- <note> element -->
-    <mapping name="note" class="org.dellroad.jibxbindings.pidf.Note">
+    <mapping name="note" class="org.dellroad.jibxbindings.pidf.LangContent">
         <structure map-as="pidf:note"/>
     </mapping>
 

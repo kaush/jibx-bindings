@@ -18,7 +18,7 @@ public class Presence {
 
     private URI entity;
     private List<Tuple> tuples = new ArrayList<Tuple>();
-    private List<Note> notes = new ArrayList<Note>();
+    private List<LangContent> notes = new ArrayList<LangContent>();
 
     public URI getEntity() {
         return this.entity;
@@ -34,10 +34,10 @@ public class Presence {
         this.tuples = tuples;
     }
 
-    public List<Note> getNotes() {
+    public List<LangContent> getNotes() {
         return this.notes;
     }
-    public void setNotes(List<Note> notes) {
+    public void setNotes(List<LangContent> notes) {
         this.notes = notes;
     }
 }

@@ -7,6 +7,9 @@
 
 package org.dellroad.jibxbindings.pidf;
 
+/**
+ * PIDF {@code <status>} element.
+ */
 public class Status {
 
     private String basic;
