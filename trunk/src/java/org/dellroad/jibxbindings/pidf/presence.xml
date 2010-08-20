@@ -4,9 +4,9 @@
 <binding package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
     <mapping abstract="true" type-name="pidf:presence" class="org.dellroad.jibxbindings.pidf.Presence">
         <value name="entity" field="entity" style="attribute"
-          serializer="org.dellroad.jibxbindings.URIFormat.serialize"
-          deserializer="org.dellroad.jibxbindings.URIFormat.deserialize"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <collection field="tuples" item-type="org.dellroad.jibxbindings.pidf.Tuple"/>
-        <collection field="notes" item-type="org.dellroad.jibxbindings.pidf.Note"/>
+        <collection field="notes" item-type="org.dellroad.jibxbindings.pidf.LangContent"/>
     </mapping>
 </binding>

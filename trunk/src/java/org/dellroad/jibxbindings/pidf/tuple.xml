@@ -6,7 +6,7 @@
         <value name="id" field="id" style="attribute"/>
         <structure field="status" map-as="org.dellroad.jibxbindings.pidf.Status"/>
         <structure field="contact" map-as="org.dellroad.jibxbindings.pidf.Contact" usage="optional"/>
-        <collection field="notes" item-type="org.dellroad.jibxbindings.pidf.Note"/>
+        <collection field="notes" item-type="org.dellroad.jibxbindings.pidf.LangContent"/>
         <value name="timestamp" field="timestamp" usage="optional"/>
     </mapping>
 </binding>
