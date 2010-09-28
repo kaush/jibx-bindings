@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.0">
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/ParseUtil.java">
+<error line="116" column="73" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="116" column="100" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/package-info.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Basic.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Contact.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/LangContent.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/PIDF.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Presence.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Status.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Tuple.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CAValue.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CivicAddress.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/GeoPriv.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/LocationInfo.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ProvidedBy.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/UsageRules.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/AbstractGMLObjectSwitch.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/ArcBand.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Circle.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Constants.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Curve.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipse.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipsoid.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GMLObject.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GMLObjectSwitch.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GeometricPrimitive.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Geometry.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/LineString.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/LinearRing.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Measure.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Point.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Polygon.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Prism.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Solid.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Sphere.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Surface.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/package-info.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/package-info.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/package-info.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/ParseTestSupport.java">
+<error line="79" column="24" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/ParseUtilTest.java">
+<error line="43" column="39" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="44" column="43" severity="info" message="&apos;1285701370123L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="45" column="44" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="46" column="44" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="47" column="43" severity="info" message="&apos;1285701370123L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="48" column="44" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="49" column="44" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/TestSupport.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/package-info.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/PIDFParseTest.java">
+</file>
+<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/package-info.java">
+</file>
+</checkstyle>
