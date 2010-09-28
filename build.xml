@@ -42,11 +42,11 @@
         <attribute name="packagedir" description="Java package subdirectory"/>
         <sequential>
             <echo message="building JARS for module @{name}"/>
-            <jar destfile="build/dist/${ant.project-name}-@{name}-${full.version}.jar">
+            <jar destfile="build/dist/${ant.project.name}-@{name}-${full.version}.jar">
                 <fileset dir="build/classes" includes="@{packagedir}/**/*"/>
                 <fileset dir="src/java" includes="@{packagedir}/**/*.xml"/>
             </jar>
-            <zip destfile="build/dist/${ant.project-name}-@{name}-sources-${full.version}.zip">
+            <zip destfile="build/dist/${ant.project.name}-@{name}-sources-${full.version}.zip">
                 <fileset dir="src/java" includes="@{packagedir}/**/*"/>
             </zip>
         </sequential>
@@ -93,7 +93,7 @@
         <delete dir="build/dist"/>
         <mkdir dir="build/dist"/>
         <dellroad:jars name="pidf" packagedir="org/dellroad/jibxbindings/pidf"/>
-        <zip destfile="build/dist/${ant.project-name}-javadocs-${full.version}.zip">
+        <zip destfile="build/dist/${ant.project.name}-javadocs-${full.version}.zip">
             <fileset dir="build/reports/javadoc" includes="**/*"/>
         </zip>
         <property name="jars.completed" value="true"/>

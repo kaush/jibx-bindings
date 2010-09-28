@@ -1,0 +1,40 @@
+
+/*
+ * Copyright (C) 2010 Archie L. Cobbs. All rights reserved.
+ *
+ * $Id$
+ */
+
+package org.dellroad.jibxbindings.pidf.lo;
+
+
+/**
+ * One field in a {@code &lt;civicAddress&gt;} element as defined in RFC 5139.
+ * This differs from {@link org.dellroad.jibxbindings.pidf.LangContent} in that the field content is whitespace normalized.
+ */
+public class CAValue {
+
+    private String lang;
+    private String content;
+
+    /**
+     * Get the language. Typically comes from an {@code xml:lang} attribute.
+     */
+    public String getLang() {
+        return this.lang;
+    }
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+
+    /**
+     * Get the string content.
+     */
+    public String getContent() {
+        return this.content;
+    }
+    public void setContent(String content) {
+        this.content = content;
+    }
+}
+

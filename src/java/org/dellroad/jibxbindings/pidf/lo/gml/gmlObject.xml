@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo.gml"
+  xmlns:gml="http://www.opengis.net/gml"
+  xmlns:gs="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape">
+
+    <namespace uri="http://www.opengis.net/gml" default="elements" prefix="gml"/>
+
+<!--
+    Abstract mappings
+-->
+
+    <mapping abstract="true" type-name="gml:measure" class="org.dellroad.jibxbindings.pidf.lo.gml.Measure">
+        <value name="uom" field="uom" style="attribute"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+        <value field="value" style="text"/>
+    </mapping>
+
+    <mapping abstract="true" class="org.dellroad.jibxbindings.pidf.lo.gml.GMLObject">
+        <namespace uri="http://www.opengis.net/gml" default="all" prefix="gml"/>
+        <value name="id" field="gmlId" style="attribute" usage="optional"/>
+    </mapping>
+
+    <mapping abstract="true" class="org.dellroad.jibxbindings.pidf.lo.gml.Geometry"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.GMLObject">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.GMLObject"/>
+        <value name="gid" field="gid" style="attribute" usage="optional"/>
+        <value name="srsName" field="srsName" style="attribute" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+        <value name="srsDimension" field="srsDimension" style="attribute" usage="optional"/>
+        <value name="axisLabels" field="axisLabels" style="attribute" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeStringList"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeStringList"/>
+        <value name="uomLabels" field="uomLabels" style="attribute" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeStringList"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeStringList"/>
+    </mapping>
+
+    <mapping abstract="true" class="org.dellroad.jibxbindings.pidf.lo.gml.Curve"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Geometry">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Geometry"/>
+    </mapping>
+
+    <mapping abstract="true" class="org.dellroad.jibxbindings.pidf.lo.gml.Surface"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Geometry">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Geometry"/>
+    </mapping>
+
+    <mapping abstract="true" class="org.dellroad.jibxbindings.pidf.lo.gml.Solid"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Geometry">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Geometry"/>
+    </mapping>
+
+<!--
+    Concrete mappings
+-->
+
+    <mapping name="LineString" class="org.dellroad.jibxbindings.pidf.lo.gml.LineString"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Curve">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Curve"/>
+        <value name="posList" field="posList"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+    </mapping>
+
+    <mapping name="Point" class="org.dellroad.jibxbindings.pidf.lo.gml.Point"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Geometry">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Geometry"/>
+        <value name="pos" field="pos"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+    </mapping>
+
+    <mapping name="LinearRing" class="org.dellroad.jibxbindings.pidf.lo.gml.LinearRing"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Geometry">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Geometry"/>
+        <value name="posList" field="posList"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+    </mapping>
+
+    <mapping name="Polygon" class="org.dellroad.jibxbindings.pidf.lo.gml.Polygon"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Surface">
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Surface"/>
+        <structure name="exterior" usage="optional">
+            <structure field="exterior"/>
+        </structure>
+    </mapping>
+
+    <mapping name="ArcBand" class="org.dellroad.jibxbindings.pidf.lo.gml.ArcBand"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Surface">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Surface"/>
+        <value name="pos" field="center" ns="http://www.opengis.net/gml"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+        <structure name="innerRadius" field="innerRadius" map-as="gml:measure"/>
+        <structure name="outerRadius" field="outerRadius" map-as="gml:measure"/>
+        <structure name="startAngle" field="startAngle" map-as="gml:measure"/>
+        <structure name="openingAngle" field="openingAngle" map-as="gml:measure"/>
+    </mapping>
+
+    <mapping name="Circle" class="org.dellroad.jibxbindings.pidf.lo.gml.Circle"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Surface">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Surface"/>
+        <value name="pos" field="center" ns="http://www.opengis.net/gml"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+        <structure name="radius" field="radius" map-as="gml:measure"/>
+    </mapping>
+
+    <mapping name="Ellipse" class="org.dellroad.jibxbindings.pidf.lo.gml.Ellipse"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Surface">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Surface"/>
+        <value name="pos" field="center" ns="http://www.opengis.net/gml"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+        <structure name="semiMajorAxis" field="semiMajorAxis" map-as="gml:measure"/>
+        <structure name="semiMinorAxis" field="semiMinorAxis" map-as="gml:measure"/>
+        <structure name="orientation" field="orientation" map-as="gml:measure"/>
+    </mapping>
+
+    <mapping name="Ellipsoid" class="org.dellroad.jibxbindings.pidf.lo.gml.Ellipsoid"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Solid">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Solid"/>
+        <value name="pos" field="center" ns="http://www.opengis.net/gml"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+        <structure name="semiMajorAxis" field="semiMajorAxis" map-as="gml:measure"/>
+        <structure name="semiMinorAxis" field="semiMinorAxis" map-as="gml:measure"/>
+        <structure name="verticalAxis" field="verticalAxis" map-as="gml:measure"/>
+        <structure name="orientation" field="orientation" map-as="gml:measure"/>
+    </mapping>
+
+    <mapping name="Prism" class="org.dellroad.jibxbindings.pidf.lo.gml.Prism"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Solid">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Solid"/>
+        <structure name="base">
+            <structure field="base"/>
+        </structure>
+        <structure name="height" field="height" map-as="gml:measure"/>
+    </mapping>
+
+    <mapping name="Sphere" class="org.dellroad.jibxbindings.pidf.lo.gml.Sphere"
+      extends="org.dellroad.jibxbindings.pidf.lo.gml.Solid">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Solid"/>
+        <value name="pos" field="center" ns="http://www.opengis.net/gml"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleArray"/>
+        <structure name="radius" field="radius" map-as="gml:measure"/>
+    </mapping>
+
+</binding>

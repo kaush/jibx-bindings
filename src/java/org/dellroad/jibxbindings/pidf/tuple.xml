@@ -2,11 +2,19 @@
 
 <!-- $Id$ -->
 <binding package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
+    <include path="status.xml"/>
+    <include path="contact.xml"/>
+    <include path="langContent.xml"/>
     <mapping abstract="true" type-name="pidf:tuple" class="org.dellroad.jibxbindings.pidf.Tuple">
+        <namespace uri="urn:ietf:params:xml:ns:pidf" default="elements" prefix="pidf"/>
         <value name="id" field="id" style="attribute"/>
-        <structure field="status" map-as="org.dellroad.jibxbindings.pidf.Status"/>
-        <structure field="contact" map-as="org.dellroad.jibxbindings.pidf.Contact" usage="optional"/>
-        <collection field="notes" item-type="org.dellroad.jibxbindings.pidf.LangContent"/>
-        <value name="timestamp" field="timestamp" usage="optional"/>
+        <structure name="status" field="status" map-as="pidf:status"/>
+        <structure name="contact" field="contact" map-as="pidf:contact" usage="optional"/>
+        <collection field="notes" create-type="java.util.ArrayList">
+            <structure name="note" map-as="pidf:langContent"/>
+        </collection>
+        <value name="timestamp" field="timestamp" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC3339Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC3339Timestamp"/>
     </mapping>
 </binding>
