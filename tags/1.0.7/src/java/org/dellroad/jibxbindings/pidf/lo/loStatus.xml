@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo">
+
+    <!-- Import PIDF <status> as a base -->
+    <include path="../status.xml"/>
+
+    <!-- Define PIDF-LO <status> element with optional <geopriv> child -->
+    <mapping abstract="true" type-name="pidf:loStatus" extends="org.dellroad.jibxbindings.pidf.Status"
+      class="org.dellroad.jibxbindings.pidf.lo.Status">
+        <namespace uri="urn:ietf:params:xml:ns:pidf" prefix="pidf"/>
+        <structure map-as="pidf:status"/>
+        <structure field="geopriv" map-as="org.dellroad.jibxbindings.pidf.lo.GeoPriv" usage="optional"/>
+    </mapping>
+
+</binding>

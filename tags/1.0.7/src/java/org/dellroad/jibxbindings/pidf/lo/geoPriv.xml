@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo"
+  xmlns:pidf="urn:ietf:params:xml:ns:pidf"
+  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10">
+    <include path="../langContent.xml"/>
+    <include path="locationInfo.xml"/>
+    <include path="usageRules.xml"/>
+    <include path="providedBy.xml"/>
+    <mapping abstract="true" type-name="gp:geopriv" class="org.dellroad.jibxbindings.pidf.lo.GeoPriv">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" default="elements" prefix="gp"/>
+        <structure name="location-info" field="locationInfo" map-as="gp:locationInfo"/>
+        <structure name="usage-rules" field="usageRules" map-as="gp:usageRules"/>
+        <structure name="method" field="method" map-as="pidf:langContent" usage="optional"/>
+        <structure name="provided-by" field="providedBy" map-as="gp:providedBy" usage="optional"/>
+    </mapping>
+</binding>

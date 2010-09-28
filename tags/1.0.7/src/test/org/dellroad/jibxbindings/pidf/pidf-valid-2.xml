@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- $Id$ -->
+<ns2:presence entity="pres:925099"
+xmlns:ns2="urn:ietf:params:xml:ns:pidf"
+xmlns="urn:ietf:params:xml:ns:geopriv:held"
+xmlns:ns4="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy"
+xmlns:ns3="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:ns9="http://www.mapinfo.com/locationutility"
+xmlns:ns5="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
+xmlns:ns6="http://www.opengis.net/xls"
+xmlns:ns10="urn:ietf:params:xml:ns:geopriv:held:id"
+xmlns:ns7="http://www.opengis.net/gml"
+xmlns:ns8="http://www.mapinfo.com/xls">
+   <ns2:tuple id="lisLocation">
+       <ns2:status>
+           <ns3:geopriv>
+               <ns3:location-info>
+                   <ns5:civicAddress>
+                       <ns5:country>US</ns5:country>
+                       <ns5:A1>Colorado</ns5:A1>
+                       <ns5:A3>DENVER</ns5:A3>
+                       <ns5:PRD>E</ns5:PRD>
+                       <ns5:RD>18TH</ns5:RD>
+                       <ns5:STS>AVE</ns5:STS>
+                       <ns5:HNO>601</ns5:HNO>
+                       <ns5:PC>80203</ns5:PC>
+                       <ns5:UNIT>STE 110</ns5:UNIT>
+                   </ns5:civicAddress>
+                   <ns7:Point>
+                       <ns7:pos>39.744876 -104.979637</ns7:pos>
+                   </ns7:Point>
+               </ns3:location-info>
+               <ns3:usage-rules>
+                <ns4:retransmission-allowed>false</ns4:retransmission-allowed>
+                <ns4:retention-expiry>2010-09-27T18:11:36.729-06:00</ns4:retention-expiry>
+               </ns3:usage-rules>
+           </ns3:geopriv>
+       </ns2:status>
+   </ns2:tuple>
+</ns2:presence>

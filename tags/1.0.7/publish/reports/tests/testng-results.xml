@@ -1,0 +1,269 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Unit Test Suite">
+    <groups>
+    </groups>
+    <test name="PIDF-LO Tests">
+      <class name="org.dellroad.jibxbindings.pidf.PIDFParseTest">
+        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="55" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="4" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="54" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="0" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[%-5p [%t]: %m%n]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="1" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="org.dellroad.jibxbindings.ParseUtilTest">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10-09-28T19:16:10Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10ZZ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="4" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10+00:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10.123Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370123]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T12:16:10-07:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10GMT+00:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="9" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10.123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="22" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="2" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="5" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[%-5p [%t]: %m%n]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T23:16:10+04:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10-00:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10GMT-00:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10-09-28T19:16:10Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-09-28T17:20:03Z" finished-at="2010-09-28T17:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10.123Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370123]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
