@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
+<binding package="org.dellroad.jibxbindings.pidf"
+  xmlns:pidf="urn:ietf:params:xml:ns:pidf"
+  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10">
+    <include path="lo/geoPriv.xml"/>
     <mapping abstract="true" type-name="pidf:status" class="org.dellroad.jibxbindings.pidf.Status">
-        <value name="basic" field="basic" usage="optional"/>
+        <namespace uri="urn:ietf:params:xml:ns:pidf" default="elements" prefix="pidf"/>
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" default="elements" prefix="gp"/>
+        <value name="basic" ns="urn:ietf:params:xml:ns:pidf" field="basic" usage="optional" enum-value-method="getXMLValue"/>
+        <structure name="geopriv" ns="urn:ietf:params:xml:ns:pidf:geopriv10" field="geoPriv" map-as="gp:geopriv" usage="optional"/>
     </mapping>
 </binding>

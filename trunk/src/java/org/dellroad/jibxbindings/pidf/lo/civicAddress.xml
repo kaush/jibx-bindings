@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo" xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+    <include path="caValue.xml"/>
+    <mapping abstract="true" type-name="ca:civicAddress" class="org.dellroad.jibxbindings.pidf.lo.CivicAddress" ordered="false">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" default="elements" prefix="ca"/>
+        <value name="country" field="country" usage="optional"
+          deserializer="org.dellroad.jibxbindings.pidf.lo.CivicAddress.deserializeCountry"/>
+        <structure name="A1" field="A1" map-as="ca:caValue" usage="optional"/>
+        <structure name="A2" field="A2" map-as="ca:caValue" usage="optional"/>
+        <structure name="A3" field="A3" map-as="ca:caValue" usage="optional"/>
+        <structure name="A4" field="A4" map-as="ca:caValue" usage="optional"/>
+        <structure name="A5" field="A5" map-as="ca:caValue" usage="optional"/>
+        <structure name="A6" field="A6" map-as="ca:caValue" usage="optional"/>
+        <structure name="PRM" field="PRM" map-as="ca:caValue" usage="optional"/>
+        <structure name="PRD" field="PRD" map-as="ca:caValue" usage="optional"/>
+        <structure name="RD" field="RD" map-as="ca:caValue" usage="optional"/>
+        <structure name="STS" field="STS" map-as="ca:caValue" usage="optional"/>
+        <structure name="POD" field="POD" map-as="ca:caValue" usage="optional"/>
+        <structure name="POM" field="POM" map-as="ca:caValue" usage="optional"/>
+        <structure name="RDSEC" field="RDSEC" map-as="ca:caValue" usage="optional"/>
+        <structure name="RDBR" field="RDBR" map-as="ca:caValue" usage="optional"/>
+        <structure name="RDSUBBR" field="RDSUBBR" map-as="ca:caValue" usage="optional"/>
+        <structure name="HNO" field="HNO" map-as="ca:caValue" usage="optional"/>
+        <structure name="HNS" field="HNS" map-as="ca:caValue" usage="optional"/>
+        <structure name="LMK" field="LMK" map-as="ca:caValue" usage="optional"/>
+        <structure name="LOC" field="LOC" map-as="ca:caValue" usage="optional"/>
+        <structure name="FLR" field="FLR" map-as="ca:caValue" usage="optional"/>
+        <structure name="NAM" field="NAM" map-as="ca:caValue" usage="optional"/>
+        <structure name="PC" field="PC" map-as="ca:caValue" usage="optional"/>
+        <structure name="BLD" field="BLD" map-as="ca:caValue" usage="optional"/>
+        <structure name="UNIT" field="UNIT" map-as="ca:caValue" usage="optional"/>
+        <structure name="ROOM" field="ROOM" map-as="ca:caValue" usage="optional"/>
+        <structure name="SEAT" field="SEAT" map-as="ca:caValue" usage="optional"/>
+        <structure name="PLC" field="PLC" map-as="ca:caValue" usage="optional"/>
+        <structure name="PCN" field="PCN" map-as="ca:caValue" usage="optional"/>
+        <structure name="POBOX" field="POBOX" map-as="ca:caValue" usage="optional"/>
+        <structure name="ADDCODE" field="ADDCODE" map-as="ca:caValue" usage="optional"/>
+    </mapping>
+</binding>

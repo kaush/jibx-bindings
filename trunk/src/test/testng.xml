@@ -11,6 +11,7 @@
 
     <test name="PIDF-LO Tests">
         <packages>
+            <package name="org.dellroad.jibxbindings"/>
             <package name="org.dellroad.jibxbindings.pidf"/>
         </packages>
     </test>

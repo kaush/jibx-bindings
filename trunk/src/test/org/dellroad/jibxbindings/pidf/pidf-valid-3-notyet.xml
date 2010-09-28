@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<presence
+  xmlns="urn:ietf:params:xml:ns:pidf"
+  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+  xmlns:gml="http://www.opengis.net/gml"
+  xmlns:gs="http://www.opengis.net/pidflo/1.0"
+  xmlns:rel="urn:ietf:params:xml:ns:pidf:geopriv10:relative" entity="pres:relative@example.com">
+  <tuple id="relative">
+    <status>
+      <gp:geopriv>
+        <gp:location-info>
+          <rel:relative-location>
+            <rel:reference>
+              <gml:Polygon srsName="urn:ogc:def:crs:EPSG::4326">
+                <gml:exterior>
+                  <gml:LinearRing>
+                    <gml:posList>
+                      -33.856625 151.215906 -33.856299 151.215343
+                      -33.856326 151.214731 -33.857533 151.214495
+                      -33.857720 151.214613 -33.857369 151.215375
+                      -33.856625 151.215906
+                    </gml:posList>
+                  </gml:LinearRing>
+                </gml:exterior>
+              </gml:Polygon>
+              <dyn:Dynamic xmlns:dyn="urn:ietf:params:xml:ns:pidf:geopriv10:dynamic">
+                <dyn:orientation>35 12</dyn:orientation>
+                <dyn:speed>24</dyn:speed>
+                <dyn:heading>278</dyn:heading>
+              </dyn:Dynamic>
+            </rel:reference>
+            <rel:offset>
+              <gml:Polygon srsName="urn:ietf:params:geopriv:relative:2d">
+                <gml:exterior>
+                  <gml:LinearRing>
+                    <gml:posList>
+                      11 34 34 34 34 50 11 50 11 34
+                  </gml:posList>
+                  </gml:LinearRing>
+                </gml:exterior>
+              </gml:Polygon>
+            </rel:offset>
+          </rel:relative-location>
+        </gp:location-info>
+        <gp:usage-rules/>
+        <gp:method>Oompa-loompa</gp:method>
+        <rel:map>
+          <rel:url type="image/jpeg">http://data.greatbuildings.com/gbc/drawings/Sydney_Opera_Lower.jpg
+          </rel:url>
+          <rel:offset>200 210</rel:offset>
+          <rel:orientation>68</rel:orientation>
+          <rel:scale>2.90</rel:scale>
+        </rel:map>
+      </gp:geopriv>
+    </status>
+    <timestamp>2007-06-22T20:57:29Z</timestamp>
+  </tuple>
+  <tuple id="absolute">
+    <status>
+      <gp:geopriv>
+        <gp:location-info>
+          <gml:Polygon srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList>
+                   -33.856625 151.215906 -33.856299 151.215343
+                   -33.856326 151.214731 -33.857533 151.214495
+                  -33.857720 151.214613 -33.857369 151.215375
+                  -33.856625 151.215906
+                </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+          <dyn:Dynamic xmlns:dyn="urn:ietf:params:xml:ns:pidf:geopriv10:dynamic">
+            <dyn:orientation>35 12</dyn:orientation>
+            <dyn:speed>24</dyn:speed>
+            <dyn:heading>278</dyn:heading>
+          </dyn:Dynamic>
+        </gp:location-info>
+        <gp:usage-rules/>
+        <method>Magic</method>
+      </gp:geopriv>
+    </status>
+    <timestamp>2007-06-22T20:57:29Z</timestamp>
+  </tuple>
+</presence>

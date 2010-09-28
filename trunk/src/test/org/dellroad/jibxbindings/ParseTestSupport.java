@@ -9,11 +9,13 @@ package org.dellroad.jibxbindings;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringWriter;
 import java.net.URL;
 import java.util.ArrayList;
 
 import org.jibx.runtime.BindingDirectory;
 import org.jibx.runtime.IBindingFactory;
+import org.jibx.runtime.IMarshallingContext;
 import org.jibx.runtime.IUnmarshallingContext;
 import org.jibx.runtime.JiBXException;
 
@@ -25,10 +27,12 @@ import org.jibx.runtime.JiBXException;
 public abstract class ParseTestSupport extends TestSupport {
 
     /**
-     * Parse the document expecting the parse to succeed.
+     * Parse the document expecting the parse to succeed. If it does, also unparse the document.
      */
     protected <T> void testValidParse(URL url, Class<T> clazz) throws Exception {
-        this.parse(url, clazz);
+        T t = this.parse(url, clazz);
+        String s = this.unparse(t);
+        System.out.println(s);
     }
 
     /**
@@ -64,6 +68,18 @@ public abstract class ParseTestSupport extends TestSupport {
             assert false : "parse expected a " + clazz.getName() + " but got a " + obj.getClass().getName();
         }
         return t;
+    }
+
+    /**
+     * Unparse the object.
+     */
+    protected String unparse(Object obj) throws IOException, JiBXException {
+        IBindingFactory bindingFactory = BindingDirectory.getFactory(obj.getClass());
+        IMarshallingContext mctx = bindingFactory.createMarshallingContext();
+        mctx.setIndent(4, "\n", ' ');
+        StringWriter writer = new StringWriter();
+        mctx.marshalDocument(obj, "UTF-8", null, writer);
+        return writer.toString();
     }
 
     /**
