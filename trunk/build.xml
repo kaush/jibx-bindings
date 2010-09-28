@@ -36,22 +36,6 @@
         </sequential>
     </macrodef>
 
-    <!-- Macro to build the JARs for a single module -->
-    <macrodef uri="urn:org.dellroad.ant" name="jars">
-        <attribute name="name" description="Binding module name"/>
-        <attribute name="packagedir" description="Java package subdirectory"/>
-        <sequential>
-            <echo message="building JARS for module @{name}"/>
-            <jar destfile="build/dist/${ant.project.name}-@{name}-${full.version}.jar">
-                <fileset dir="build/classes" includes="@{packagedir}/**/*"/>
-                <fileset dir="src/java" includes="@{packagedir}/**/*.xml"/>
-            </jar>
-            <zip destfile="build/dist/${ant.project.name}-@{name}-sources-${full.version}.zip">
-                <fileset dir="src/java" includes="@{packagedir}/**/*"/>
-            </zip>
-        </sequential>
-    </macrodef>
-
     <!-- Classpath targets -->
     <target name="javac.classpath" unless="javac.classpath.resolved">
         <dellroad:ivypath pathid="javac.classpath" conf="javac"/>
@@ -92,12 +76,27 @@
     <target name="jars" depends="javac, jibx-bind, javadoc, runtime.classpath" unless="jars.completed">
         <delete dir="build/dist"/>
         <mkdir dir="build/dist"/>
-        <dellroad:jars name="pidf" packagedir="org/dellroad/jibxbindings/pidf"/>
+        <jar destfile="build/dist/${ant.project.name}-${full.version}.jar">
+            <fileset dir="build/classes"/>
+            <fileset dir="src/java" includes="**/*.xml"/>
+        </jar>
+        <zip destfile="build/dist/${ant.project.name}-sources-${full.version}.zip">
+            <fileset dir="src/java" includes="**/*"/>
+        </zip>
         <zip destfile="build/dist/${ant.project.name}-javadocs-${full.version}.zip">
             <fileset dir="build/reports/javadoc" includes="**/*"/>
         </zip>
         <property name="jars.completed" value="true"/>
     </target>
+
+    <!-- Macro to build the JARs for a single module -->
+    <macrodef uri="urn:org.dellroad.ant" name="jars">
+        <attribute name="name" description="Binding module name"/>
+        <attribute name="packagedir" description="Java package subdirectory"/>
+        <sequential>
+
+        </sequential>
+    </macrodef>
 
     <!-- Build Javadocs -->
     <target name="javadoc" depends="javac.classpath">
