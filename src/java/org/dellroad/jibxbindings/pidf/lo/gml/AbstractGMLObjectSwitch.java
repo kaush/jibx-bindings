@@ -17,7 +17,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseDefault}.
+     * </p>
      */
     @Override
     public void casePoint(Point point) {
@@ -26,7 +29,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseSurface}.
+     * </p>
      */
     @Override
     public void casePolygon(Polygon polygon) {
@@ -35,7 +41,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseSurface}.
+     * </p>
      */
     @Override
     public void caseCircle(Circle circle) {
@@ -44,7 +53,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseSurface}.
+     * </p>
      */
     @Override
     public void caseEllipse(Ellipse ellipse) {
@@ -53,7 +65,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseSurface}.
+     * </p>
      */
     @Override
     public void caseArcBand(ArcBand arcBand) {
@@ -62,7 +77,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseSolid}.
+     * </p>
      */
     @Override
     public void caseSphere(Sphere sphere) {
@@ -71,7 +89,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseSolid}.
+     * </p>
      */
     @Override
     public void caseEllipsoid(Ellipsoid ellipsoid) {
@@ -79,7 +100,11 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
     }
 
     /**
+     * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseSolid}.
+     * </p>
      */
     @Override
     public void casePrism(Prism prism) {
@@ -88,7 +113,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseDefault}.
+     * </p>
      */
     @Override
     public void caseLineString(LineString lineString) {
@@ -97,7 +125,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * {@inheritDoc}
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseDefault}.
+     * </p>
      */
     @Override
     public void caseLinearRing(LinearRing linearRing) {
@@ -106,7 +137,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * Roll-up method for {@link Surface} subclasses.
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseDefault}.
+     * </p>
      */
     protected void caseSurface(Surface surface) {
         caseDefault(surface);
@@ -114,7 +148,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * Roll-up method for {@link Solid} subclasses.
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} delegates to {@link #caseDefault}.
+     * </p>
      */
     protected void caseSolid(Solid solid) {
         caseDefault(solid);
@@ -122,7 +159,10 @@ public class AbstractGMLObjectSwitch implements GMLObjectSwitch {
 
     /**
      * Roll-up method for all cases.
+     *
+     * <p>
      * The implementation in {@link AbstractGMLObjectSwitch} does nothing.
+     * </p>
      */
     protected void caseDefault(GMLObject object) {
     }
