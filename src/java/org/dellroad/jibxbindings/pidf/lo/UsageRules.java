@@ -13,7 +13,7 @@ import java.util.Date;
 import org.dellroad.jibxbindings.pidf.LangContent;
 
 /**
- * The {@code &lt;usage-rules&gt;} element as defined in RFC 4119.
+ * The {@code <gp:usage-rules>} element as defined in RFC 4119.
  */
 public class UsageRules {
 

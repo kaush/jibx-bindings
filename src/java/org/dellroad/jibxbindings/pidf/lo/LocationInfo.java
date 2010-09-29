@@ -10,7 +10,7 @@ package org.dellroad.jibxbindings.pidf.lo;
 import org.dellroad.jibxbindings.pidf.lo.gml.GMLObject;
 
 /**
- * The {@code &lt;location-info&gt;} element as defined in RFC 4119.
+ * The {@code <gp:location-info>} element as defined in RFC 4119.
  */
 public class LocationInfo {
 

@@ -8,7 +8,7 @@
 package org.dellroad.jibxbindings.pidf.lo;
 
 /**
- * The {@code &lt;provided-by&gt;} element as defined in RFC 4119.
+ * The {@code <gp:provided-by>} element as defined in RFC 4119.
  */
 public class ProvidedBy {
 }

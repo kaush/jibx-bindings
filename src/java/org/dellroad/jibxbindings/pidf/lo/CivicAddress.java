@@ -11,7 +11,7 @@ import org.dellroad.jibxbindings.ParseUtil;
 import org.jibx.runtime.JiBXParseException;
 
 /**
- * The {@code &lt;civicAddress&gt;} element as defined in RFC 5139.
+ * The {@code <ca:civicAddress>} element as defined in RFC 5139.
  */
 public class CivicAddress {
 
