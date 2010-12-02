@@ -540,7 +540,7 @@
             <param name="basedir" expression="${basedir}"/>
             <param name="ant.project.name" expression="${ant.project.name}"/>
             <param name="svn.revision" expression="${svn_revision}"/>
-            <param name="version" expression="${version}"/>
+            <param name="version" expression="${library.version}"/>
             <param name="timestamp" expression="${current.time}"/>
         </xslt>
         <antcontrib:if>
