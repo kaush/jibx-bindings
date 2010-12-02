@@ -100,7 +100,7 @@
 
     <!-- Build Javadocs -->
     <target name="javadoc" depends="javac.classpath">
-        <dellroad:javadoc>
+        <dellroad:javadoc overview="src/java/overview.html">
             <links>
                 <link href="http://download-llnw.oracle.com/javase/6/docs/api/"/>
                 <link href="http://jibx.sourceforge.net/api/"/>
