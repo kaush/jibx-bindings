@@ -29,53 +29,47 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">PIDF-LO Tests</td><td class="numi">2</td><td class="numi">17</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">PIDF-LO Tests</td><td class="numi">2</td><td class="numi">17</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
 <tr><th colspan="4">PIDF-LO Tests &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">org.dellroad.jibxbindings.ParseUtilTest<td><a href="#m1"><b>testRFC3339</b> </a></td><td class="numi">14</td><td class="numi">42</td></tr>
-<tr class="passedeven"><td rowspan="1">org.dellroad.jibxbindings.pidf.PIDFParseTest<td><a href="#m2"><b>testValid</b> </a></td><td class="numi">3</td><td class="numi">113</td></tr>
+<tr class="passedodd"><td rowspan="1">org.dellroad.jibxbindings.ParseUtilTest<td><a href="#m1"><b>testRFC3339</b> </a></td><td class="numi">14</td><td class="numi">97</td></tr>
+<tr class="passedeven"><td rowspan="1">org.dellroad.jibxbindings.pidf.PIDFParseTest<td><a href="#m2"><b>testValid</b> </a></td><td class="numi">3</td><td class="numi">175</td></tr>
 </table>
 <h1>PIDF-LO Tests</h1>
 <a id="m1"></a><h2>org.dellroad.jibxbindings.ParseUtilTest:testRFC3339</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">10-09-28T19:16:10Z</td>
+<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10.123</td>
 <td style="padding-left:.5em;padding-right:2em">null</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">10-09-28T19:16:10Z</td>
+<td style="padding-left:.5em;padding-right:2em">null</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10Z</td>
+<td style="padding-left:.5em;padding-right:2em">1285701370000</td>
 </tr>
 <tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10ZZ</td>
 <td style="padding-left:.5em;padding-right:2em">null</td>
 </tr>
-<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10+00:00</td>
+<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T12:16:10-07:00</td>
 <td style="padding-left:.5em;padding-right:2em">1285701370000</td>
 </tr>
 <tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10.123Z</td>
 <td style="padding-left:.5em;padding-right:2em">1285701370123</td>
 </tr>
-<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T12:16:10-07:00</td>
+<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10+00:00</td>
 <td style="padding-left:.5em;padding-right:2em">1285701370000</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10-00:00</td>
+<td style="padding-left:.5em;padding-right:2em">1285701370000</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10GMT-00:00</td>
+<td style="padding-left:.5em;padding-right:2em">null</td>
 </tr>
 <tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10GMT+00:00</td>
-<td style="padding-left:.5em;padding-right:2em">null</td>
-</tr>
-<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10.123</td>
-<td style="padding-left:.5em;padding-right:2em">null</td>
-</tr>
-<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10Z</td>
-<td style="padding-left:.5em;padding-right:2em">1285701370000</td>
-</tr>
-<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10</td>
-<td style="padding-left:.5em;padding-right:2em">null</td>
-</tr>
-<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T23:16:10+04:00</td>
-<td style="padding-left:.5em;padding-right:2em">1285701370000</td>
-</tr>
-<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10-00:00</td>
-<td style="padding-left:.5em;padding-right:2em">1285701370000</td>
-</tr>
-<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10GMT-00:00</td>
 <td style="padding-left:.5em;padding-right:2em">null</td>
 </tr>
 <tr><td style="padding-left:.5em;padding-right:2em">10-09-28T19:16:10Z</td>
@@ -83,17 +77,23 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 </tr>
 <tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10.123Z</td>
 <td style="padding-left:.5em;padding-right:2em">1285701370123</td>
+</tr>
+<tr><td style="padding-left:.5em;padding-right:2em">2010-09-28T23:16:10+04:00</td>
+<td style="padding-left:.5em;padding-right:2em">1285701370000</td>
+</tr>
+<tr class="stripe"><td style="padding-left:.5em;padding-right:2em">2010-09-28T19:16:10</td>
+<td style="padding-left:.5em;padding-right:2em">null</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <a id="m2"></a><h2>org.dellroad.jibxbindings.pidf.PIDFParseTest:testValid</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-1.xml</td>
+<tr><td style="padding-left:.5em;padding-right:2em">file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-0.xml</td>
 </tr>
 <tr class="stripe"><td style="padding-left:.5em;padding-right:2em">file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-2.xml</td>
 </tr>
-<tr><td style="padding-left:.5em;padding-right:2em">file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-0.xml</td>
+<tr><td style="padding-left:.5em;padding-right:2em">file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-1.xml</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
