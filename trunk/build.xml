@@ -81,7 +81,7 @@
             <fileset dir="src/java" includes="**/*.xml"/>
         </jar>
         <zip destfile="build/dist/${ant.project.name}-sources-${full.version}.zip">
-            <fileset dir="src/java" includes="**/*"/>
+            <fileset dir="src/java" includes="**/*.java, **/*.xml"/>
         </zip>
         <zip destfile="build/dist/${ant.project.name}-javadocs-${full.version}.zip">
             <fileset dir="build/reports/javadoc" includes="**/*"/>
