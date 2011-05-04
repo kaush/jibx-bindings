@@ -7,7 +7,7 @@
 
 package org.dellroad.jibxbindings.pidf.lo;
 
-import org.dellroad.jibxbindings.ParseUtil;
+import org.dellroad.stuff.jibx.ParseUtil;
 import org.jibx.runtime.JiBXParseException;
 
 /**
