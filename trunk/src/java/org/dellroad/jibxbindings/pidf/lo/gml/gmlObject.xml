@@ -13,8 +13,8 @@
 
     <mapping abstract="true" type-name="gml:measure" class="org.dellroad.jibxbindings.pidf.lo.gml.Measure">
         <value name="uom" field="uom" style="attribute"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
-          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
         <value field="value" style="text"/>
     </mapping>
 
@@ -28,8 +28,8 @@
         <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.GMLObject"/>
         <value name="gid" field="gid" style="attribute" usage="optional"/>
         <value name="srsName" field="srsName" style="attribute" usage="optional"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
-          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
         <value name="srsDimension" field="srsDimension" style="attribute" usage="optional"/>
         <value name="axisLabels" field="axisLabels" style="attribute" usage="optional"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeStringList"

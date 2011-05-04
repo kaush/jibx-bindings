@@ -8,13 +8,13 @@
     <mapping abstract="true" type-name="gp:usageRules" class="org.dellroad.jibxbindings.pidf.lo.UsageRules">
         <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy" default="elements" prefix="bp"/>
         <value name="retransmission-allowed" field="retransmissionAllowed" usage="optional"
-          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeBoolean"/>
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeBoolean"/>
         <value name="retention-expiry" field="retentionExpiry" usage="optional"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC3339Timestamp"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC3339Timestamp"/>
         <value name="external-ruleset" field="externalRuleset" usage="optional"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
-          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
         <structure name="note-well" field="noteWell" map-as="pidf:langContent" usage="optional"/>
     </mapping>
 </binding>

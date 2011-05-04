@@ -24,6 +24,7 @@
         <dependency org="org.apache.log4j" name="log4j" rev="1.2.15" conf="javac,test->default"/>
         <dependency org="net.sourceforge.jibx" name="jibx" rev="1.2.3" conf="base->runtime-xpp3,extras;bind->bind"/>
         <dependency org="org.xmlpull.xpp3" name="xpp3" rev="1.1.3.4.O" conf="javac->default"/>
+        <dependency org="org.dellroad" name="dellroad-stuff" rev="1.0.92" conf="base,bind->default"/>
     </dependencies>
 
 </ivy-module>
