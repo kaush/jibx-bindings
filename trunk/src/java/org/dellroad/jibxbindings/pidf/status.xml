@@ -7,10 +7,7 @@
     <include path="lo/geoPriv.xml"/>
     <mapping abstract="true" type-name="pidf:status" class="org.dellroad.jibxbindings.pidf.Status">
         <namespace uri="urn:ietf:params:xml:ns:pidf" default="elements" prefix="pidf"/>
-    <!--
-        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" default="elements" prefix="gp"/>
-            Commented out due to http://jira.codehaus.org/browse/JIBX-437
-    -->
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" prefix="gp"/>
         <value name="basic" ns="urn:ietf:params:xml:ns:pidf" field="basic" usage="optional" enum-value-method="getXMLValue"/>
         <structure name="geopriv" ns="urn:ietf:params:xml:ns:pidf:geopriv10" field="geoPriv" map-as="gp:geopriv" usage="optional"/>
     </mapping>
