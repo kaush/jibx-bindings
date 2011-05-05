@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <mapping name="RestException" class="org.dellroad.jibxbindings.twilio.restapi.RestException">
+        <value name="Status" get-method="getStatus" set-method="setStatus"/>
+        <value name="Message" get-method="getMessage" set-method="setMessage"/>
+        <value name="Code" get-method="getCode" set-method="setCode" usage="optional"/>
+        <value name="MoreInfo" get-method="getMoreInfo" set-method="setMoreInfo" usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+    </mapping>
+</binding>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.twiml">
+    <mapping name="Response" class="org.dellroad.jibxbindings.twilio.twiml.Response">
+        <collection get-method="getVerbs" set-method="setVerbs" create-type="java.util.ArrayList"/>
+    </mapping>
+</binding>

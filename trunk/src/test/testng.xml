@@ -13,7 +13,8 @@
         <packages>
             <package name="org.dellroad.jibxbindings"/>
             <package name="org.dellroad.jibxbindings.pidf"/>
-            <package name="org.dellroad.jibxbindings.twilio"/>
+            <package name="org.dellroad.jibxbindings.twilio.restapi"/>
+            <package name="org.dellroad.jibxbindings.twilio.twiml"/>
         </packages>
     </test>
 
