@@ -6,10 +6,10 @@
  */
 
 /**
- * JiBX Bindings for version 2010-04-01 of the Twilio REST API and TwiML.
+ * Shared classes for the Twilio REST API and TwiML Markup Language.
  *
- * @see <a href="http://www.twilio.com/docs/api/rest/">Twilio REST Web Service Interface</a>
- * @see <a href="http://www.twilio.com/docs/api/twiml/">TwilML: the Twilio Markup Language</a>
+ * @see org.dellroad.jibxbindings.twilio.twiml
+ * @see org.dellroad.jibxbindings.twilio.restapi
  * @see <a href="http://jibx-bindings.googlecode.com/">JiBX Bindings</a>
  */
 package org.dellroad.jibxbindings.twilio;

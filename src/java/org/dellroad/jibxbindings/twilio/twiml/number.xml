@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.twiml">
+    <mapping name="Number" class="org.dellroad.jibxbindings.twilio.twiml.Number">
+        <value name="sendDigits" style="attribute" get-method="getSendDigits" set-method="setSendDigits" usage="optional"/>
+        <value name="url" style="attribute" get-method="getURL" set-method="setURL" usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value style="text" get-method="getNumber" set-method="setNumber"/>
+    </mapping>
+</binding>

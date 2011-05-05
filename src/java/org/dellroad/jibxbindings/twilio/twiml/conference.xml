@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.twiml">
+    <mapping name="Conference" class="org.dellroad.jibxbindings.twilio.twiml.Conference">
+        <value name="muted" style="attribute" get-method="isMuted" set-method="setMuted" usage="optional"/>
+        <value name="beep" style="attribute" get-method="isBeep" set-method="setBeep" usage="optional"/>
+        <value name="startConferenceOnEnter" style="attribute"
+          get-method="isStartConferenceOnEnter" set-method="setStartConferenceOnEnter" usage="optional"/>
+        <value name="endConferenceOnExit" style="attribute"
+          get-method="isEndConferenceOnExit" set-method="setEndConferenceOnExit" usage="optional"/>
+        <value name="waitUrl" style="attribute" get-method="getWaitUrl" set-method="setWaitUrl" usage="optional"/>
+        <value name="waitMethod" style="attribute" get-method="getWaitMethod" set-method="setWaitMethod" usage="optional"/>
+        <value name="maxParticipants" style="attribute"
+          get-method="getMaxParticipants" set-method="setMaxParticipants" usage="optional"/>
+        <value style="text" get-method="getRoom" set-method="setRoom"/>
+    </mapping>
+</binding>
+
