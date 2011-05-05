@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio">
+    <mapping name="Dial" class="org.dellroad.jibxbindings.twilio.Dial">
+        <value name="action" style="attribute" get-method="getAction" set-method="setAction" usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="method" style="attribute" get-method="getMethod" set-method="setMethod" usage="optional"/>
+        <value name="timeout" style="attribute" get-method="getTimeout" set-method="setTimeout" usage="optional"/>
+        <value name="hangupOnStar" style="attribute" get-method="isHangupOnStar" set-method="setHangupOnStar" usage="optional"/>
+        <value name="timeLimit" style="attribute" get-method="getTimeLimit" set-method="setTimeLimit" usage="optional"/>
+        <value name="callerId" style="attribute" get-method="getCallerId" set-method="setCallerId" usage="optional"/>
+        <collection get-method="getNumbers" set-method="setNumbers" create-type="java.util.ArrayList"/>
+        <structure get-method="getConference" set-method="setConference" usage="optional"/>
+    </mapping>
+</binding>

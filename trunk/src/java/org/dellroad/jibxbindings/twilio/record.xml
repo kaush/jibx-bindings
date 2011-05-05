@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio">
+    <mapping name="Record" class="org.dellroad.jibxbindings.twilio.Record">
+        <value name="action" style="attribute" get-method="getAction" set-method="setAction" usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="method" style="attribute" get-method="getMethod" set-method="setMethod" usage="optional"/>
+        <value name="timeout" style="attribute" get-method="getTimeout" set-method="setTimeout" usage="optional"/>
+        <value name="finishOnKey" style="attribute" get-method="getFinishOnKey" set-method="setFinishOnKey" usage="optional"/>
+        <value name="maxLength" style="attribute" get-method="getMaxLength" set-method="setMaxLength" usage="optional"/>
+        <value name="transcribe" style="attribute" get-method="isTranscribe" set-method="setTranscribe" usage="optional"/>
+        <value name="transcribeCallback" style="attribute" get-method="getTranscribeCallback" set-method="setTranscribeCallback"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="playBeep" style="attribute" get-method="isPlayBeep" set-method="setPlayBeep" usage="optional"/>
+    </mapping>
+</binding>

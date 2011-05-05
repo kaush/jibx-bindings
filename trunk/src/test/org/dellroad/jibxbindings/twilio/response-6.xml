@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<Response>
+  <Dial>
+    <Number>5551212</Number>
+    <Number>5551213</Number>
+    <Conference
+      muted="false"
+      beep="true"
+      startConferenceOnEnter="true"
+      endConferenceOnExit="true"
+      waitMethod="POST"
+      maxParticipants="10"
+      waitUrl="">
+      Rubber Room
+    </Conference>
+  </Dial>
+</Response>

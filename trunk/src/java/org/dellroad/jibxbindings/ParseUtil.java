@@ -29,6 +29,7 @@ public final class ParseUtil {
 
     private static final Pattern RFC3339_PATTERN
       = Pattern.compile("(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?)(Z|([-+]\\d{2}:\\d{2}))");
+    private static final String RFC5322_FORMAT = "EEE, dd MMM yyyy HH:mm:ss Z";
 
     private ParseUtil() {
     }
@@ -71,6 +72,41 @@ public final class ParseUtil {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
         dateFormat.setCalendar(cal);
         return dateFormat.format(timestamp);
+    }
+
+    /**
+     * Deserialize a timestamp in RFC 5322 format.
+     *
+     * @see #serializeRFC5322Timestamp
+     * @see <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a>
+     */
+    public static Date deserializeRFC5322Timestamp(String string) throws JiBXParseException {
+        try {
+            return getRFC5322DateFormat(null).parse(string);
+        } catch (ParseException e) {
+            throw new JiBXParseException("incorrectly formatted date string", string, e);
+        }
+    }
+
+    /**
+     * Serialize a timestamp in RFC 5322 format.
+     *
+     * @see #deserializeRFC5322Timestamp
+     * @see <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a>
+     */
+    public static String serializeRFC5322Timestamp(Date date) {
+        return getRFC5322DateFormat(date).format(date);
+    }
+
+    private static SimpleDateFormat getRFC5322DateFormat(Date date) {
+        TimeZone gmt = TimeZone.getTimeZone("GMT");
+        GregorianCalendar cal = new GregorianCalendar(gmt, Locale.US);
+        if (date != null)
+            cal.setTime(date);
+        SimpleDateFormat dateFormat = new SimpleDateFormat(RFC5322_FORMAT);
+        dateFormat.setLenient(false);
+        dateFormat.setCalendar(cal);
+        return dateFormat;
     }
 
     /**

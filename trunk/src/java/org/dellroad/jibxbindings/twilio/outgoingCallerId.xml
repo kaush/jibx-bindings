@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio">
+    <mapping name="OutgoingCallerId" class="org.dellroad.jibxbindings.twilio.OutgoingCallerId">
+        <value name="Sid" get-method="getSid" set-method="setSid"/>
+        <value name="AccountSid" get-method="getAccountSid" set-method="setAccountSid"/>
+        <value name="FriendlyName" get-method="getFriendlyName" set-method="setFriendlyName"/>
+        <value name="PhoneNumber" get-method="getPhoneNumber" set-method="setPhoneNumber"/>
+        <value name="DateCreated" get-method="getDateCreated" set-method="setDateCreated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="DateUpdated" get-method="getDateUpdated" set-method="setDateUpdated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="Uri" get-method="getUri" set-method="setUri"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+    </mapping>
+</binding>

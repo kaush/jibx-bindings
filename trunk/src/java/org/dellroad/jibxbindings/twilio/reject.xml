@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio">
+    <mapping name="Reject" class="org.dellroad.jibxbindings.twilio.Reject">
+        <value name="reason" style="attribute" get-method="getReason" set-method="setReason"
+          enum-value-method="getXMLName" usage="optional"/>
+    </mapping>
+</binding>
