@@ -7,6 +7,7 @@
 
 package org.dellroad.jibxbindings;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
@@ -18,11 +19,12 @@ import org.jibx.runtime.IBindingFactory;
 import org.jibx.runtime.IMarshallingContext;
 import org.jibx.runtime.IUnmarshallingContext;
 import org.jibx.runtime.JiBXException;
+import static org.testng.Assert.assertEquals;
 
 /**
  * Support superclass for tests that parse XML expecting it to be valid or invalid.
  * The subclass provides the test name, and this class finds all XML files in the
- * same package named NAME-valid-N.xml and NAME-invalid-N.xml where N = 0, 1, 2, ....
+ * same package named FOO-N.xml where FOO is some given label and N = 0, 1, 2, ....
  */
 public abstract class ParseTestSupport extends TestSupport {
 
@@ -30,9 +32,22 @@ public abstract class ParseTestSupport extends TestSupport {
      * Parse the document expecting the parse to succeed. If it does, also unparse the document.
      */
     protected <T> void testValidParse(URL url, Class<T> clazz) throws Exception {
-        T t = this.parse(url, clazz);
-        String s = this.unparse(t);
-        System.out.println(s);
+
+        // Parse it
+        T t1 = this.parse(url, clazz);
+
+        // Unparse it
+        String xml1 = this.unparse(t1);
+        System.out.println(xml1);
+
+        // Parse it again
+        T t2 = this.parse(xml1, clazz);
+
+        // Unparse it again
+        String xml2 = this.unparse(t2);
+
+        // Compare
+        assertEquals(xml1, xml2);
     }
 
     /**
@@ -51,9 +66,22 @@ public abstract class ParseTestSupport extends TestSupport {
      * Parse the document expecting an instance of {@code clazz} and return the parsed object.
      */
     protected <T> T parse(URL url, Class<T> clazz) throws IOException, JiBXException {
+        return parse(url.openStream(), clazz);
+    }
+
+    /**
+     * Parse the document expecting an instance of {@code clazz} and return the parsed object.
+     */
+    protected <T> T parse(String s, Class<T> clazz) throws IOException, JiBXException {
+        return parse(new ByteArrayInputStream(s.getBytes("UTF-8")), clazz);
+    }
+
+    /**
+     * Parse the document expecting an instance of {@code clazz} and return the parsed object.
+     */
+    protected <T> T parse(InputStream input, Class<T> clazz) throws IOException, JiBXException {
         IBindingFactory bindingFactory = BindingDirectory.getFactory(clazz);
         IUnmarshallingContext unmarshallingContext = bindingFactory.createUnmarshallingContext();
-        InputStream input = url.openStream();
         Object obj;
         try {
             obj = unmarshallingContext.unmarshalDocument(input, null);
