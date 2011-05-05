@@ -1,7 +1,0 @@
-<Response>
-  <Dial>
-    <Conference startConferenceOnEnter="true" endConferenceOnExit="true">
-      1234
-    </Conference>
-  </Dial>
-</Response>
