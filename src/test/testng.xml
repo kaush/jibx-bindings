@@ -9,10 +9,11 @@
     <parameter name="deleteTempDirs" value="true"/>
     <parameter name="randomSeed" value=""/>
 
-    <test name="PIDF-LO Tests">
+    <test name="JiBX Bindings Tests">
         <packages>
             <package name="org.dellroad.jibxbindings"/>
             <package name="org.dellroad.jibxbindings.pidf"/>
+            <package name="org.dellroad.jibxbindings.twilio"/>
         </packages>
     </test>
 

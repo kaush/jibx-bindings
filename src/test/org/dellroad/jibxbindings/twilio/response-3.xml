@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<Response>
+    <Gather action="/process_gather.php" method="GET">
+        <Play>/chime.au</Play>
+        <Say>
+            Please enter your account number,
+            followed by the pound sign
+        </Say>
+    </Gather>
+    <Pause length="2"/>
+    <Say>We didn't receive any input. Goodbye!</Say>
+</Response>

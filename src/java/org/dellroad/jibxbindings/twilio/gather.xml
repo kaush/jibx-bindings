@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio">
+    <mapping name="Gather" class="org.dellroad.jibxbindings.twilio.Gather">
+        <value name="action" style="attribute" get-method="getAction" set-method="setAction" usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="method" style="attribute" get-method="getMethod" set-method="setMethod" usage="optional"/>
+        <value name="timeout" style="attribute" get-method="getTimeout" set-method="setTimeout" usage="optional"/>
+        <value name="finishOnKey" style="attribute" get-method="getFinishOnKey" set-method="setFinishOnKey" usage="optional"/>
+        <value name="numDigits" style="attribute" get-method="getNumDigits" set-method="setNumDigits" usage="optional"/>
+        <collection get-method="getVerbs" set-method="setVerbs" create-type="java.util.ArrayList"/>
+    </mapping>
+</binding>

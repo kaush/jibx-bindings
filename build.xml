@@ -69,6 +69,7 @@
     <target name="jibx-bind" depends="javac, jibx-bind.classpath" unless="jibx-bind.completed">
         <taskdef name="bind" classname="org.jibx.binding.ant.CompileTask" classpathref="jibx-bind.classpath"/>
         <dellroad:bind packagedir="org/dellroad/jibxbindings/pidf"/>
+        <dellroad:bind packagedir="org/dellroad/jibxbindings/twilio"/>
         <property name="jibx-bind.completed" value="true"/>
     </target>
 

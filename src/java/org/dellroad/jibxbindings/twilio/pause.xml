@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio">
+    <mapping name="Pause" class="org.dellroad.jibxbindings.twilio.Pause">
+        <value name="length" style="attribute" get-method="getLength" set-method="setLength" usage="optional"/>
+    </mapping>
+</binding>
