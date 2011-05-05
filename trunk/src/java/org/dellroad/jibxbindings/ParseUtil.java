@@ -27,7 +27,7 @@ import org.jibx.runtime.JiBXParseException;
  */
 public final class ParseUtil {
 
-    private static final Pattern RFC3339_FORMAT
+    private static final Pattern RFC3339_PATTERN
       = Pattern.compile("(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?)(Z|([-+]\\d{2}:\\d{2}))");
 
     private ParseUtil() {
@@ -40,7 +40,7 @@ public final class ParseUtil {
      * @see <a href="http://tools.ietf.org/html/rfc3339">RFC 3339</a>
      */
     public static Date deserializeRFC3339Timestamp(String string) throws JiBXParseException {
-        Matcher matcher = RFC3339_FORMAT.matcher(string);
+        Matcher matcher = RFC3339_PATTERN.matcher(string);
         if (!matcher.matches())
             throw new JiBXParseException("incorrectly formatted timestamp", string);
         TimeZone timeZone = TimeZone.getTimeZone("GMT" + (matcher.group(4) != null ? matcher.group(4) : ""));
@@ -48,7 +48,6 @@ public final class ParseUtil {
         String fmt = "y-M-d'T'H:m:s" + (matcher.group(2) != null ?  ".S" : "");
         SimpleDateFormat dateFormat = new SimpleDateFormat(fmt);
         dateFormat.setLenient(false);
-        dateFormat.setTimeZone(timeZone);
         dateFormat.setCalendar(cal);
         try {
             return dateFormat.parse(matcher.group(1));
@@ -70,7 +69,6 @@ public final class ParseUtil {
         Calendar cal = new GregorianCalendar(gmt, Locale.US);
         cal.setTime(timestamp);
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-        dateFormat.setTimeZone(gmt);
         dateFormat.setCalendar(cal);
         return dateFormat.format(timestamp);
     }
