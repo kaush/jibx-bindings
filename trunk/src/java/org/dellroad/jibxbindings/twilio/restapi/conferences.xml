@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <include path="conference.xml"/>
+    <include path="page.xml"/>
+    <mapping name="Conferences" class="org.dellroad.jibxbindings.twilio.restapi.Conferences">
+        <structure map-as="page"/>
+        <collection get-method="getConferences" set-method="setConferences" create-type="java.util.ArrayList"
+          item-type="org.dellroad.jibxbindings.twilio.restapi.Conference"/>
+    </mapping>
+</binding>

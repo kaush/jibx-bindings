@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <include path="recording.xml"/>
+    <include path="page.xml"/>
+    <mapping name="Recordings" class="org.dellroad.jibxbindings.twilio.restapi.Recordings">
+        <structure map-as="page"/>
+        <collection get-method="getRecordings" set-method="setRecordings" create-type="java.util.ArrayList"
+          item-type="org.dellroad.jibxbindings.twilio.restapi.Recording"/>
+    </mapping>
+</binding>

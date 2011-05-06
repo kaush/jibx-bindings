@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <mapping abstract="true" type-name="subresourceUris" class="org.dellroad.jibxbindings.twilio.restapi.SubresourceUris"
+      ordered="false">
+        <value name="AvailablePhoneNumbers" get-method="getAvailablePhoneNumbers" set-method="setAvailablePhoneNumbers"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="Calls" get-method="getCalls" set-method="setCalls"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="Conferences" get-method="getConferences" set-method="setConferences"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="IncomingPhoneNumbers" get-method="getIncomingPhoneNumbers" set-method="setIncomingPhoneNumbers"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="Notifications" get-method="getNotifications" set-method="setNotifications"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="OutgoingCallerIds" get-method="getOutgoingCallerIds" set-method="setOutgoingCallerIds"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="Recordings" get-method="getRecordings" set-method="setRecordings"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="Sandbox" get-method="getSandbox" set-method="setSandbox"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="SMSMessages" get-method="getSMSMessages" set-method="setSMSMessages"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="Transcriptions" get-method="getTranscriptions" set-method="setTranscriptions"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <value name="Participants" get-method="getParticipants" set-method="setParticipants"
+          usage="optional"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+    </mapping>
+</binding>

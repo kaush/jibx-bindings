@@ -11,6 +11,8 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.dellroad.jibxbindings.twilio.Method;
+
 /**
  * TwiML <code>&lt;Gather&gt;</code> verb.
  */

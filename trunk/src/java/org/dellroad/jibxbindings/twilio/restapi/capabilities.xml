@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <mapping abstract="true" type-name="capabilities" class="org.dellroad.jibxbindings.twilio.restapi.Capabilities">
+        <value name="Voice" get-method="isVoice" set-method="setVoice" usage="optional"/>
+        <value name="SMS" get-method="isSMS" set-method="setSMS" usage="optional"/>
+    </mapping>
+</binding>
+

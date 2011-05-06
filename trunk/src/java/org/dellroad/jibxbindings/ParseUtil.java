@@ -75,12 +75,14 @@ public final class ParseUtil {
     }
 
     /**
-     * Deserialize a timestamp in RFC 5322 format.
+     * Deserialize a timestamp in RFC 5322 format. Treat an empty string as null.
      *
      * @see #serializeRFC5322Timestamp
      * @see <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a>
      */
     public static Date deserializeRFC5322Timestamp(String string) throws JiBXParseException {
+        if (string.length() == 0)
+            return null;
         try {
             return getRFC5322DateFormat(null).parse(string);
         } catch (ParseException e) {
@@ -95,7 +97,9 @@ public final class ParseUtil {
      * @see <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a>
      */
     public static String serializeRFC5322Timestamp(Date date) {
-        return getRFC5322DateFormat(date).format(date);
+        if (date == null)
+            return null;
+        return ParseUtil.getRFC5322DateFormat(date).format(date);
     }
 
     private static SimpleDateFormat getRFC5322DateFormat(Date date) {
@@ -107,6 +111,67 @@ public final class ParseUtil {
         dateFormat.setLenient(false);
         dateFormat.setCalendar(cal);
         return dateFormat;
+    }
+
+    /**
+     * Deserialize an integer, but treat empty string as zero.
+     */
+    public static int deserializeInt(String string) throws JiBXParseException {
+        if (string.length() == 0)
+            return 0;
+        try {
+            return Integer.parseInt(string);
+        } catch (NumberFormatException e) {
+            throw new JiBXParseException("can't parse integer value `" + string + "'", string, e);
+        }
+    }
+
+    /**
+     * Deserialize a double, but treat empty string as NaN.
+     */
+    public static double deserializeDouble(String string) throws JiBXParseException {
+        if (string.length() == 0)
+            return Double.NaN;
+        try {
+            return Double.parseDouble(string);
+        } catch (NumberFormatException e) {
+            throw new JiBXParseException("can't parse double value `" + string + "'", string, e);
+        }
+    }
+
+    /**
+     * Deserialize a {@link Enum} using the enum name, but treat empty string as null.
+     */
+    public static <T extends Enum<T>> T deserializeEnum(String string, T[] values) throws JiBXParseException {
+        if (string.length() == 0)
+            return null;
+        for (T value : values) {
+            if (value.name().equals(string))
+                return value;
+        }
+        throw new JiBXParseException("no match found for enum value `" + string + "'", string);
+    }
+
+    /**
+     * Deserialize an {@link XMLEnum}. Treat an empty string like null.
+     */
+    public static <T extends XMLEnum> T deserializeXMLEnum(String string, T[] values) throws JiBXParseException {
+        if (string.length() == 0)
+            return null;
+        for (T value : values) {
+            if (value.getXMLName().equals(string))
+                return value;
+        }
+        throw new JiBXParseException("no match found for enum value `" + string + "'", string);
+    }
+
+    /**
+     * Serialize an {@link XMLEnum}.
+     */
+    public static String serializeXMLEnum(XMLEnum value) {
+        if (value == null)
+            return null;
+        return value.getXMLName();
     }
 
     /**

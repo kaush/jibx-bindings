@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <include path="subresourceUris.xml"/>
+    <mapping name="Transcription" class="org.dellroad.jibxbindings.twilio.restapi.Transcription" ordered="false">
+
+        <!-- Resource -->
+        <value name="DateCreated" get-method="getDateCreated" set-method="setDateCreated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="DateUpdated" get-method="getDateUpdated" set-method="setDateUpdated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="Uri" get-method="getURI" set-method="setURI"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <structure name="SubresourceUris" map-as="subresourceUris" get-method="getSubresourceUris" set-method="setSubresourceUris"
+          usage="optional"/>
+
+        <!-- AccountResource -->
+        <value name="AccountSid" get-method="getAccountSid" set-method="setAccountSid"/>
+
+        <!-- SidAccountResource -->
+        <value name="Sid" get-method="getSid" set-method="setSid"/>
+
+        <!-- Transcription -->
+        <value name="Status" get-method="getStatus" set-method="setStatus"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.TranscriptionStatus.deserializeXML"/>
+        <value name="Type" get-method="getType" set-method="setType"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.TranscriptionType.deserializeXML"/>
+        <value name="RecordingSid" get-method="getRecordingSid" set-method="setRecordingSid"/>
+        <value name="Duration" get-method="getDuration" set-method="setDuration"/>
+        <value name="TranscriptionText" get-method="getTranscriptionText" set-method="setTranscriptionText"/>
+        <value name="Price" get-method="getPrice" set-method="setPrice" usage="optional"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDouble"/>
+        <value name="ApiVersion" get-method="getAPIVersion" set-method="setAPIVersion"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.APIVersion.deserializeXML"/>
+    </mapping>
+</binding>

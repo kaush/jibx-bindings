@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <include path="subresourceUris.xml"/>
+    <mapping name="Call" class="org.dellroad.jibxbindings.twilio.restapi.Call" ordered="false">
+
+        <!-- Resource -->
+        <value name="DateCreated" get-method="getDateCreated" set-method="setDateCreated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="DateUpdated" get-method="getDateUpdated" set-method="setDateUpdated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="Uri" get-method="getURI" set-method="setURI"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <structure name="SubresourceUris" map-as="subresourceUris" get-method="getSubresourceUris" set-method="setSubresourceUris"
+          usage="optional"/>
+
+        <!-- AccountResource -->
+        <value name="AccountSid" get-method="getAccountSid" set-method="setAccountSid"/>
+
+        <!-- SidAccountResource -->
+        <value name="Sid" get-method="getSid" set-method="setSid"/>
+
+        <!-- Call -->
+        <value name="ParentCallSid" get-method="getParentCallSid" set-method="setParentCallSid"/>
+        <value name="To" get-method="getTo" set-method="setTo"/>
+        <value name="From" get-method="getFrom" set-method="setFrom"/>
+        <value name="PhoneNumberSid" get-method="getPhoneNumberSid" set-method="setPhoneNumberSid"/>
+        <value name="Status" get-method="getStatus" set-method="setStatus"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.CallStatus.deserializeXML"/>
+        <value name="StartTime" get-method="getStartTime" set-method="setStartTime" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="EndTime" get-method="getEndTime" set-method="setEndTime" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="Duration" get-method="getDuration" set-method="setDuration"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeInt"/>
+        <value name="Price" get-method="getPrice" set-method="setPrice" usage="optional"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDouble"/>
+        <value name="Direction" get-method="getDirection" set-method="setDirection"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.CallDirection.deserializeXML"/>
+        <value name="AnsweredBy" get-method="getAnsweredBy" set-method="setAnsweredBy"
+          usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.AnswerType.deserializeXML"/>
+        <value name="ForwardedFrom" get-method="getForwardedFrom" set-method="setForwardedFrom" usage="optional"/>
+        <value name="CallerName" get-method="getCallerName" set-method="setCallerName" usage="optional"/>
+        <value name="ApiVersion" get-method="getAPIVersion" set-method="setAPIVersion"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.APIVersion.deserializeXML"/>
+    </mapping>
+</binding>

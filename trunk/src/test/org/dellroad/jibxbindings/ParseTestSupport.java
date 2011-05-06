@@ -111,16 +111,18 @@ public abstract class ParseTestSupport extends TestSupport {
     }
 
     /**
-     * Generate parse test cases based on the given label.
+     * Generate parse test cases based on the given label(s).
      * If the label is FOO, we look for FOO-0.xml, FOO-1.xml, etc.
      */
-    protected Object[][] genCases(String label) throws IOException {
+    protected Object[][] genCases(String... labels) throws IOException {
         ArrayList<Object[]> list = new ArrayList<Object[]>();
-        for (int index = 0; true; index++) {
-            URL url = getClass().getResource(label + "-" + index + ".xml");
-            if (url == null)
-                break;
-            list.add(new Object[] { url });
+        for (String label : labels) {
+            for (int index = 0; true; index++) {
+                URL url = getClass().getResource(label + "-" + index + ".xml");
+                if (url == null)
+                    break;
+                list.add(new Object[] { url });
+            }
         }
         return list.toArray(new Object[list.size()][]);
     }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <include path="incomingPhoneNumber.xml"/>
+    <include path="page.xml"/>
+    <mapping name="IncomingPhoneNumbers" class="org.dellroad.jibxbindings.twilio.restapi.IncomingPhoneNumbers">
+        <structure map-as="page"/>
+        <collection get-method="getPhoneNumbers" set-method="setPhoneNumbers" create-type="java.util.ArrayList"
+          item-type="org.dellroad.jibxbindings.twilio.restapi.IncomingPhoneNumber"/>
+    </mapping>
+</binding>
