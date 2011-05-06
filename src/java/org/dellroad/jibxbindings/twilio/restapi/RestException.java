@@ -16,7 +16,7 @@ public class RestException implements TwilioResponseContent {
 
     private int status;
     private String message;
-    private String code;
+    private int code;
     private URI moreInfo;
 
     public int getStatus() {
@@ -33,10 +33,10 @@ public class RestException implements TwilioResponseContent {
         this.message = message;
     }
 
-    public String getCode() {
+    public int getCode() {
         return this.code;
     }
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 

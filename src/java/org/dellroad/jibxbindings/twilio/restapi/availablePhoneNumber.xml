@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <mapping name="AvailablePhoneNumber" class="org.dellroad.jibxbindings.twilio.restapi.AvailablePhoneNumber" ordered="false">
+        <value name="FriendlyName" get-method="getFriendlyName" set-method="setFriendlyName"/>
+        <value name="PhoneNumber" get-method="getPhoneNumber" set-method="setPhoneNumber"/>
+        <value name="Lata" get-method="getLATA" set-method="setLATA" usage="optional"/>
+        <value name="RateCenter" get-method="getRateCenter" set-method="setRateCenter" usage="optional"/>
+        <value name="Latitude" get-method="getLatitude" set-method="setLatitude" usage="optional"/>
+        <value name="Longitude" get-method="getLongitude" set-method="setLongitude" usage="optional"/>
+        <value name="Region" get-method="getRegion" set-method="setRegion" usage="optional"/>
+        <value name="PostalCode" get-method="getPostalCode" set-method="setPostalCode" usage="optional"/>
+        <value name="IsoCountry" get-method="getISOCountry" set-method="setISOCountry"/>
+    </mapping>
+</binding>

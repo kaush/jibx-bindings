@@ -9,6 +9,8 @@ package org.dellroad.jibxbindings.twilio.twiml;
 
 import java.net.URI;
 
+import org.dellroad.jibxbindings.twilio.Method;
+
 /**
  * TwiML <code>&lt;Sms&gt;</code> verb.
  */

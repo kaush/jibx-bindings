@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.twilio.twiml;
 
+import org.dellroad.jibxbindings.twilio.Method;
+
 /**
  * TwiML <code>&lt;Conference&gt;</code> noun.
  */

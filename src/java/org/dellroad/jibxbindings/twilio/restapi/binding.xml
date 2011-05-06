@@ -3,9 +3,31 @@
 <!-- $Id$ -->
 <binding name="binding" package="org.dellroad.jibxbindings.twilio.restapi">
 
+    <include path="account.xml"/>
+    <include path="accounts.xml"/>
+    <include path="availablePhoneNumber.xml"/>
+    <include path="availablePhoneNumbers.xml"/>
+    <include path="call.xml"/>
+    <include path="calls.xml"/>
+    <include path="conference.xml"/>
+    <include path="conferences.xml"/>
+    <include path="incomingPhoneNumber.xml"/>
+    <include path="incomingPhoneNumbers.xml"/>
+    <include path="notification.xml"/>
+    <include path="notifications.xml"/>
     <include path="outgoingCallerId.xml"/>
+    <include path="outgoingCallerIds.xml"/>
+    <include path="participant.xml"/>
+    <include path="participants.xml"/>
+    <include path="recording.xml"/>
+    <include path="recordings.xml"/>
     <include path="restException.xml"/>
+    <include path="smsMessage.xml"/>
+    <include path="smsMessages.xml"/>
+    <include path="transcription.xml"/>
+    <include path="transcriptions.xml"/>
     <include path="twilioResponse.xml"/>
+    <include path="twilioSandbox.xml"/>
+    <include path="validationRequest.xml"/>
 
 </binding>
-

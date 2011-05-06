@@ -25,9 +25,33 @@ public class RestAPIParseTest extends ParseTestSupport {
 
     @DataProvider(name = "validTwilioResponses")
     public Object[][] validTwilioResponses() throws IOException {
-        return genCases("twilioResponse");
+        return genCases(
+          "account",
+          "accounts",
+          "availablePhoneNumbers",
+          "call",
+          "calls",
+          "conference",
+          "conferences",
+          "incomingPhoneNumber",
+          "incomingPhoneNumbers",
+          "notification",
+          "notifications",
+          "outgoingCallerId",
+          "outgoingCallerIds",
+          "participant",
+          "participants",
+          "recording",
+          "recordings",
+          "restException",
+          "smsMessage",
+          "smsMessages",
+          "transcription",
+          "transcriptions",
+          "twilioSandbox",
+          "validationRequest"
+        );
     }
 
     // Invalid cases
 }
-

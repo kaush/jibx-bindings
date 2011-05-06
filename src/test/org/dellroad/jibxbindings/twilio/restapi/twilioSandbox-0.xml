@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<TwilioResponse>
+    <TwilioSandbox>
+        <Pin>63729915</Pin>
+        <AccountSid>ACda6f1e31047ebd6fe7a55f120be3a900</AccountSid>
+        <PhoneNumber>+14154132865</PhoneNumber>
+        <VoiceUrl>http://demo.twilio.com/welcome</VoiceUrl>
+        <VoiceMethod>GET</VoiceMethod>
+        <SmsUrl>http://demo.twilio.com/welcome/sms</SmsUrl>
+        <SmsMethod>POST</SmsMethod>
+        <DateCreated>Mon, 10 Nov 2008 20:52:56 +0000</DateCreated>
+        <DateUpdated>Mon, 10 Nov 2008 20:52:56 +0000</DateUpdated>
+        <ApiVersion>2010-04-01</ApiVersion>
+        <Uri>/2010-04-01/Accounts/ACda6f1e31047ebd6fe7a55f120be3a900/Sandbox</Uri>
+    </TwilioSandbox>
+</TwilioResponse>

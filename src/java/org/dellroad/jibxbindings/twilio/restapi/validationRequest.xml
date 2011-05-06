@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <mapping name="ValidationRequest" class="org.dellroad.jibxbindings.twilio.restapi.ValidationRequest" ordered="false">
+        <value name="AccountSid" get-method="getAccountSid" set-method="setAccountSid"/>
+        <value name="PhoneNumber" get-method="getPhoneNumber" set-method="setPhoneNumber"/>
+        <value name="FriendlyName" get-method="getFriendlyName" set-method="setFriendlyName"/>
+        <value name="ValidationCode" get-method="getValidationCode" set-method="setValidationCode"/>
+    </mapping>
+</binding>

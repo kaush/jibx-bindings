@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<TwilioResponse>
+    <AvailablePhoneNumbers uri="/2010-04-01/Accounts/ACde6f1e11047ebd6fe7a55f120be3a900/AvailablePhoneNumbers/US/Loca?InRegion=CA&amp;NearLatLong=37.840699,-122.461853&amp;Distance=50&amp;Contains=555">
+        <AvailablePhoneNumber>
+            <FriendlyName>(415) 555-1212</FriendlyName>
+            <PhoneNumber>+14155551212</PhoneNumber>
+            <Lata>722</Lata>
+            <RateCenter>SNFC CNTRL</RateCenter>
+            <Latitude>37.7726</Latitude>
+            <Longitude>-122.4196</Longitude>
+            <Region>CA</Region>
+            <PostalCode>94133</PostalCode>
+            <IsoCountry>US</IsoCountry>
+        </AvailablePhoneNumber>
+    </AvailablePhoneNumbers>
+</TwilioResponse>

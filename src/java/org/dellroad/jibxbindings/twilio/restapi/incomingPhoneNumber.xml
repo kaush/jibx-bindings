@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.twilio.restapi">
+    <include path="subresourceUris.xml"/>
+    <include path="capabilities.xml"/>
+    <mapping name="IncomingPhoneNumber" class="org.dellroad.jibxbindings.twilio.restapi.IncomingPhoneNumber" ordered="false">
+
+        <!-- Resource -->
+        <value name="DateCreated" get-method="getDateCreated" set-method="setDateCreated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="DateUpdated" get-method="getDateUpdated" set-method="setDateUpdated"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="Uri" get-method="getURI" set-method="setURI"
+          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
+          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+        <structure name="SubresourceUris" map-as="subresourceUris" get-method="getSubresourceUris" set-method="setSubresourceUris"
+          usage="optional"/>
+
+        <!-- AccountResource -->
+        <value name="AccountSid" get-method="getAccountSid" set-method="setAccountSid"/>
+
+        <!-- SidAccountResource -->
+        <value name="Sid" get-method="getSid" set-method="setSid"/>
+
+        <!-- NamedAccountResource -->
+        <value name="FriendlyName" get-method="getFriendlyName" set-method="setFriendlyName"/>
+
+        <!-- NumberedAccountResource -->
+        <value name="PhoneNumber" get-method="getPhoneNumber" set-method="setPhoneNumber"/>
+
+        <!-- IncomingPhoneNumber -->
+        <value name="ApiVersion" get-method="getAPIVersion" set-method="setAPIVersion" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.APIVersion.deserializeXML"/>
+        <value name="VoiceUrl" get-method="getVoiceURL" set-method="setVoiceURL" usage="optional"/>
+        <value name="VoiceMethod" get-method="getVoiceMethod" set-method="setVoiceMethod" usage="optional"
+          deserializer="org.dellroad.jibxbindings.twilio.Method.deserialize"/>
+        <value name="VoiceFallbackUrl" get-method="getVoiceFallbackURL" set-method="setVoiceFallbackURL" usage="optional"/>
+        <value name="VoiceFallbackMethod" get-method="getVoiceFallbackMethod" set-method="setVoiceFallbackMethod" usage="optional"
+          deserializer="org.dellroad.jibxbindings.twilio.Method.deserialize"/>
+        <value name="StatusCallback" get-method="getStatusCallback" set-method="setStatusCallback" usage="optional"/>
+        <value name="StatusCallbackMethod" get-method="getStatusCallbackMethod" set-method="setStatusCallbackMethod"
+          usage="optional"
+          deserializer="org.dellroad.jibxbindings.twilio.Method.deserialize"/>
+        <value name="SmsUrl" get-method="getSMSURL" set-method="setSMSURL" usage="optional"/>
+        <value name="SmsMethod" get-method="getSMSMethod" set-method="setSMSMethod" usage="optional"
+          deserializer="org.dellroad.jibxbindings.twilio.Method.deserialize"/>
+        <value name="SmsFallbackUrl" get-method="getSMSFallbackURL" set-method="setSMSFallbackURL" usage="optional"/>
+        <value name="SmsFallbackMethod" get-method="getSMSFallbackMethod" set-method="setSMSFallbackMethod" usage="optional"
+          deserializer="org.dellroad.jibxbindings.twilio.Method.deserialize"/>
+        <structure name="Capabilities" get-method="getCapabilities" set-method="setCapabilities" map-as="capabilities"/>
+        <value name="VoiceCallerIdLookup" get-method="isVoiceCallerIdLookup" set-method="setVoiceCallerIdLookup"/>
+    </mapping>
+</binding>
