@@ -1,0 +1,12 @@
+Version 1.0.32 Released May 12, 2011
+
+    - Added twilio module
+    - Build separate JARs for each module
+    - Fixed error in pidf status binding definition
+    - Javadoc fixes
+
+Version 1.0.7 Released September 28, 2010
+
+    - Initial release
+
+$Id$
