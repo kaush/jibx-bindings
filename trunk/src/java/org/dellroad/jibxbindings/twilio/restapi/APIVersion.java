@@ -12,14 +12,14 @@ import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
- * API versions.
+ * API versions. Enum values are ordered from most recent to oldest.
  */
 public enum APIVersion implements XMLEnum {
     V_2008_08_01("2008-08-01"),
     V_2010_04_01("2010-04-01");
 
     /**
-     * The API version that this library version adheres to ({@value}).
+     * The API version that this library version adheres to (always the first enum value).
      */
     public static final APIVersion CURRENT = APIVersion.values()[0];
 
