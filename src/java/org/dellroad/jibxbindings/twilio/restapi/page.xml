@@ -10,20 +10,20 @@
         <value name="start" style="attribute" get-method="getStart" set-method="setStart" usage="optional"/>
         <value name="end" style="attribute" get-method="getEnd" set-method="setEnd" usage="optional"/>
         <value name="uri" style="attribute" get-method="getURI" set-method="setURI"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI" usage="optional"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="firstPageURI" style="attribute" get-method="getFirstPageURI" set-method="setFirstPageURI"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI" usage="optional"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="nextPageURI" style="attribute" get-method="getNextPageURI" set-method="setNextPageURI"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI" usage="optional"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="previousPageURI" style="attribute" get-method="getPreviousPageURI" set-method="setPreviousPageURI"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI" usage="optional"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="lastPageURI" style="attribute" get-method="getLastPageURI" set-method="setLastPageURI"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI" usage="optional"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
     </mapping>
 </binding>
 

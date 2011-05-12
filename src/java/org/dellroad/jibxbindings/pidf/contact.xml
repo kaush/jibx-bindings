@@ -5,7 +5,7 @@
     <mapping abstract="true" type-name="pidf:contact" class="org.dellroad.jibxbindings.pidf.Contact">
         <value name="priority" field="priority" style="attribute"/>
         <value field="uri" style="text"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
     </mapping>
 </binding>

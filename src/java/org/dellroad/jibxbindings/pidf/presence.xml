@@ -7,8 +7,8 @@
     <mapping abstract="true" type-name="pidf:presence" class="org.dellroad.jibxbindings.pidf.Presence">
         <namespace uri="urn:ietf:params:xml:ns:pidf" default="elements" prefix="pidf"/>
         <value name="entity" field="entity" style="attribute"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <collection field="tuples" create-type="java.util.ArrayList">
             <structure name="tuple" map-as="pidf:tuple"/>
         </collection>

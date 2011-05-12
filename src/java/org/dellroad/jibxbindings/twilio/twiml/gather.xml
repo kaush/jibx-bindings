@@ -4,8 +4,8 @@
 <binding package="org.dellroad.jibxbindings.twilio.twiml">
     <mapping name="Gather" class="org.dellroad.jibxbindings.twilio.twiml.Gather">
         <value name="action" style="attribute" get-method="getAction" set-method="setAction" usage="optional"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <value name="method" style="attribute" get-method="getMethod" set-method="setMethod" usage="optional"/>
         <value name="timeout" style="attribute" get-method="getTimeout" set-method="setTimeout" usage="optional"/>
         <value name="finishOnKey" style="attribute" get-method="getFinishOnKey" set-method="setFinishOnKey" usage="optional"/>

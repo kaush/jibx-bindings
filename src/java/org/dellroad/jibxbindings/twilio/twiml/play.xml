@@ -5,7 +5,7 @@
     <mapping name="Play" class="org.dellroad.jibxbindings.twilio.twiml.Play">
         <value name="loop" style="attribute" get-method="getLoop" set-method="setLoop" usage="optional"/>
         <value style="text" get-method="getURI" set-method="setURI"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
     </mapping>
 </binding>

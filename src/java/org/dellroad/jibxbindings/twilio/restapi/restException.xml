@@ -7,8 +7,8 @@
         <value name="Message" get-method="getMessage" set-method="setMessage"/>
         <value name="Code" get-method="getCode" set-method="setCode" usage="optional"/>
         <value name="MoreInfo" get-method="getMoreInfo" set-method="setMoreInfo" usage="optional"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
     </mapping>
 </binding>
 

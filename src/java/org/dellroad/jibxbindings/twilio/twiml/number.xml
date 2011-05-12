@@ -5,8 +5,8 @@
     <mapping name="Number" class="org.dellroad.jibxbindings.twilio.twiml.Number">
         <value name="sendDigits" style="attribute" get-method="getSendDigits" set-method="setSendDigits" usage="optional"/>
         <value name="url" style="attribute" get-method="getURL" set-method="setURL" usage="optional"
-          serializer="org.dellroad.stuff.jibx.ParseUtil.serializeURI"
-          deserializer="org.dellroad.stuff.jibx.ParseUtil.deserializeURI"/>
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <value style="text" get-method="getNumber" set-method="setNumber"/>
     </mapping>
 </binding>
