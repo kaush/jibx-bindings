@@ -78,16 +78,33 @@
     <target name="jars" depends="javac, jibx-bind, javadoc, runtime.classpath" unless="jars.completed">
         <delete dir="build/dist"/>
         <mkdir dir="build/dist"/>
-        <jar destfile="build/dist/${ant.project.name}-${full.version}.jar">
-            <fileset dir="build/classes"/>
-            <fileset dir="src/java" includes="**/*.xml"/>
+
+        <!-- Core JAR -->
+        <jar destfile="build/dist/${ant.project.name}-core-${full.version}.jar">
+            <fileset dir="build/classes" includes="org/dellroad/jibxbindings/*"/>
         </jar>
+
+        <!-- Module JARs -->
+        <antcontrib:for list="pidf,twilio" param="module">
+            <sequential>
+                <jar destfile="build/dist/${ant.project.name}-@{module}-${full.version}.jar">
+                    <fileset dir="build/classes" includes="org/dellroad/jibxbindings/@{module}/**/*"/>
+                    <fileset dir="src/java" includes="org/dellroad/jibxbindings/@{module}/**/*.xml"/>
+                </jar>
+            </sequential>
+        </antcontrib:for>
+
+        <!-- Sources -->
         <zip destfile="build/dist/${ant.project.name}-sources-${full.version}.zip">
             <fileset dir="src/java" includes="**/*.java, **/*.xml"/>
         </zip>
+
+        <!-- Javadocs -->
         <zip destfile="build/dist/${ant.project.name}-javadocs-${full.version}.zip">
             <fileset dir="build/reports/javadoc" includes="**/*"/>
         </zip>
+
+        <!-- Done -->
         <property name="jars.completed" value="true"/>
     </target>
 
