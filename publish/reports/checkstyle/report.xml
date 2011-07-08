@@ -1,87 +1,225 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="5.0">
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/ParseUtil.java">
+<checkstyle version="5.3">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/ParseUtil.java">
 <error line="116" column="73" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 <error line="116" column="100" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/package-info.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/XMLEnum.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Basic.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/package-info.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Contact.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Basic.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/LangContent.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Contact.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/PIDF.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/LangContent.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Presence.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/PIDF.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Status.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Presence.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Tuple.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Status.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CAValue.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Tuple.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CivicAddress.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CAValue.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/GeoPriv.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CivicAddress.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/LocationInfo.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/GeoPriv.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ProvidedBy.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/LocationInfo.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/UsageRules.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ProvidedBy.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/AbstractGMLObjectSwitch.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/UsageRules.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/ArcBand.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/AbstractGMLObjectSwitch.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Circle.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/ArcBand.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Constants.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Circle.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Curve.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Constants.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipse.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Curve.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipsoid.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipse.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GMLObject.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipsoid.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GMLObjectSwitch.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GMLObject.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GeometricPrimitive.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GMLObjectSwitch.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Geometry.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GeometricPrimitive.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/LineString.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Geometry.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/LinearRing.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/LineString.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Measure.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/LinearRing.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Point.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Measure.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Polygon.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Point.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Prism.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Polygon.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Solid.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Prism.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Sphere.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Solid.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Surface.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Sphere.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/package-info.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Surface.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/package-info.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/package-info.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/package-info.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/package-info.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/ParseTestSupport.java">
-<error line="79" column="24" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/package-info.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/ParseUtilTest.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/Method.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/package-info.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/APIVersion.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Account.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/AccountResource.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/AccountStatus.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/AccountType.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Accounts.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/AnswerType.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/AvailablePhoneNumber.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/AvailablePhoneNumbers.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Call.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/CallDirection.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/CallStatus.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Calls.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Capabilities.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Conference.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/ConferenceStatus.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Conferences.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/IncomingPhoneNumber.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/IncomingPhoneNumbers.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/NamedAccountResource.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Notification.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Notifications.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/NumberedAccountResource.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/OutgoingCallerId.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/OutgoingCallerIds.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Page.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Participant.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Participants.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Recording.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Recordings.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Resource.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/RestException.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/SMSDirection.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/SMSMessage.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/SMSMessages.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/SMSStatus.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/SidAccountResource.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/SubresourceUris.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Transcription.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/TranscriptionStatus.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/TranscriptionType.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/Transcriptions.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/TwilioResponse.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/TwilioResponseContent.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/TwilioSandbox.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/ValidationRequest.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/restapi/package-info.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Conference.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Dial.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Gather.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/GatherVerb.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Hangup.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Language.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Number.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Pause.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Play.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Record.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Redirect.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Reject.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/RejectReason.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Response.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Say.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Sms.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Verb.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/Voice.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/package-info.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/ParseTestSupport.java">
+<error line="107" column="24" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/ParseUtilTest.java">
 <error line="43" column="39" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 <error line="44" column="43" severity="info" message="&apos;1285701370123L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 <error line="45" column="44" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
@@ -90,12 +228,22 @@
 <error line="48" column="44" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 <error line="49" column="44" severity="info" message="&apos;1285701370000L&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/TestSupport.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/TestSupport.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/package-info.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/package-info.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/PIDFParseTest.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/PIDFParseTest.java">
 </file>
-<file name="/Users/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/package-info.java">
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/package-info.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/twilio/package-info.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/twilio/restapi/RestAPIParseTest.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/twilio/restapi/package-info.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/twilio/twiml/TwiMLParseTest.java">
+</file>
+<file name="/home/archie/projects/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/twilio/twiml/package-info.java">
 </file>
 </checkstyle>

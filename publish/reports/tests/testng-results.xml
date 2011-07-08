@@ -1,30 +1,21 @@
 <testng-results>
   <reporter-output>
   </reporter-output>
-  <suite name="Unit Test Suite">
+  <suite name="Unit Test Suite" duration-ms="476" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:05Z">
     <groups>
     </groups>
-    <test name="PIDF-LO Tests">
+    <test name="JiBX Bindings Tests" duration-ms="476" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:05Z">
       <class name="org.dellroad.jibxbindings.pidf.PIDFParseTest">
-        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="82" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="0" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-0.xml]]>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="91" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-2.xml]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="0" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +29,36 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="1" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="64" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="2" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="22" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="org.dellroad.jibxbindings.ParseUtilTest">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="11" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -47,42 +67,21 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testValid(java.net.URL)" name="testValid" duration-ms="1" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[file:/Users/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-1.xml]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-      </class>
-      <class name="org.dellroad.jibxbindings.ParseUtilTest">
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2010-09-28T19:16:10.123]]>
+                <![CDATA[INFO]]>
               </value>
             </param>
             <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
               <value>
-                <![CDATA[10-09-28T19:16:10Z]]>
+                <![CDATA[%-5p [%t]: %m%n]]>
               </value>
             </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="45" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="26" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -96,33 +95,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2010-09-28T19:16:10ZZ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="2" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2010-09-28T12:16:10-07:00]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1285701370000]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -136,7 +109,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="43" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -150,30 +123,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="2" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="5" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[INFO]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[%-5p [%t]: %m%n]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -187,43 +137,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2010-09-28T19:16:10GMT-00:00]]>
-              </value>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2010-09-28T19:16:10GMT+00:00]]>
-              </value>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10-09-28T19:16:10Z]]>
-              </value>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -237,7 +151,21 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T12:16:10-07:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1285701370000]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -251,7 +179,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2010-12-02T13:15:14Z" finished-at="2010-12-02T13:15:14Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
           <params>
             <param index="0">
               <value>
@@ -260,6 +188,659 @@
             </param>
             <param index="1">
               <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10.123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10GMT+00:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10GMT-00:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10-09-28T19:16:10Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10-09-28T19:16:10Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)" name="testRFC3339" duration-ms="0" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10ZZ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="1" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[%-5p [%t]: %m%n]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="0" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="35" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="18" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="17" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="10" started-at="2011-07-07T22:09:04Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-3.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="6" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-4.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="7" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-5.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="7" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/accounts-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="12" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/accounts-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="6" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/accounts-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-3.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-4.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="2" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-5.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="2" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-6.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="8" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="6" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-3.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="7" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-4.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="7" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-5.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="7" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/calls-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/conference-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/conferences-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-3.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumbers-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="6" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/notification-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="13" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/notifications-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/outgoingCallerId-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/outgoingCallerIds-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/participant-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/participant-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/participants-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/recording-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/recordings-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/restException-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/restException-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessage-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessage-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="5" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessages-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/transcription-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/transcriptions-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/twilioSandbox-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/twilioSandbox-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)" name="testValidTwilioResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/validationRequest-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+      </class>
+      <class name="org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)" name="setupLogging" is-config="true" duration-ms="0" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[%-5p [%t]: %m%n]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="seedRandom(java.lang.String)" name="seedRandom" is-config="true" duration-ms="0" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="2" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-0.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-1.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-2.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="3" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-3.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="2" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-4.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="2" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-5.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="4" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-6.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-7.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-8.xml]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)" name="testValidResponse" duration-ms="1" started-at="2011-07-07T22:09:05Z" finished-at="2011-07-07T22:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-9.xml]]>
+              </value>
             </param>
           </params>
         </test-method>
