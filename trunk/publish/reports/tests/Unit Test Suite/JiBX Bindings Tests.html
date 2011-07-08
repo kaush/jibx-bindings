@@ -1,0 +1,459 @@
+<html>
+<head>
+<title>TestNG:  JiBX Bindings Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>JiBX Bindings Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>76/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 07 22:09:04 CDT 2011</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (476 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10Z, 1285701370000</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10.123Z, 1285701370123</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10+00:00, 1285701370000</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10-00:00, 1285701370000</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10.123Z, 1285701370123</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T12:16:10-07:00, 1285701370000</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T23:16:10+04:00, 1285701370000</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10, null</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10.123, null</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10GMT+00:00, null</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10GMT-00:00, null</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 10-09-28T19:16:10Z, null</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 10-09-28T19:16:10Z, null</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.ParseUtilTest.testRFC3339()'><b>testRFC3339</b><br>Test class: org.dellroad.jibxbindings.ParseUtilTest<br>Parameters: 2010-09-28T19:16:10ZZ, null</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.ParseUtilTest@1328c7a</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.pidf.PIDFParseTest.testValid()'><b>testValid</b><br>Test class: org.dellroad.jibxbindings.pidf.PIDFParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.pidf.PIDFParseTest@1a4ded3</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.pidf.PIDFParseTest.testValid()'><b>testValid</b><br>Test class: org.dellroad.jibxbindings.pidf.PIDFParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.pidf.PIDFParseTest@1a4ded3</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.pidf.PIDFParseTest.testValid()'><b>testValid</b><br>Test class: org.dellroad.jibxbindings.pidf.PIDFParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/pidf/pidf-valid-2.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.pidf.PIDFParseTest@1a4ded3</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-2.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-3.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-4.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-5.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-6.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-7.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-8.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest.testValidResponse()'><b>testValidResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/twiml/response-9.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@18d7ace</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-2.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-3.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-4.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/account-5.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/accounts-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/accounts-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/accounts-2.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-2.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-3.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-4.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-5.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/availablePhoneNumbers-6.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-2.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-3.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-4.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/call-5.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/calls-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/conference-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/conferences-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-2.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumber-3.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/incomingPhoneNumbers-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/notification-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/notifications-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/outgoingCallerId-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/outgoingCallerIds-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/participant-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/participant-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/participants-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/recording-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/recordings-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/restException-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/restException-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessage-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessage-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessages-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/transcription-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/transcriptions-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/twilioSandbox-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/twilioSandbox-1.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+<tr>
+<td title='org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest.testValidTwilioResponse()'><b>testValidTwilioResponse</b><br>Test class: org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest<br>Parameters: file:/home/archie/projects/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/validationRequest-0.xml</td>
+<td></td>
+<td>0</td>
+<td>org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@121177e</td></tr>
+</table><p>
+</body>
+</html>
