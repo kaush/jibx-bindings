@@ -11,7 +11,7 @@
     <mapping abstract="true" type-name="gp:geopriv" class="org.dellroad.jibxbindings.pidf.lo.GeoPriv">
         <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" default="elements" prefix="gp"/>
         <structure name="location-info" field="locationInfo" map-as="gp:locationInfo"/>
-        <structure name="usage-rules" field="usageRules" map-as="gp:usageRules"/>
+        <structure name="usage-rules" field="usageRules" map-as="gp:usageRules" usage="optional"/>
         <structure name="method" field="method" map-as="pidf:langContent" usage="optional"/>
         <structure name="provided-by" field="providedBy" map-as="gp:providedBy" usage="optional"/>
     </mapping>
