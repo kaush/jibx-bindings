@@ -33,7 +33,9 @@ public final class ParseUtil {
     private static final String[] BOOLEAN_FALSES = { "0", "false", "no" };
     private static final Pattern RFC3339_PATTERN
       = Pattern.compile("(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?)(Z|([-+]\\d{2}:\\d{2}))");
+    private static final String RFC3339_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
     private static final String RFC5322_FORMAT = "EEE, dd MMM yyyy HH:mm:ss Z";
+    private static final String XSD_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
 
     private ParseUtil() {
     }
@@ -135,12 +137,7 @@ public final class ParseUtil {
     public static String serializeRFC3339Timestamp(Date timestamp) {
         if (timestamp == null)
             return null;
-        TimeZone gmt = TimeZone.getTimeZone("GMT");
-        Calendar cal = new GregorianCalendar(gmt, Locale.US);
-        cal.setTime(timestamp);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-        dateFormat.setCalendar(cal);
-        return dateFormat.format(timestamp);
+        return ParseUtil.getDateFormat(RFC3339_FORMAT, timestamp).format(timestamp);
     }
 
     /**
@@ -153,7 +150,7 @@ public final class ParseUtil {
         if (string.length() == 0)
             return null;
         try {
-            return getRFC5322DateFormat(null).parse(string);
+            return ParseUtil.getDateFormat(RFC5322_FORMAT, null).parse(string);
         } catch (ParseException e) {
             throw new JiBXParseException("incorrectly formatted date string", string, e);
         }
@@ -168,15 +165,39 @@ public final class ParseUtil {
     public static String serializeRFC5322Timestamp(Date date) {
         if (date == null)
             return null;
-        return ParseUtil.getRFC5322DateFormat(date).format(date);
+        return ParseUtil.getDateFormat(RFC5322_FORMAT, date).format(date);
     }
 
-    private static SimpleDateFormat getRFC5322DateFormat(Date date) {
+    /**
+     * Deserialize a {@link Date} in XSD dateTime format.
+     *
+     * @see #serializeXSDDateTime
+     * @see <a href="http://www.w3.org/TR/xmlschema-2/#dateTime">XSD dateTime datatype</a>
+     */
+    public static Date deserializeXSDDateTime(String date) throws JiBXParseException {
+        try {
+            return ParseUtil.getDateFormat(XSD_DATE_FORMAT, null).parse(date);
+        } catch (java.text.ParseException e) {
+            throw new JiBXParseException("invalid date", date, e);
+        }
+    }
+
+    /**
+     * Serialize a {@link Date} to XSD dateTime format.
+     *
+     * @see #deserializeXSDDateTime
+     * @see <a href="http://www.w3.org/TR/xmlschema-2/#dateTime">XSD dateTime datatype</a>
+     */
+    public static String serializeXSDDateTime(Date date) throws JiBXParseException {
+        return ParseUtil.getDateFormat(XSD_DATE_FORMAT, date).format(date);
+    }
+
+    private static SimpleDateFormat getDateFormat(String format, Date date) {
         TimeZone gmt = TimeZone.getTimeZone("GMT");
         GregorianCalendar cal = new GregorianCalendar(gmt, Locale.US);
         if (date != null)
             cal.setTime(date);
-        SimpleDateFormat dateFormat = new SimpleDateFormat(RFC5322_FORMAT);
+        SimpleDateFormat dateFormat = new SimpleDateFormat(format);
         dateFormat.setLenient(false);
         dateFormat.setCalendar(cal);
         return dateFormat;
