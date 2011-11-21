@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.pidf.lo.gml"
-  xmlns:gml="http://www.opengis.net/gml"
-  xmlns:gs="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape">
+<binding package="org.dellroad.jibxbindings.pidf.lo.gml" xmlns:gml="http://www.opengis.net/gml">
 
     <namespace uri="http://www.opengis.net/gml" default="elements" prefix="gml"/>
 
@@ -92,7 +90,7 @@
 
     <mapping name="ArcBand" class="org.dellroad.jibxbindings.pidf.lo.gml.ArcBand"
       extends="org.dellroad.jibxbindings.pidf.lo.gml.Surface">
-        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <namespace uri="http://www.opengis.net/pidflo/1.0" default="elements" prefix="gs"/>
         <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Surface"/>
         <value name="pos" field="center" ns="http://www.opengis.net/gml"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
@@ -105,7 +103,7 @@
 
     <mapping name="Circle" class="org.dellroad.jibxbindings.pidf.lo.gml.Circle"
       extends="org.dellroad.jibxbindings.pidf.lo.gml.Surface">
-        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <namespace uri="http://www.opengis.net/pidflo/1.0" default="elements" prefix="gs"/>
         <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Surface"/>
         <value name="pos" field="center" ns="http://www.opengis.net/gml"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
@@ -115,7 +113,7 @@
 
     <mapping name="Ellipse" class="org.dellroad.jibxbindings.pidf.lo.gml.Ellipse"
       extends="org.dellroad.jibxbindings.pidf.lo.gml.Surface">
-        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <namespace uri="http://www.opengis.net/pidflo/1.0" default="elements" prefix="gs"/>
         <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Surface"/>
         <value name="pos" field="center" ns="http://www.opengis.net/gml"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
@@ -127,7 +125,7 @@
 
     <mapping name="Ellipsoid" class="org.dellroad.jibxbindings.pidf.lo.gml.Ellipsoid"
       extends="org.dellroad.jibxbindings.pidf.lo.gml.Solid">
-        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <namespace uri="http://www.opengis.net/pidflo/1.0" default="elements" prefix="gs"/>
         <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Solid"/>
         <value name="pos" field="center" ns="http://www.opengis.net/gml"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
@@ -140,7 +138,7 @@
 
     <mapping name="Prism" class="org.dellroad.jibxbindings.pidf.lo.gml.Prism"
       extends="org.dellroad.jibxbindings.pidf.lo.gml.Solid">
-        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <namespace uri="http://www.opengis.net/pidflo/1.0" default="elements" prefix="gs"/>
         <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Solid"/>
         <structure name="base">
             <structure field="base"/>
@@ -150,7 +148,7 @@
 
     <mapping name="Sphere" class="org.dellroad.jibxbindings.pidf.lo.gml.Sphere"
       extends="org.dellroad.jibxbindings.pidf.lo.gml.Solid">
-        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:geoShape" default="elements" prefix="gs"/>
+        <namespace uri="http://www.opengis.net/pidflo/1.0" default="elements" prefix="gs"/>
         <structure map-as="org.dellroad.jibxbindings.pidf.lo.gml.Solid"/>
         <value name="pos" field="center" ns="http://www.opengis.net/gml"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeDoubleArray"
