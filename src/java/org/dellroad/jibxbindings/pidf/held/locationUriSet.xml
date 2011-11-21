@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.held" xmlns:held="urn:ietf:params:xml:ns:geopriv:held">
+    <mapping abstract="true" type-name="held:locationUriSet" class="org.dellroad.jibxbindings.pidf.held.LocationUriSet">
+        <namespace uri="urn:ietf:params:xml:ns:geopriv:held" default="elements" prefix="held"/>
+        <value name="expires" field="expires" style="attribute"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXSDDateTime"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeXSDDateTime"/>
+        <collection field="locationURIs" create-type="java.util.ArrayList">
+            <value name="locationURI" type="java.net.URI"
+              serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+              deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+        </collection>
+    </mapping>
+</binding>

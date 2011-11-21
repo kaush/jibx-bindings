@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<!-- $Id$ -->
+<locationRequest xmlns="urn:ietf:params:xml:ns:geopriv:held">
+    <locationType exact="true">
+        geodetic
+        civic
+        locationURI
+    </locationType>
+</locationRequest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding name="held" package="org.dellroad.jibxbindings.pidf.held" xmlns:held="urn:ietf:params:xml:ns:geopriv:held">
+
+    <include path="locationRequest.xml"/>
+    <include path="locationResponse.xml"/>
+    <include path="error.xml"/>
+
+    <mapping name="locationRequest" class="org.dellroad.jibxbindings.pidf.held.LocationRequest">
+        <namespace uri="urn:ietf:params:xml:ns:geopriv:held" default="elements" prefix="held"/>
+        <structure map-as="held:locationRequest"/>
+    </mapping>
+
+    <mapping name="locationResponse" class="org.dellroad.jibxbindings.pidf.held.LocationResponse">
+        <namespace uri="urn:ietf:params:xml:ns:geopriv:held" default="elements" prefix="held"/>
+        <structure map-as="held:locationResponse"/>
+    </mapping>
+
+    <mapping name="error" class="org.dellroad.jibxbindings.pidf.held.Error">
+        <namespace uri="urn:ietf:params:xml:ns:geopriv:held" default="elements" prefix="held"/>
+        <structure map-as="held:error"/>
+    </mapping>
+
+</binding>

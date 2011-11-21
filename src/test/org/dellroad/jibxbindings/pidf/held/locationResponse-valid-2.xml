@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!-- $Id$ -->
+<locationResponse xmlns="urn:ietf:params:xml:ns:geopriv:held">
+  <locationUriSet expires="2006-01-01T13:00:00.0Z">
+    <locationURI>https://ls.example.com:9768/357yc6s64ceyoiuy5ax3o</locationURI>
+    <locationURI>sip:9769+357yc6s64ceyoiuy5ax3o@ls.example.com:</locationURI>
+  </locationUriSet>
+  <presence xmlns="urn:ietf:params:xml:ns:pidf" entity="pres:ae3be8585902e2253ce2@10.102.23.9">
+    <tuple id="lisLocation">
+      <status>
+        <geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+          <location-info>
+            <gs:Circle xmlns:gs="http://www.opengis.net/pidflo/1.0" xmlns:gml="http://www.opengis.net/gml" srsName="urn:ogc:def:crs:EPSG::4326">
+              <gml:pos>-34.407242 150.882518</gml:pos>
+              <gs:radius uom="urn:ogc:def:uom:EPSG::9001">30</gs:radius>
+            </gs:Circle>
+            <ca:civicAddress xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" xml:lang="en-au">
+              <ca:country>AU</ca:country>
+              <ca:A1>NSW</ca:A1>
+              <ca:A3>Wollongong</ca:A3>
+              <ca:A4>Gwynneville</ca:A4>
+              <ca:STS>Northfield Avenue</ca:STS>
+              <ca:LMK>University of Wollongong</ca:LMK>
+              <ca:FLR>2</ca:FLR>
+              <ca:NAM>Andrew Corporation</ca:NAM>
+              <ca:PC>2500</ca:PC>
+              <ca:BLD>39</ca:BLD>
+              <ca:SEAT>WS-183</ca:SEAT>
+              <ca:POBOX>U40</ca:POBOX>
+            </ca:civicAddress>
+          </location-info>
+          <usage-rules xmlns:gbp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy">
+            <gbp:retransmission-allowed>false</gbp:retransmission-allowed>
+            <gbp:retention-expiry>2007-05-25T12:35:02+10:00</gbp:retention-expiry>
+          </usage-rules>
+          <method>Wiremap</method>
+        </geopriv>
+      </status>
+      <timestamp>2007-05-24T12:35:02+10:00</timestamp>
+    </tuple>
+  </presence>
+</locationResponse>

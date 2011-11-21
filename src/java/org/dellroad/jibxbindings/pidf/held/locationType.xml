@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.held" xmlns:held="urn:ietf:params:xml:ns:geopriv:held">
+    <mapping abstract="true" type-name="held:locationType" class="org.dellroad.jibxbindings.pidf.held.LocationType">
+        <namespace uri="urn:ietf:params:xml:ns:geopriv:held" default="elements" prefix="held"/>
+        <value name="exact" field="exact" style="attribute" default="false"/>
+        <value field="types" style="text"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeStringList"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeStringList"/>
+    </mapping>
+</binding>

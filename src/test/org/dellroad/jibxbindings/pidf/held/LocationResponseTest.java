@@ -5,7 +5,7 @@
  * $Id$
  */
 
-package org.dellroad.jibxbindings.pidf;
+package org.dellroad.jibxbindings.pidf.held;
 
 import java.io.IOException;
 import java.net.URL;
@@ -14,26 +14,26 @@ import org.dellroad.jibxbindings.ParseTestSupport;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class PIDFParseTest extends ParseTestSupport {
+public class LocationResponseTest extends ParseTestSupport {
 
     @Test(dataProvider = "validCases")
     public void testValid(URL url) throws Exception {
-        super.testValidParse(url, Presence.class, "pidf");
+        super.testValidParse(url, LocationResponse.class);
     }
 
     @Test(dataProvider = "invalidCases")
     public void testInvalid(URL url) throws Exception {
-        super.testInvalidParse(url, Presence.class, "pidf");
+        super.testInvalidParse(url, LocationResponse.class);
     }
 
     @DataProvider(name = "validCases")
     public Object[][] validCases() throws IOException {
-        return genCases("pidf-valid");
+        return genCases("locationResponse-valid");
     }
 
     @DataProvider(name = "invalidCases")
     public Object[][] invalidCases() throws IOException {
-        return genCases("pidf-invalid");
+        return genCases("locationResponse-invalid");
     }
 }
 
