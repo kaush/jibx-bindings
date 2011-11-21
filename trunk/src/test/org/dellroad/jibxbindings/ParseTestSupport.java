@@ -31,20 +31,20 @@ public abstract class ParseTestSupport extends TestSupport {
     /**
      * Parse the document expecting the parse to succeed. If it does, also unparse the document.
      */
-    protected <T> void testValidParse(URL url, Class<T> clazz) throws Exception {
+    protected <T> void testValidParse(URL url, Class<T> clazz, String... name) throws Exception {
 
         // Parse it
-        T t1 = this.parse(url, clazz);
+        T t1 = this.parse(url, clazz, name);
 
         // Unparse it
-        String xml1 = this.unparse(t1);
+        String xml1 = this.unparse(t1, name);
         System.out.println(xml1);
 
         // Parse it again
-        T t2 = this.parse(xml1, clazz);
+        T t2 = this.parse(xml1, clazz, name);
 
         // Unparse it again
-        String xml2 = this.unparse(t2);
+        String xml2 = this.unparse(t2, name);
 
         // Compare
         assertEquals(xml1, xml2);
@@ -53,9 +53,9 @@ public abstract class ParseTestSupport extends TestSupport {
     /**
      * Parse the document expecting the parse to fail.
      */
-    protected <T> void testInvalidParse(URL url, Class<T> clazz) throws Exception {
+    protected <T> void testInvalidParse(URL url, Class<T> clazz, String... name) throws Exception {
         try {
-            this.parse(url, clazz);
+            this.parse(url, clazz, name);
         } catch (JiBXException e) {
             return;
         }
@@ -65,22 +65,22 @@ public abstract class ParseTestSupport extends TestSupport {
     /**
      * Parse the document expecting an instance of {@code clazz} and return the parsed object.
      */
-    protected <T> T parse(URL url, Class<T> clazz) throws IOException, JiBXException {
-        return parse(url.openStream(), clazz);
+    protected <T> T parse(URL url, Class<T> clazz, String... name) throws IOException, JiBXException {
+        return parse(url.openStream(), clazz, name);
     }
 
     /**
      * Parse the document expecting an instance of {@code clazz} and return the parsed object.
      */
-    protected <T> T parse(String s, Class<T> clazz) throws IOException, JiBXException {
-        return parse(new ByteArrayInputStream(s.getBytes("UTF-8")), clazz);
+    protected <T> T parse(String s, Class<T> clazz, String... name) throws IOException, JiBXException {
+        return parse(new ByteArrayInputStream(s.getBytes("UTF-8")), clazz, name);
     }
 
     /**
      * Parse the document expecting an instance of {@code clazz} and return the parsed object.
      */
-    protected <T> T parse(InputStream input, Class<T> clazz) throws IOException, JiBXException {
-        IBindingFactory bindingFactory = BindingDirectory.getFactory(clazz);
+    protected <T> T parse(InputStream input, Class<T> clazz, String... name) throws IOException, JiBXException {
+        IBindingFactory bindingFactory = this.getBindingFactory(clazz, name);
         IUnmarshallingContext unmarshallingContext = bindingFactory.createUnmarshallingContext();
         Object obj;
         try {
@@ -101,8 +101,8 @@ public abstract class ParseTestSupport extends TestSupport {
     /**
      * Unparse the object.
      */
-    protected String unparse(Object obj) throws IOException, JiBXException {
-        IBindingFactory bindingFactory = BindingDirectory.getFactory(obj.getClass());
+    protected String unparse(Object obj, String... name) throws IOException, JiBXException {
+        IBindingFactory bindingFactory = this.getBindingFactory(obj.getClass(), name);
         IMarshallingContext mctx = bindingFactory.createMarshallingContext();
         mctx.setIndent(4, "\n", ' ');
         StringWriter writer = new StringWriter();
@@ -125,6 +125,18 @@ public abstract class ParseTestSupport extends TestSupport {
             }
         }
         return list.toArray(new Object[list.size()][]);
+    }
+
+    protected IBindingFactory getBindingFactory(Class clazz, String... name) throws JiBXException {
+        IBindingFactory bindingFactory;
+        switch (name.length) {
+        case 0:
+            return BindingDirectory.getFactory(clazz);
+        case 1:
+            return BindingDirectory.getFactory(name[0], clazz);
+        default:
+            throw new IllegalArgumentException("multiple names given");
+        }
     }
 }
 

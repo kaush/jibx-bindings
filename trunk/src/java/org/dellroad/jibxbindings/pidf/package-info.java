@@ -10,7 +10,7 @@
  *
  * <p>
  * This package includes several abstract JiBX mapping definitions for PIDF XML structures
- * and one concrete JiBX definition named "pidf" defining a mapping for the {@code <pidf:presence>} element.
+ * and one concrete JiBX binding named {@code "pidf"} defining a mapping for the {@code <pidf:presence>} element.
  * The binding technically does not adhere to RFC 3863 because it doesn't allow arbitrary nested
  * elements from other namespaces in several locations where supporting that is required. This is
  * because JiBX doesn't support doing that.

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!-- $Id$ -->
+<locationResponse xmlns="urn:ietf:params:xml:ns:geopriv:held">
+  <presence xmlns="urn:ietf:params:xml:ns:pidf" entity="pres:3650n87934c@ls.example.com">
+    <tuple id="b650sf789nd">
+      <status>
+        <geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+          <location-info>
+            <Point xmlns="http://www.opengis.net/gml" srsName="urn:ogc:def:crs:EPSG::4326">
+              <pos>-34.407 150.88001</pos>
+            </Point>
+          </location-info>
+          <usage-rules xmlns:gbp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy">
+            <gbp:retention-expiry>2006-01-11T03:42:28+00:00</gbp:retention-expiry>
+          </usage-rules>
+          <method>Wiremap</method>
+        </geopriv>
+      </status>
+      <timestamp>2006-01-10T03:42:28+00:00</timestamp>
+    </tuple>
+  </presence>
+</locationResponse>

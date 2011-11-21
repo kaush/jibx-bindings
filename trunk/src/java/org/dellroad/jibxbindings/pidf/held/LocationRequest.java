@@ -1,0 +1,51 @@
+
+/*
+ * Copyright (C) 2010 Archie L. Cobbs. All rights reserved.
+ *
+ * $Id$
+ */
+
+package org.dellroad.jibxbindings.pidf.held;
+
+/**
+ * The {@code <held:locationRequest>} XML element.
+ */
+public class LocationRequest {
+
+    /**
+     * Possible value for {@link #getResponseTime}.
+     */
+    public static final String EMERGENCY_DISPATCH = "emergencyDispatch";
+
+    /**
+     * Possible value for {@link #getResponseTime}.
+     */
+    public static final String EMERGENCY_ROUTING = "emergencyRouting";
+
+    private String responseTime;
+    private LocationType locationType;
+
+    public String getResponseTime() {
+        return this.responseTime;
+    }
+    public void setResponseTime(String responseTime) {
+        this.responseTime = responseTime;
+    }
+
+    /**
+     * Parse the response time as a seconds value.
+     *
+     * @throws NumberFormatException if response time is not parseable, e.g., equal to {@link #EMERGENCY_DISPATCH}
+     */
+    public int getReponseTimeInSeconds() {
+        return Integer.parseInt(this.responseTime, 10);
+    }
+
+    public LocationType getLocationType() {
+        return this.locationType;
+    }
+    public void setLocationType(LocationType locationType) {
+        this.locationType = locationType;
+    }
+}
+
