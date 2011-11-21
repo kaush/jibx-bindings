@@ -175,11 +175,7 @@ public final class ParseUtil {
      * @see <a href="http://www.w3.org/TR/xmlschema-2/#dateTime">XSD dateTime datatype</a>
      */
     public static Date deserializeXSDDateTime(String date) throws JiBXParseException {
-        try {
-            return ParseUtil.getDateFormat(XSD_DATE_FORMAT, null).parse(date);
-        } catch (java.text.ParseException e) {
-            throw new JiBXParseException("invalid date", date, e);
-        }
+        return ParseUtil.deserializeRFC3339Timestamp(date);
     }
 
     /**
@@ -189,7 +185,7 @@ public final class ParseUtil {
      * @see <a href="http://www.w3.org/TR/xmlschema-2/#dateTime">XSD dateTime datatype</a>
      */
     public static String serializeXSDDateTime(Date date) throws JiBXParseException {
-        return ParseUtil.getDateFormat(XSD_DATE_FORMAT, date).format(date);
+        return ParseUtil.serializeRFC3339Timestamp(date);
     }
 
     private static SimpleDateFormat getDateFormat(String format, Date date) {
