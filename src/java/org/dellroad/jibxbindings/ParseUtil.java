@@ -269,7 +269,7 @@ public final class ParseUtil {
         string = string.trim();
         if (string.length() == 0)
             return Collections.<String>emptyList();
-        return Arrays.asList(string.split("\\s"));
+        return Arrays.asList(string.split("\\s+"));
     }
 
     /**
