@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<presence entity="pres:entity1017" xmlns="urn:ietf:params:xml:ns:pidf">
+  <tuple id="lisLocation">
+    <status>
+      <ns6:geopriv xmlns:ns6="urn:ietf:params:xml:ns:pidf:geopriv10">
+        <ns6:location-info>
+          <ca:civicAddress xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+            <ca:country>US</ca:country>
+            <ca:A1>AK</ca:A1>
+            <ca:A2>SMITH COUNTY</ca:A2>
+            <ca:RD>PLEASANT</ca:RD>
+            <ca:STS>LN</ca:STS>
+            <ca:HNO>11234</ca:HNO>
+            <ca:PC>77877</ca:PC>
+            <ca:PCN>FRED</ca:PCN>
+          </ca:civicAddress>
+        </ns6:location-info>
+        <ns6:usage-rules>
+          <ns7:retransmission-allowed xmlns:ns7="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy">false</ns7:retransmission-allowed>
+          <ns7:retention-expiry xmlns:ns7="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy">2011-11-17T15:16:14.483-07:00</ns7:retention-expiry>
+        </ns6:usage-rules>
+      </ns6:geopriv>
+    </status>
+    <timestamp>2011-11-16T15:16:14.684-07:00</timestamp>
+  </tuple>
+</presence>
