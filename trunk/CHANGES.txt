@@ -1,3 +1,9 @@
+
+Version 1.0.42 Released November 27, 2011
+
+    - Added support for HELD (RFC 5985: HTTP-Enabled Location Delivery)
+    - Fixed bugs and added tests for PIDF-LO
+
 Version 1.0.32 Released May 12, 2011
 
     - Added twilio module
