@@ -10,11 +10,19 @@
 </file>
 <file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Basic.java">
 </file>
+<file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Component.java">
+</file>
+<file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/ComponentSwitch.java">
+</file>
 <file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Contact.java">
+</file>
+<file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Device.java">
 </file>
 <file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/LangContent.java">
 </file>
 <file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/PIDF.java">
+</file>
+<file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Person.java">
 </file>
 <file name="/home/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/Presence.java">
 </file>
