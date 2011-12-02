@@ -127,8 +127,19 @@
     </macrodef>
 
     <!-- Build Javadocs -->
-    <target name="javadoc" depends="javac.classpath">
-        <dellroad:javadoc overview="src/java/overview.html">
+    <target name="javadoc" depends="javac">
+        <delete dir="build/javadoc"/>
+        <mkdir dir="build/javadoc"/>
+        <copy todir="build/javadoc">
+            <fileset dir="src/java/org/dellroad/jibxbindings" includes="overview.html"/>
+            <filterset>
+                <filter token="VERSION" value="${full.version}"/>
+            </filterset>
+        </copy>
+        <dellroad:javadoc overview="build/javadoc/overview.html">
+            <additional-classpath>
+                <pathelement path="build/classes"/>
+            </additional-classpath>
             <links>
                 <link href="http://docs.oracle.com/javase/6/docs/api/"/>
                 <link href="http://jibx.sourceforge.net/api/"/>

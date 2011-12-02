@@ -1,5 +1,5 @@
 
-Version Next
+Version 1.0.46 Released December 2, 2011
 
     - Added support for <device> and <person> PIDF-LO elements
 
