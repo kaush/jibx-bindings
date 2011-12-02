@@ -1,4 +1,8 @@
 
+Version Next
+
+    - Added support for <device> and <person> PIDF-LO elements
+
 Version 1.0.42 Released November 27, 2011
 
     - Added support for HELD (RFC 5985: HTTP-Enabled Location Delivery)

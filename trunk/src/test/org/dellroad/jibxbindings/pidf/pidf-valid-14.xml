@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<!-- From RFC 5491 Section 5.2.1 -->
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+          xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+          xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+          xmlns:cl="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
+          xmlns:gml="http://www.opengis.net/gml"
+          entity="pres:point2d@example.com">
+  <dm:device id="point2d">
+    <gp:geopriv>
+      <gp:location-info>
+        <gml:Point srsName="urn:ogc:def:crs:EPSG::4326">
+          <gml:pos>-34.407 150.883</gml:pos>
+        </gml:Point>
+      </gp:location-info>
+      <gp:usage-rules/>
+      <gp:method>Wiremap</gp:method>
+    </gp:geopriv>
+    <dm:deviceID>mac:1234567890ab</dm:deviceID>
+    <dm:timestamp>2007-06-22T20:57:29Z</dm:timestamp>
+  </dm:device>
+</presence>

@@ -17,7 +17,7 @@ import java.util.List;
 public class Presence {
 
     private URI entity;
-    private List<Tuple> tuples = new ArrayList<Tuple>();
+    private List<Component> components = new ArrayList<Component>();
     private List<LangContent> notes = new ArrayList<LangContent>();
 
     public URI getEntity() {
@@ -27,11 +27,11 @@ public class Presence {
         this.entity = entity;
     }
 
-    public List<Tuple> getTuples() {
-        return this.tuples;
+    public List<Component> getComponents() {
+        return this.components;
     }
-    public void setTuples(List<Tuple> tuples) {
-        this.tuples = tuples;
+    public void setComponents(List<Component> components) {
+        this.components = components;
     }
 
     public List<LangContent> getNotes() {

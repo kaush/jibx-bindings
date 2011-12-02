@@ -1,0 +1,27 @@
+
+/*
+ * Copyright (C) 2010 Archie L. Cobbs. All rights reserved.
+ *
+ * $Id$
+ */
+
+package org.dellroad.jibxbindings.pidf;
+
+import org.dellroad.jibxbindings.pidf.lo.GeoPriv;
+
+/**
+ * Implemented by types that can immediately nest inside a {@code <presence>} element.
+ */
+public interface Component {
+
+    /**
+     * Apply visitor pattern.
+     */
+    void visit(ComponentSwitch componentSwitch);
+
+    /**
+     * Get the nested {@link GeoPriv}, if any.
+     */
+    GeoPriv getGeoPriv();
+}
+
