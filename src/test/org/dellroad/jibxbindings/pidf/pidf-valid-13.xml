@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<!-- From RFC 5491 Section 3.4 -->
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+          xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+          xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+          xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
+          xmlns:gml="http://www.opengis.net/gml"
+          xmlns:gs="http://www.opengis.net/pidflo/1.0"
+          entity="pres:ness@example.com">
+  <dm:device id="nesspc-1">
+    <gp:geopriv>
+      <gp:location-info>
+        <ca:civicAddress xml:lang="en-AU">
+          <ca:country>AU</ca:country>
+          <ca:A1>NSW</ca:A1>
+          <ca:A3>Wollongong</ca:A3>
+          <ca:A4>North Wollongong</ca:A4>
+        <ca:RD>Flinders</ca:RD><ca:STS>Street</ca:STS>
+        <ca:RDBR>Campbell Street</ca:RDBR>
+        <ca:LMK>
+          Gilligan's Island
+          </ca:LMK> <ca:LOC>Corner</ca:LOC>
+          <ca:NAM> Video Rental Store </ca:NAM>
+          <ca:PC>2500</ca:PC>
+          <ca:ROOM> Westerns and Classics </ca:ROOM>
+          <ca:PLC>store</ca:PLC>
+          <ca:POBOX>Private Box 15</ca:POBOX>
+        </ca:civicAddress>
+      </gp:location-info>
+      <gp:usage-rules/>
+      <gp:method>GPS</gp:method>
+    </gp:geopriv>
+    <dm:deviceID>mac:1234567890ab</dm:deviceID>
+    <dm:timestamp>2007-06-22T20:57:29Z</dm:timestamp>
+  </dm:device>
+  <dm:person id="ness">
+    <gp:geopriv>
+      <gp:location-info>
+        <gs:Circle srsName="urn:ogc:def:crs:EPSG::4326">
+          <gml:pos>-34.410649 150.87651</gml:pos>
+          <gs:radius uom="urn:ogc:def:uom:EPSG::9001">30</gs:radius>
+        </gs:Circle>
+      </gp:location-info>
+      <gp:usage-rules/>
+      <gp:method>Manual</gp:method>
+    </gp:geopriv>
+    <dm:timestamp>2007-06-24T12:28:04Z</dm:timestamp>
+  </dm:person>
+</presence>

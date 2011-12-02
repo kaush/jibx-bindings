@@ -11,10 +11,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.dellroad.jibxbindings.pidf.lo.GeoPriv;
+
 /**
  * PIDF {@code <tuple>} element.
  */
-public class Tuple {
+public class Tuple implements Component {
 
     private String id;
     private Status status;
@@ -55,6 +57,16 @@ public class Tuple {
     }
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
+    }
+
+    @Override
+    public GeoPriv getGeoPriv() {
+        return this.status != null ? this.status.getGeoPriv() : null;
+    }
+
+    @Override
+    public void visit(ComponentSwitch componentSwitch) {
+        componentSwitch.caseTuple(this);
     }
 }
 

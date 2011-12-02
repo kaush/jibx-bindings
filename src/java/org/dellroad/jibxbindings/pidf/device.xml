@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf"
+  xmlns:pidf="urn:ietf:params:xml:ns:pidf"
+  xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10">
+    <include path="langContent.xml"/>
+    <include path="lo/geoPriv.xml"/>
+    <mapping abstract="true" type-name="dm:device" class="org.dellroad.jibxbindings.pidf.Device">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:data-model" default="elements" prefix="dm"/>
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" prefix="gp"/>
+        <structure name="geopriv" ns="urn:ietf:params:xml:ns:pidf:geopriv10" field="geoPriv" map-as="gp:geopriv" usage="optional"/>
+        <value name="id" field="id" style="attribute"/>
+        <value name="deviceID" field="deviceID" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+        <structure name="note" field="note" map-as="pidf:langContent" usage="optional"/>
+        <value name="timestamp" field="timestamp" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC3339Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC3339Timestamp"/>
+    </mapping>
+</binding>

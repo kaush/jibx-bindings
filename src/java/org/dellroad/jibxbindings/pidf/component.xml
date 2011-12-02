@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf"
+  xmlns:pidf="urn:ietf:params:xml:ns:pidf"
+  xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model">
+    <include path="tuple.xml"/>
+    <include path="person.xml"/>
+    <include path="device.xml"/>
+    <mapping abstract="true" class="org.dellroad.jibxbindings.pidf.Component"/>
+    <mapping name="tuple" class="org.dellroad.jibxbindings.pidf.Tuple" extends="org.dellroad.jibxbindings.pidf.Component">
+        <namespace uri="urn:ietf:params:xml:ns:pidf" default="elements" prefix="pidf"/>
+        <structure map-as="pidf:tuple"/>
+    </mapping>
+    <mapping name="person" class="org.dellroad.jibxbindings.pidf.Person" extends="org.dellroad.jibxbindings.pidf.Component">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:data-model" default="elements" prefix="dm"/>
+        <structure map-as="dm:person"/>
+    </mapping>
+    <mapping name="device" class="org.dellroad.jibxbindings.pidf.Device" extends="org.dellroad.jibxbindings.pidf.Component">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:data-model" default="elements" prefix="dm"/>
+        <structure map-as="dm:device"/>
+    </mapping>
+</binding>
