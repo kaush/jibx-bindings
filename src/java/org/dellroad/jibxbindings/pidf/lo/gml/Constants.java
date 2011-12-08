@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * Some GML constants.
@@ -14,29 +16,41 @@ package org.dellroad.jibxbindings.pidf.lo.gml;
 public final class Constants {
 
     /**
-     * Coordinate Reference System: WGS-84 and EPSG-4326
+     * Coordinate Reference System: WGS-84 and EPSG-4326.
      */
-    public static final String URN_OCG_DEF_CRS_EPSG_4326 = "urn:ogc:def:crs:EPSG::4326";
+    public static final URI URN_OCG_DEF_CRS_EPSG_4326;
 
     /**
-     * Coordinate Reference System: EPSG-4979
+     * Coordinate Reference System: EPSG-4979.
      */
-    public static final String URN_OCG_DEF_CRS_EPSG_4979 = "urn:ogc:def:crs:EPSG::4979";
+    public static final URI URN_OCG_DEF_CRS_EPSG_4979;
 
     /**
      * Unit of Measurement: distance in meters.
      */
-    public static final String URN_OCG_DEF_UOM_EPSG_9001 = "urn:ogc:def:uom:EPSG::9001";
-
-    /**
-     * Unit of Measurement: angle in degrees.
-     */
-    public static final String URN_OCG_DEF_UOM_EPSG_9002 = "urn:ogc:def:uom:EPSG::9102";
+    public static final URI URN_OCG_DEF_UOM_EPSG_9001;
 
     /**
      * Unit of Measurement: angle in radians.
      */
-    public static final String URN_OCG_DEF_UOM_EPSG_9101 = "urn:ogc:def:uom:EPSG::9101";
+    public static final URI URN_OCG_DEF_UOM_EPSG_9101;
+
+    /**
+     * Unit of Measurement: angle in degrees.
+     */
+    public static final URI URN_OCG_DEF_UOM_EPSG_9102;
+
+    static {
+        try {
+            URN_OCG_DEF_CRS_EPSG_4326 = new URI("urn:ogc:def:crs:EPSG::4326");
+            URN_OCG_DEF_CRS_EPSG_4979 = new URI("urn:ogc:def:crs:EPSG::4979");
+            URN_OCG_DEF_UOM_EPSG_9001 = new URI("urn:ogc:def:uom:EPSG::9001");
+            URN_OCG_DEF_UOM_EPSG_9101 = new URI("urn:ogc:def:uom:EPSG::9101");
+            URN_OCG_DEF_UOM_EPSG_9102 = new URI("urn:ogc:def:uom:EPSG::9102");
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     private Constants() {
     }

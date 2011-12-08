@@ -1,4 +1,10 @@
 
+Version Next
+
+    - Change GML constant types from String to URI
+    - Fixed broken setters in CivicAddress class
+    - Fix typo in "urn:ogc:def:uom:EPSG::9102" URI name
+
 Version 1.0.46 Released December 2, 2011
 
     - Added support for <device> and <person> PIDF-LO elements
