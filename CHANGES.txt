@@ -1,5 +1,5 @@
 
-Version Next
+Version 1.0.48 Released December 8, 2011
 
     - Change GML constant types from String to URI
     - Fixed broken setters in CivicAddress class
