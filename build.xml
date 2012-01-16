@@ -20,24 +20,6 @@
     <echo message="Version is ${library.version}.${svn.revision}"/>
     <echo message=""/>
 
-    <!-- Macro to do JiBX binding for a single JiBX binding unit -->
-    <macrodef uri="urn:org.dellroad.ant" name="bind">
-        <attribute name="name" description="Name of what we're binding"/>
-        <element name="includes" implicit="yes" description="Binding files to include"/>
-        <sequential>
-            <echo message="performing JiBX binding for @{name}"/>
-            <bind verbose="false" load="true">
-                <classpath>
-                    <pathelement path="build/classes"/>
-                    <path refid="jibx-bind.classpath"/>
-                </classpath>
-                <bindingfileset dir="src/java">
-                    <includes/>
-                </bindingfileset>
-            </bind> 
-        </sequential>
-    </macrodef>
-
     <!-- Classpath targets -->
     <target name="javac.classpath" unless="javac.classpath.resolved">
         <dellroad:ivypath pathid="javac.classpath" conf="javac"/>
@@ -69,17 +51,31 @@
 
     <!-- Compile JiBX bindings -->
     <target name="jibx-bind" depends="javac, jibx-bind.classpath" unless="jibx-bind.completed">
-        <taskdef name="bind" classname="org.jibx.binding.ant.CompileTask" classpathref="jibx-bind.classpath"/>
-        <dellroad:bind name="PIDF-LO">
-            <include name="org/dellroad/jibxbindings/pidf/binding.xml"/>
-            <include name="org/dellroad/jibxbindings/pidf/held/binding.xml"/>
-        </dellroad:bind>
-        <dellroad:bind name="Twilio REST API">
-            <include name="org/dellroad/jibxbindings/twilio/restapi/binding.xml"/>
-        </dellroad:bind>
-        <dellroad:bind name="TwiML">
-            <include name="org/dellroad/jibxbindings/twilio/twiml/binding.xml"/>
-        </dellroad:bind>
+        <dellroad:jibx-bind name="PIDF-LO">
+            <classes>
+                <pathelement path="build/classes"/>
+            </classes>
+            <bindings>
+                <include name="src/java/org/dellroad/jibxbindings/pidf/binding.xml"/>
+                <include name="src/java/org/dellroad/jibxbindings/pidf/held/binding.xml"/>
+            </bindings>
+        </dellroad:jibx-bind>
+        <dellroad:jibx-bind name="Twilio REST API">
+            <classes>
+                <pathelement path="build/classes"/>
+            </classes>
+            <bindings>
+                <include name="src/java/org/dellroad/jibxbindings/twilio/restapi/binding.xml"/>
+            </bindings>
+        </dellroad:jibx-bind>
+        <dellroad:jibx-bind name="TwiML">
+            <classes>
+                <pathelement path="build/classes"/>
+            </classes>
+            <bindings>
+                <include name="src/java/org/dellroad/jibxbindings/twilio/twiml/binding.xml"/>
+            </bindings>
+        </dellroad:jibx-bind>
         <property name="jibx-bind.completed" value="true"/>
     </target>
 
