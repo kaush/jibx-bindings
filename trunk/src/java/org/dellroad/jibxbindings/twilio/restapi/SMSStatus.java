@@ -17,7 +17,7 @@ import org.jibx.runtime.JiBXParseException;
 public enum SMSStatus implements XMLEnum {
     QUEUED("queued"),
     SENDING("sending"),
-    SEND("sent"),
+    SENT("sent"),
     FAILED("failed");
 
     private final String xmlName;
