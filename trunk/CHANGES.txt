@@ -1,4 +1,8 @@
 
+Version 1.0.54 Released April 2, 2012
+
+    - Fix typo in enum SMSStatus.SEND -> SMSStatus.SENT
+
 Version 1.0.48 Released December 8, 2011
 
     - Change GML constant types from String to URI
