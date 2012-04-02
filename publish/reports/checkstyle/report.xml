@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="5.3">
+<checkstyle version="5.4">
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/ParseUtil.java">
 <error line="118" column="73" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 <error line="118" column="100" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
