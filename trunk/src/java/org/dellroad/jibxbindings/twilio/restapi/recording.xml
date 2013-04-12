@@ -3,7 +3,7 @@
 <!-- $Id$ -->
 <binding package="org.dellroad.jibxbindings.twilio.restapi">
     <include path="subresourceUris.xml"/>
-    <mapping name="Recording" class="org.dellroad.jibxbindings.twilio.restapi.Recording" ordered="false">
+    <mapping name="Recording" class="org.dellroad.jibxbindings.twilio.restapi.Recording" ordered="false" flexible="true">
 
         <!-- Resource -->
         <value name="DateCreated" get-method="getDateCreated" set-method="setDateCreated"
