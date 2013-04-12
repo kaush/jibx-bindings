@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span><a name="line.1"></a>
+<span class="sourceLineNo">002</span>/*<a name="line.2"></a>
+<span class="sourceLineNo">003</span> * Copyright (C) 2011 Archie L. Cobbs. All rights reserved.<a name="line.3"></a>
+<span class="sourceLineNo">004</span> *<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * $Id$<a name="line.5"></a>
+<span class="sourceLineNo">006</span> */<a name="line.6"></a>
+<span class="sourceLineNo">007</span><a name="line.7"></a>
+<span class="sourceLineNo">008</span>package org.dellroad.jibxbindings.twilio;<a name="line.8"></a>
+<span class="sourceLineNo">009</span><a name="line.9"></a>
+<span class="sourceLineNo">010</span>/**<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * Twilio error codes.<a name="line.11"></a>
+<span class="sourceLineNo">012</span> *<a name="line.12"></a>
+<span class="sourceLineNo">013</span> * @see &lt;a href="http://www.twilio.com/docs/errors/reference"&gt;Twilio Error Code Reference&lt;/a&gt;<a name="line.13"></a>
+<span class="sourceLineNo">014</span> */<a name="line.14"></a>
+<span class="sourceLineNo">015</span>public final class ErrorCodes {<a name="line.15"></a>
+<span class="sourceLineNo">016</span><a name="line.16"></a>
+<span class="sourceLineNo">017</span>    public static final int ACCOUNT_IS_NOT_ACTIVE = 10001;<a name="line.17"></a>
+<span class="sourceLineNo">018</span>    public static final int TRIAL_ACCOUNT_DOES_NOT_SUPPORT_THIS_FEATURE = 10002;<a name="line.18"></a>
+<span class="sourceLineNo">019</span>    public static final int INCOMING_CALL_REJECTED_DUE_TO_INACTIVE_ACCOUNT = 10003;<a name="line.19"></a>
+<span class="sourceLineNo">020</span>    public static final int INVALID_URL_FORMAT = 11100;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>    public static final int HTTP_RETRIEVAL_FAILURE = 11200;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>    public static final int HTTP_CONNECTION_FAILURE = 11205;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>    public static final int HTTP_PROTOCOL_VIOLATION = 11206;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>    public static final int HTTP_BAD_HOST_NAME = 11210;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>    public static final int HTTP_TOO_MANY_REDIRECTS = 11215;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>    public static final int INVALID_TEMPLATE_URL = 11300;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>    public static final int INVALID_TEMPLATE_TOKEN = 11310;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>    public static final int INVALID_TEMPLATE_UNCLOSED_BRACKETS = 11320;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>    public static final int DOCUMENT_PARSE_FAILURE = 12100;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>    public static final int INVALID_TWILIO_MARKUP_XML_VERSION = 12101;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>    public static final int THE_ROOT_ELEMENT_MUST_BE_RESPONSE = 12102;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>    public static final int SCHEMA_VALIDATION_WARNING = 12200;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>    public static final int INVALID_CONTENT_TYPE = 12300;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>    public static final int INTERNAL_FAILURE = 12400;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>    public static final int DIAL_CANNOT_DIAL_OUT_FROM_A_DIAL_CALL_SEGMENT = 13201;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>    public static final int DIAL_INVALID_METHOD_VALUE = 13210;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>    public static final int DIAL_INVALID_IFMACHINE_VALUE = 13211;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>    public static final int DIAL_INVALID_TIMEOUT_VALUE = 13212;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>    public static final int DIAL_INVALID_HANGUPONSTAR_VALUE = 13213;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>    public static final int DIAL_INVALID_CALLERID_VALUE = 13214;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>    public static final int DIAL_INVALID_NESTED_ELEMENT = 13215;<a name="line.41"></a>
+<span class="sourceLineNo">042</span>    public static final int DIAL_INVALID_TIMELIMIT_VALUE = 13216;<a name="line.42"></a>
+<span class="sourceLineNo">043</span>    public static final int DIAL_INVALID_RECORD_VALUE = 13217;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    public static final int DIAL_NUMBER_INVALID_METHOD_VALUE = 13221;<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    public static final int DIAL_NUMBER_INVALID_SENDDIGITS_VALUE = 13222;<a name="line.45"></a>
+<span class="sourceLineNo">046</span>    public static final int DIAL_INVALID_PHONE_NUMBER_FORMAT = 13223;<a name="line.46"></a>
+<span class="sourceLineNo">047</span>    public static final int DIAL_INVALID_PHONE_NUMBER = 13224;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>    public static final int DIAL_FORBIDDEN_PHONE_NUMBER = 13225;<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    public static final int DIAL_INVALID_COUNTRY_CODE = 13226;<a name="line.49"></a>
+<span class="sourceLineNo">050</span>    public static final int DIAL_NO_INTERNATIONAL_AUTHORIZATION = 13227;<a name="line.50"></a>
+<span class="sourceLineNo">051</span>    public static final int DIAL_CONFERENCE_INVALID_MUTED_VALUE = 13230;<a name="line.51"></a>
+<span class="sourceLineNo">052</span>    public static final int DIAL_CONFERENCE_INVALID_ENDCONFERENCEONEXIT_VALUE = 13231;<a name="line.52"></a>
+<span class="sourceLineNo">053</span>    public static final int DIAL_CONFERENCE_INVALID_STARTCONFERENCEONENTER_VALUE = 13232;<a name="line.53"></a>
+<span class="sourceLineNo">054</span>    public static final int DIAL_CONFERENCE_INVALID_WAITURL_VALUE = 13233;<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    public static final int DIAL_CONFERENCE_INVALID_WAITMETHOD_VALUE = 13234;<a name="line.55"></a>
+<span class="sourceLineNo">056</span>    public static final int DIAL_CONFERENCE_INVALID_BEEP_VALUE = 13235;<a name="line.56"></a>
+<span class="sourceLineNo">057</span>    public static final int DIAL_CONFERENCE_INVALID_CONFERENCE_SID_VALUE = 13236;<a name="line.57"></a>
+<span class="sourceLineNo">058</span>    public static final int DIAL_CONFERENCE_INVALID_CONFERENCE_NAME = 13237;<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    public static final int DIAL_CONFERENCE_INVALID_VERB_FOR_WAITURL_TWIML = 13238;<a name="line.59"></a>
+<span class="sourceLineNo">060</span>    public static final int DIAL_SIP_INVALID_METHOD_VALUE = 13241;<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    public static final int DIAL_SIP_INVALID_SENDDIGITS_VALUE = 13242;<a name="line.61"></a>
+<span class="sourceLineNo">062</span>    public static final int DIAL_SIP_INVALID_SIP_URI = 13243;<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    public static final int DIAL_NO_SIP_AUTHORIZATION = 13244;<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    public static final int GATHER_INVALID_FINISHONKEY_VALUE = 13310;<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    public static final int GATHER_INVALID_FINISHONKEY_VALUE2 = 13311;<a name="line.65"></a>
+<span class="sourceLineNo">066</span>    public static final int GATHER_INVALID_METHOD_VALUE = 13312;<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    public static final int GATHER_INVALID_TIMEOUT_VALUE = 13313;<a name="line.67"></a>
+<span class="sourceLineNo">068</span>    public static final int GATHER_INVALID_NUMDIGITS_VALUE = 13314;<a name="line.68"></a>
+<span class="sourceLineNo">069</span>    public static final int GATHER_INVALID_NESTED_VERB = 13320;<a name="line.69"></a>
+<span class="sourceLineNo">070</span>    public static final int GATHER_SAY_INVALID_VOICE_VALUE = 13321;<a name="line.70"></a>
+<span class="sourceLineNo">071</span>    public static final int GATHER_SAY_INVALID_LOOP_VALUE = 13322;<a name="line.71"></a>
+<span class="sourceLineNo">072</span>    public static final int GATHER_PLAY_INVALID_CONTENT_TYPE = 13325;<a name="line.72"></a>
+<span class="sourceLineNo">073</span>    public static final int PLAY_INVALID_LOOP_VALUE = 13410;<a name="line.73"></a>
+<span class="sourceLineNo">074</span>    public static final int PLAY_INVALID_CONTENT_TYPE = 13420;<a name="line.74"></a>
+<span class="sourceLineNo">075</span>    public static final int SAY_INVALID_LOOP_VALUE = 13510;<a name="line.75"></a>
+<span class="sourceLineNo">076</span>    public static final int SAY_INVALID_VOICE_VALUE = 13511;<a name="line.76"></a>
+<span class="sourceLineNo">077</span>    public static final int SAY_INVALID_TEXT = 13520;<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    public static final int RECORD_INVALID_METHOD_VALUE = 13610;<a name="line.78"></a>
+<span class="sourceLineNo">079</span>    public static final int RECORD_INVALID_TIMEOUT_VALUE = 13611;<a name="line.79"></a>
+<span class="sourceLineNo">080</span>    public static final int RECORD_INVALID_MAXLENGTH_VALUE = 13612;<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    public static final int RECORD_INVALID_FINISHONKEY_VALUE = 13613;<a name="line.81"></a>
+<span class="sourceLineNo">082</span>    public static final int RECORD_INVALID_TRANSCRIBE_VALUE = 13614;<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    public static final int RECORD_MAXLENGTH_TOO_HIGH_FOR_TRANSCRIPTION = 13615;<a name="line.83"></a>
+<span class="sourceLineNo">084</span>    public static final int RECORD_PLAYBEEP_MUST_BE_TRUE_OR_FALSE = 13616;<a name="line.84"></a>
+<span class="sourceLineNo">085</span>    public static final int REDIRECT_INVALID_METHOD_VALUE = 13710;<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    public static final int PAUSE_INVALID_LENGTH_VALUE = 13910;<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    public static final int TO_ATTRIBUTE_IS_INVALID = 14101;<a name="line.87"></a>
+<span class="sourceLineNo">088</span>    public static final int SMS_FROM_ATTRIBUTE_IS_INVALID = 14102;<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    public static final int SMS_INVALID_BODY = 14103;<a name="line.89"></a>
+<span class="sourceLineNo">090</span>    public static final int SMS_METHOD_ATTRIBUTE_INVALID = 14104;<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    public static final int SMS_VERB_STATUSCALLBACK_ATTRIBUTE_INVALID = 14105;<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    public static final int SMS_REPLY_TWIML_DOCUMENT_RETRIEVAL_LIMIT_REACHED = 14106;<a name="line.92"></a>
+<span class="sourceLineNo">093</span>    public static final int SMS_RATE_MESSAGE_LIMIT_EXCEEDED = 14107;<a name="line.93"></a>
+<span class="sourceLineNo">094</span>    public static final int SMS_FROM_PHONE_NUMBER_NOT_SMS_CAPABLE = 14108;<a name="line.94"></a>
+<span class="sourceLineNo">095</span>    public static final int SMS_REPLY_MESSAGE_LIMIT_EXCEEDED = 14109;<a name="line.95"></a>
+<span class="sourceLineNo">096</span>    public static final int INVALID_VERB_FOR_SMS_REPLY = 14110;<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    public static final int INVALID_TO_PHONE_NUMBER_FOR_TRIAL_MODE = 14111;<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    public static final int UNKNOWN_PARAMETERS = 20001;<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    public static final int INVALID_FRIENDLYNAME = 20002;<a name="line.99"></a>
+<span class="sourceLineNo">100</span>    public static final int PERMISSION_DENIED = 20003;<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    public static final int METHOD_NOT_ALLOWED = 20004;<a name="line.101"></a>
+<span class="sourceLineNo">102</span>    public static final int ACCOUNT_NOT_ACTIVE = 20005;<a name="line.102"></a>
+<span class="sourceLineNo">103</span>    public static final int ACCESS_DENIED = 20006;<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    public static final int ACCOUNTS_RESOURCE = 21100;<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    public static final int CALLS_RESOURCE = 21200;<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    public static final int NO_TO_NUMBER_SPECIFIED = 21201;<a name="line.106"></a>
+<span class="sourceLineNo">107</span>    public static final int TO_NUMBER_IS_A_PREMIUM_NUMBER = 21202;<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    public static final int INTERNATIONAL_CALLING_NOT_ENABLED = 21203;<a name="line.108"></a>
+<span class="sourceLineNo">109</span>    public static final int CALL_ALREADY_INITIATED = 21204;<a name="line.109"></a>
+<span class="sourceLineNo">110</span>    public static final int INVALID_URL = 21205;<a name="line.110"></a>
+<span class="sourceLineNo">111</span>    public static final int INVALID_SENDDIGITS = 21206;<a name="line.111"></a>
+<span class="sourceLineNo">112</span>    public static final int INVALID_IFMACHINE = 21207;<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    public static final int INVALID_TIMEOUT = 21208;<a name="line.113"></a>
+<span class="sourceLineNo">114</span>    public static final int INVALID_METHOD = 21209;<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    public static final int FROM_PHONE_NUMBER_NOT_VERIFIED = 21210;<a name="line.115"></a>
+<span class="sourceLineNo">116</span>    public static final int INVALID_TO_PHONE_NUMBER = 21211;<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    public static final int INVALID_FROM_PHONE_NUMBER = 21212;<a name="line.117"></a>
+<span class="sourceLineNo">118</span>    public static final int FROM_PHONE_NUMBER_IS_REQUIRED = 21213;<a name="line.118"></a>
+<span class="sourceLineNo">119</span>    public static final int TO_PHONE_NUMBER_CANNOT_BE_REACHED = 21214;<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    public static final int ACCOUNT_NOT_AUTHORIZED_TO_CALL_PHONE_NUMBER = 21215;<a name="line.120"></a>
+<span class="sourceLineNo">121</span>    public static final int ACCOUNT_NOT_ALLOWED_TO_CALL_PHONE_NUMBER = 21216;<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    public static final int PHONE_NUMBER_DOES_NOT_APPEAR_TO_BE_VALID = 21217;<a name="line.122"></a>
+<span class="sourceLineNo">123</span>    public static final int INVALID_APPLICATIONSID = 21218;<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    public static final int TO_PHONE_NUMBER_NOT_VERIFIED = 21219;<a name="line.124"></a>
+<span class="sourceLineNo">125</span>    public static final int INVALID_CALL_STATE = 21220;<a name="line.125"></a>
+<span class="sourceLineNo">126</span>    public static final int INVALID_PHONE_NUMBER = 21401;<a name="line.126"></a>
+<span class="sourceLineNo">127</span>    public static final int INVALID_URL2 = 21402;<a name="line.127"></a>
+<span class="sourceLineNo">128</span>    public static final int INVALID_METHOD2 = 21403;<a name="line.128"></a>
+<span class="sourceLineNo">129</span>    public static final int INBOUND_PHONE_NUMBERS_NOT_AVAILABLE_TO_TRIAL_ACCOUNTS = 21404;<a name="line.129"></a>
+<span class="sourceLineNo">130</span>    public static final int CANNOT_SET_VOICEFALLBACKURL_WITHOUT_SETTING_URL = 21405;<a name="line.130"></a>
+<span class="sourceLineNo">131</span>    public static final int CANNOT_SET_SMSFALLBACKURL_WITHOUT_SETTING_SMSURL = 21406;<a name="line.131"></a>
+<span class="sourceLineNo">132</span>    public static final int THIS_PHONE_NUMBER_TYPE_DOES_NOT_SUPPORT_SMS = 21407;<a name="line.132"></a>
+<span class="sourceLineNo">133</span>    public static final int PERMISSION_TO_SEND_AN_SMS_HAS_NOT_BEEN_ENABLED_FOR_THE_REGION_INDICATED_BY_THE_TO_NUMBER = 21408;<a name="line.133"></a>
+<span class="sourceLineNo">134</span>    public static final int APPLICATIONSID_IS_NOT_ACCESSIBLE = 21420;<a name="line.134"></a>
+<span class="sourceLineNo">135</span>    public static final int PHONENUMBER_IS_INVALID = 21421;<a name="line.135"></a>
+<span class="sourceLineNo">136</span>    public static final int PHONENUMBER_IS_NOT_AVAILABLE_FOR_PURCHASE = 21422;<a name="line.136"></a>
+<span class="sourceLineNo">137</span>    public static final int PHONE_NUMBER_ALREADY_VERIFIED_FOR_YOUR_ACCOUNT = 21450;<a name="line.137"></a>
+<span class="sourceLineNo">138</span>    public static final int INVALID_AREA_CODE = 21451;<a name="line.138"></a>
+<span class="sourceLineNo">139</span>    public static final int NO_PHONE_NUMBERS_FOUND_IN_AREA_CODE = 21452;<a name="line.139"></a>
+<span class="sourceLineNo">140</span>    public static final int PHONE_NUMBER_ALREADY_VERIFIED_FOR_ANOTHER_ACCOUNT = 21453;<a name="line.140"></a>
+<span class="sourceLineNo">141</span>    public static final int INVALID_CALLDELAY = 21454;<a name="line.141"></a>
+<span class="sourceLineNo">142</span>    public static final int INVALID_PLAYURL = 21455;<a name="line.142"></a>
+<span class="sourceLineNo">143</span>    public static final int INVALID_CALLBACKURL = 21456;<a name="line.143"></a>
+<span class="sourceLineNo">144</span>    public static final int AREACODE_PARAMETER_NOT_SUPPORTED = 21457;<a name="line.144"></a>
+<span class="sourceLineNo">145</span>    public static final int PHONENUMBER_PROVISIONING_TYPE_MISMATCH = 21458;<a name="line.145"></a>
+<span class="sourceLineNo">146</span>    public static final int INVALID_ACCOUNTSID = 21470;<a name="line.146"></a>
+<span class="sourceLineNo">147</span>    public static final int ACCOUNT_DOES_NOT_EXIST = 21471;<a name="line.147"></a>
+<span class="sourceLineNo">148</span>    public static final int ACCOUNT_IS_NOT_ACTIVE2 = 21472;<a name="line.148"></a>
+<span class="sourceLineNo">149</span>    public static final int ACCOUNTSID_YOU_ARE_TRANSFERRING_TO_IS_NOT_RELATED_TO_THE_ORIGINATING_OWNER_OF_THE_PHONE_NUMBER = 21473;<a name="line.149"></a>
+<span class="sourceLineNo">150</span>    public static final int API_USER_MUST_BE_THE_PARENT_ACCOUNT_TO_TRANSFER_PHONE_NUMBERS = 21474;<a name="line.150"></a>
+<span class="sourceLineNo">151</span>    public static final int UNABLE_TO_UPDATE_STATUS_INVALID_STATUS = 21475;<a name="line.151"></a>
+<span class="sourceLineNo">152</span>    public static final int UNABLE_TO_UPDATE_STATUS_FOR_SUBACCOUNT_PARENT_ACCOUNT_IS_SUSPENDED = 21476;<a name="line.152"></a>
+<span class="sourceLineNo">153</span>    public static final int UNABLE_TO_UPDATE_STATUS_FOR_PARENT_ACCOUNTS = 21477;<a name="line.153"></a>
+<span class="sourceLineNo">154</span>    public static final int UNABLE_TO_UPDATE_STATUS_FOR_SUBACCOUNT_SUBACCOUNT_HAS_BEEN_SUSPENDED_BY_TWILIO = 21478;<a name="line.154"></a>
+<span class="sourceLineNo">155</span>    public static final int UNABLE_TO_UPDATE_STATUS_FOR_SUBACCOUNT_SUBACCOUNT_HAS_BEEN_CLOSED = 21479;<a name="line.155"></a>
+<span class="sourceLineNo">156</span>    public static final int REACHED_MAXIMUM_NUMBER_OF_SUBACCOUNTS = 21480;<a name="line.156"></a>
+<span class="sourceLineNo">157</span>    public static final int RESOURCE_NOT_AVAILABLE = 21501;<a name="line.157"></a>
+<span class="sourceLineNo">158</span>    public static final int INVALID_CALLBACK_URL = 21502;<a name="line.158"></a>
+<span class="sourceLineNo">159</span>    public static final int INVALID_TRANSCRIPTION_TYPE = 21503;<a name="line.159"></a>
+<span class="sourceLineNo">160</span>    public static final int RECORDINGSID_IS_REQUIRED = 21504;<a name="line.160"></a>
+<span class="sourceLineNo">161</span>    public static final int PHONE_NUMBER_IS_NOT_A_VALID_SMS_CAPABLE_INBOUND_PHONE_NUMBER = 21601;<a name="line.161"></a>
+<span class="sourceLineNo">162</span>    public static final int MESSAGE_BODY_IS_REQUIRED_TO_SEND_AN_SMS = 21602;<a name="line.162"></a>
+<span class="sourceLineNo">163</span>    public static final int FROM_PHONE_NUMBER_IS_REQUIRED_TO_SEND_AN_SMS = 21603;<a name="line.163"></a>
+<span class="sourceLineNo">164</span>    public static final int TO_PHONE_NUMBER_IS_REQUIRED_TO_SEND_AN_SMS = 21604;<a name="line.164"></a>
+<span class="sourceLineNo">165</span>    public static final int MAXIMUM_BODY_LENGTH_IS_160_CHARACTERS = 21605;<a name="line.165"></a>
+<span class="sourceLineNo">166</span>    public static final int THE_FROM_PHONE_NUMBER_PROVIDED_IS_NOT_A_VALID_SMS_CAPABLE_TWILIO_PHONE_NUMBER = 21606;<a name="line.166"></a>
+<span class="sourceLineNo">167</span>    public static final int THE_FROM_NUMBER_MUST_BE_THE_SANDBOX_PHONE_NUMBER_FOR_TRIAL_ACCOUNTS = 21607;<a name="line.167"></a>
+<span class="sourceLineNo">168</span>    public static final int THE_SANDBOX_NUMBER_CAN_SEND_SMS_MESSAGES_ONLY_TO_VERIFIED_NUMBERS = 21608;<a name="line.168"></a>
+<span class="sourceLineNo">169</span>    public static final int SMS_CANNOT_BE_SENT_TO_THE_TO_NUMBER_BECAUSE_THE_CUSTOMER_HAS_REPLIED_WITH_STOP = 21610;<a name="line.169"></a>
+<span class="sourceLineNo">170</span>    public static final int THIS_FROM_NUMBER_HAS_EXCEEDED_THE_MAXIMUM_NUMBER_OF_QUEUED_MESSAGES = 21611;<a name="line.170"></a>
+<span class="sourceLineNo">171</span>    public static final int THE_TO_PHONE_NUMBER_IS_NOT_CURRENTLY_REACHABLE_VIA_SMS = 21612;<a name="line.171"></a>
+<span class="sourceLineNo">172</span>    public static final int PHONENUMBER_REQUIRES_CERTIFICATION = 21613;<a name="line.172"></a>
+<span class="sourceLineNo">173</span>    public static final int TO_NUMBER_IS_NOT_A_VALID_MOBILE_NUMBER = 21614;<a name="line.173"></a>
+<span class="sourceLineNo">174</span>    public static final int THE_FROM_NUMBER_MATCHES_MULTIPLE_NUMBERS_FOR_YOUR_ACCOUNT = 21616;<a name="line.174"></a>
+<span class="sourceLineNo">175</span><a name="line.175"></a>
+<span class="sourceLineNo">176</span>    private ErrorCodes() {<a name="line.176"></a>
+<span class="sourceLineNo">177</span>    }<a name="line.177"></a>
+<span class="sourceLineNo">178</span>}<a name="line.178"></a>
+<span class="sourceLineNo">179</span><a name="line.179"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>
