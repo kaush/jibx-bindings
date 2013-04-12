@@ -127,7 +127,7 @@ public abstract class ParseTestSupport extends TestSupport {
         return list.toArray(new Object[list.size()][]);
     }
 
-    protected IBindingFactory getBindingFactory(Class clazz, String... name) throws JiBXException {
+    protected IBindingFactory getBindingFactory(Class<?> clazz, String... name) throws JiBXException {
         IBindingFactory bindingFactory;
         switch (name.length) {
         case 0:
