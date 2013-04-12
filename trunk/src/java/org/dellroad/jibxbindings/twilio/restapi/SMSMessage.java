@@ -21,6 +21,7 @@ public class SMSMessage extends SidAccountResource implements TwilioResponseCont
     private SMSStatus status;
     private SMSDirection direction;
     private double price;
+    private String priceUnit;
     private APIVersion apiVersion;
 
     public Date getDateSent() {
@@ -70,6 +71,13 @@ public class SMSMessage extends SidAccountResource implements TwilioResponseCont
     }
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getPriceUnit() {
+        return this.priceUnit;
+    }
+    public void setPriceUnit(String priceUnit) {
+        this.priceUnit = priceUnit;
     }
 
     /**

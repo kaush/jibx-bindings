@@ -39,6 +39,7 @@
           deserializer="org.dellroad.jibxbindings.twilio.restapi.SMSDirection.deserializeXML"/>
         <value name="Price" get-method="getPrice" set-method="setPrice" usage="optional"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDouble"/>
+        <value name="PriceUnit" get-method="getPriceUnit" set-method="setPriceUnit" usage="optional"/>
         <value name="ApiVersion" get-method="getAPIVersion" set-method="setAPIVersion"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
           deserializer="org.dellroad.jibxbindings.twilio.restapi.APIVersion.deserializeXML"/>

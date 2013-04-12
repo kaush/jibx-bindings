@@ -23,6 +23,7 @@ public class Call extends SidAccountResource implements TwilioResponseContent {
     private Date endTime;
     private int duration;
     private double price;
+    private String priceUnit;
     private CallDirection direction;
     private AnswerType answeredBy;
     private String forwardedFrom;
@@ -90,6 +91,13 @@ public class Call extends SidAccountResource implements TwilioResponseContent {
     }
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getPriceUnit() {
+        return this.priceUnit;
+    }
+    public void setPriceUnit(String priceUnit) {
+        this.priceUnit = priceUnit;
     }
 
     public CallDirection getDirection() {
