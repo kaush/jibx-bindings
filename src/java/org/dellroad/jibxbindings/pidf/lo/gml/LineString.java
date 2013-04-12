@@ -7,7 +7,6 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
-
 /**
  * GML LineStrings.
  *

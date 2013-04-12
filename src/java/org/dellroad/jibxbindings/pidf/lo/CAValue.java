@@ -7,7 +7,6 @@
 
 package org.dellroad.jibxbindings.pidf.lo;
 
-
 /**
  * One field in a {@code <ca:civicAddress>} element as defined in RFC 5139.
  * This differs from {@link org.dellroad.jibxbindings.pidf.LangContent} in that the field content is whitespace normalized.
