@@ -18,6 +18,7 @@ public class Transcription extends SidAccountResource implements TwilioResponseC
     private int duration;
     private String transcriptionText;
     private double price;
+    private String priceUnit;
     private APIVersion apiVersion;
 
     public TranscriptionStatus getStatus() {
@@ -60,6 +61,13 @@ public class Transcription extends SidAccountResource implements TwilioResponseC
     }
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getPriceUnit() {
+        return this.priceUnit;
+    }
+    public void setPriceUnit(String priceUnit) {
+        this.priceUnit = priceUnit;
     }
 
     public APIVersion getAPIVersion() {
