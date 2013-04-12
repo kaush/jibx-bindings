@@ -1,7 +1,8 @@
 
-Version Next
+Version 1.0.62 Released April 11 2013
 
     - Added Twilio ErrorCodes.java
+    - Added handling for <PriceUnit>
 
 Version 1.0.54 Released April 2, 2012
 
