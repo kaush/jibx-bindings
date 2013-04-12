@@ -15,6 +15,7 @@
         <Direction>outbound-api</Direction>
         <ApiVersion>2010-04-01</ApiVersion>
         <Price/>
+        <PriceUnit>USD</PriceUnit>
         <Uri>/2010-04-01/Accounts/AC5ef872f6da5a21de157d80997a64bd33/SMS/Messages/SM90c6fc909d8504d45ecdb3a3d5b3556e</Uri>
     </SMSMessage>
 </TwilioResponse>
