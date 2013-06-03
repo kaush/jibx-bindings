@@ -1,6 +1,7 @@
 Version Next
 
     - Added new language codes
+    - Added "canceled" call status
 
 Version 1.0.62 Released April 11 2013
 
