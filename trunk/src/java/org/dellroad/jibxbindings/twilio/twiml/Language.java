@@ -14,8 +14,10 @@ import org.dellroad.jibxbindings.XMLEnum;
  */
 public enum Language implements XMLEnum {
     EN("en"),
+    EN_GB("en-gb"),
     ES("es"),
     FR("fr"),
+    IT("it"),
     DE("de");
 
     private final String xmlName;
