@@ -1,3 +1,6 @@
+Version Next
+
+    - Added new language codes
 
 Version 1.0.62 Released April 11 2013
 
