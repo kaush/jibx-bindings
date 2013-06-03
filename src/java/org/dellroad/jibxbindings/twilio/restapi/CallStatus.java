@@ -21,7 +21,8 @@ public enum CallStatus implements XMLEnum {
     COMPLETED("completed"),
     FAILED("failed"),
     BUSY("busy"),
-    NO_ANSWER("no-answer");
+    NO_ANSWER("no-answer"),
+    CANCELED("canceled");
 
     private final String xmlName;
 
