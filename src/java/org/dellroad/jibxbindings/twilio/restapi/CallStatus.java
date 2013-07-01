@@ -15,19 +15,28 @@ import org.jibx.runtime.JiBXParseException;
  * Call statuses.
  */
 public enum CallStatus implements XMLEnum {
-    QUEUED("queued"),
-    RINGING("ringing"),
-    IN_PROGRESS("in-progress"),
-    COMPLETED("completed"),
-    FAILED("failed"),
-    BUSY("busy"),
-    NO_ANSWER("no-answer"),
-    CANCELED("canceled");
+    QUEUED("queued", false),
+    RINGING("ringing", false),
+    IN_PROGRESS("in-progress", false),
+    COMPLETED("completed", true),
+    FAILED("failed", true),
+    BUSY("busy", true),
+    NO_ANSWER("no-answer", true),
+    CANCELED("canceled", true);
 
     private final String xmlName;
+    private final boolean terminal;
 
-    private CallStatus(String xmlName) {
+    private CallStatus(String xmlName, boolean terminal) {
         this.xmlName = xmlName;
+        this.terminal = terminal;
+    }
+
+    /**
+     * Determine whether this represents a terminal state, i.e., the call is hung up.
+     */
+    public boolean isTerminal() {
+        return this.terminal;
     }
 
     @Override
