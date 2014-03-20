@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.twilio.restapi">
+<binding>
     <include path="subresourceUris.xml"/>
     <mapping name="SMSMessage" class="org.dellroad.jibxbindings.twilio.restapi.SMSMessage" ordered="false" flexible="true">
 
@@ -13,7 +13,6 @@
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
         <value name="Uri" get-method="getURI" set-method="setURI"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <structure name="SubresourceUris" map-as="subresourceUris" get-method="getSubresourceUris" set-method="setSubresourceUris"
           usage="optional"/>
@@ -24,7 +23,7 @@
         <!-- SidAccountResource -->
         <value name="Sid" get-method="getSid" set-method="setSid"/>
 
-        <!-- SMSMessge -->
+        <!-- SMSMessage -->
         <value name="DateSent" get-method="getDateSent" set-method="setDateSent" usage="optional"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
@@ -32,16 +31,14 @@
         <value name="From" get-method="getFrom" set-method="setFrom"/>
         <value name="Body" get-method="getBody" set-method="setBody"/>
         <value name="Status" get-method="getStatus" set-method="setStatus"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeEnumToString"
           deserializer="org.dellroad.jibxbindings.twilio.restapi.SMSStatus.deserializeXML"/>
         <value name="Direction" get-method="getDirection" set-method="setDirection"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeEnumToString"
           deserializer="org.dellroad.jibxbindings.twilio.restapi.SMSDirection.deserializeXML"/>
         <value name="Price" get-method="getPrice" set-method="setPrice" usage="optional"
-          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDouble"/>
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleOrNaN"/>
         <value name="PriceUnit" get-method="getPriceUnit" set-method="setPriceUnit" usage="optional"/>
-        <value name="ApiVersion" get-method="getAPIVersion" set-method="setAPIVersion"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
-          deserializer="org.dellroad.jibxbindings.twilio.restapi.APIVersion.deserializeXML"/>
+        <value name="ApiVersion" get-method="getAPIVersion" set-method="setAPIVersion" enum-value-method="toString"/>
     </mapping>
 </binding>

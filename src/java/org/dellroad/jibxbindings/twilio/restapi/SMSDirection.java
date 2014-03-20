@@ -8,13 +8,12 @@
 package org.dellroad.jibxbindings.twilio.restapi;
 
 import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * SMS directionality.
  */
-public enum SMSDirection implements XMLEnum {
+public enum SMSDirection {
 
     /**
      * Inbound SMS.
@@ -54,12 +53,12 @@ public enum SMSDirection implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
     }
 
     public static SMSDirection deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, SMSDirection.values());
+        return ParseUtil.deserializeEnumOrNull(string, SMSDirection.class);
     }
 }
 

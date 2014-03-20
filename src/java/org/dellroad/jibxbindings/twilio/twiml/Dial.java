@@ -30,6 +30,13 @@ public class Dial implements Verb {
     private List<Number> numbers = new ArrayList<Number>();
     private Conference conference;
 
+    public Dial() {
+    }
+
+    public Dial(Number number) {
+        this.numbers.add(number);
+    }
+
     public URI getAction() {
         return this.action;
     }

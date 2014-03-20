@@ -9,6 +9,8 @@ package org.dellroad.jibxbindings.twilio.restapi;
 
 import java.util.Date;
 
+import org.dellroad.jibxbindings.twilio.twiml.CallStatus;
+
 /**
  * Represents a <code>&lt;Call&gt;</code>.
  */
@@ -16,7 +18,9 @@ public class Call extends SidAccountResource implements TwilioResponseContent {
 
     private String parentCallSid;
     private String to;
+    private String toFormatted;
     private String from;
+    private String fromFormatted;
     private String phoneNumberSid;
     private CallStatus status;
     private Date startTime;
@@ -44,11 +48,25 @@ public class Call extends SidAccountResource implements TwilioResponseContent {
         this.to = to;
     }
 
+    public String getToFormatted() {
+        return this.toFormatted;
+    }
+    public void setToFormatted(String toFormatted) {
+        this.toFormatted = toFormatted;
+    }
+
     public String getFrom() {
         return this.from;
     }
     public void setFrom(String from) {
         this.from = from;
+    }
+
+    public String getFromFormatted() {
+        return this.fromFormatted;
+    }
+    public void setFromFormatted(String fromFormatted) {
+        this.fromFormatted = fromFormatted;
     }
 
     public String getPhoneNumberSid() {

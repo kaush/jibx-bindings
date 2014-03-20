@@ -19,6 +19,18 @@ public class Play implements GatherVerb {
     private int loop = DEFAULT_LOOP;
     private URI uri;
 
+    public Play() {
+    }
+
+    public Play(URI uri) {
+        this.setURI(uri);
+    }
+
+    public Play(URI uri, int loop) {
+        this(uri);
+        this.setLoop(loop);
+    }
+
     public int getLoop() {
         return this.loop;
     }

@@ -8,13 +8,12 @@
 package org.dellroad.jibxbindings.twilio.restapi;
 
 import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * Call directionality.
  */
-public enum CallDirection implements XMLEnum {
+public enum CallDirection {
 
     /**
      * Inbound call.
@@ -49,12 +48,12 @@ public enum CallDirection implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
     }
 
     public static CallDirection deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, CallDirection.values());
+        return ParseUtil.deserializeEnumOrNull(string, CallDirection.class);
     }
 }
 

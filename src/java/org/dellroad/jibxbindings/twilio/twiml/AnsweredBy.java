@@ -5,19 +5,18 @@
  * $Id$
  */
 
-package org.dellroad.jibxbindings.twilio.restapi;
+package org.dellroad.jibxbindings.twilio.twiml;
 
 /**
- * Account status.
+ * Specifies if an answering machine was detected or not.
  */
-public enum AccountStatus {
-    ACTIVE("active"),
-    SUSPENDED("suspended"),
-    CLOSED("closed");
+public enum AnsweredBy {
+    HUMAN("human"),
+    MACHINE("machine");
 
     private final String xmlName;
 
-    private AccountStatus(String xmlName) {
+    private AnsweredBy(String xmlName) {
         this.xmlName = xmlName;
     }
 

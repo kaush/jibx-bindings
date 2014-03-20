@@ -8,16 +8,17 @@
 package org.dellroad.jibxbindings.twilio.restapi;
 
 import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * SMS statuses.
  */
-public enum SMSStatus implements XMLEnum {
+public enum SMSStatus {
     QUEUED("queued"),
     SENDING("sending"),
     SENT("sent"),
+    RECEIVING("receiving"),
+    RECEIVED("received"),
     FAILED("failed");
 
     private final String xmlName;
@@ -27,12 +28,12 @@ public enum SMSStatus implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
     }
 
     public static SMSStatus deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, SMSStatus.values());
+        return ParseUtil.deserializeEnumOrNull(string, SMSStatus.class);
     }
 }
 

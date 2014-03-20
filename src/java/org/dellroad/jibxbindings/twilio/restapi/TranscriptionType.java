@@ -8,13 +8,12 @@
 package org.dellroad.jibxbindings.twilio.restapi;
 
 import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * Transcription types. These are not documented so I'm just guessing.
  */
-public enum TranscriptionType implements XMLEnum {
+public enum TranscriptionType {
     FAST("fast"),
     MEDIUM("medium"),
     SLOW("slow");
@@ -26,12 +25,12 @@ public enum TranscriptionType implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
     }
 
     public static TranscriptionType deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, TranscriptionType.values());
+        return ParseUtil.deserializeEnumOrNull(string, TranscriptionType.class);
     }
 }
 

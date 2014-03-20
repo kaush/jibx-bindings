@@ -239,25 +239,71 @@ public final class ParseUtil {
     }
 
     /**
-     * Deserialize an {@link XMLEnum}. Treat an empty string like null.
+     * Deserialize an {@link Enum}. Either the {@link Enum#name name()} or {@linkplain Enum#toString string value}
+     * may match, and treat an empty string like null.
      */
-    public static <T extends XMLEnum> T deserializeXMLEnum(String string, T[] values) throws JiBXParseException {
-        if (string.length() == 0)
+    public static <T extends Enum<T>> T deserializeEnumOrNull(String string, Class<T> type) throws JiBXParseException {
+        if (string == null || string.length() == 0)
             return null;
-        for (T value : values) {
-            if (value.getXMLName().equals(string))
+        for (T value : ParseUtil.getValues(type)) {
+            if (value.name().equals(string) || value.toString().equals(string))
                 return value;
         }
-        throw new JiBXParseException("no match found for enum value `" + string + "'", string);
+        throw new JiBXParseException("no match found for " + type.getSimpleName() + " enum value `" + string + "'", string);
     }
 
     /**
-     * Serialize an {@link XMLEnum}.
+     * Serialize an {@link Enum} using {@link Enum#toString}.
      */
-    public static String serializeXMLEnum(XMLEnum value) {
-        if (value == null)
-            return null;
-        return value.getXMLName();
+    public static <T extends Enum<T>> String serializeEnumToString(T value) throws JiBXParseException {
+        return value != null ? value.toString() : null;
+    }
+
+    /**
+     * Get all instances of the given {@link Enum} class in a list in their natural ordering.
+     *
+     * @return unmodifiable list of enum values
+     */
+    @SuppressWarnings("unchecked")
+    public static <T extends Enum<T>> List<T> getValues(Class<T> enumClass) {
+
+        // Generate ClassCastException if type is not an enum type
+        enumClass.asSubclass(Enum.class);
+
+        // Get values
+        Object array;
+        try {
+            array = enumClass.getMethod("values").invoke(null);
+        } catch (Exception e) {
+            throw new RuntimeException("unexpected exception", e);
+        }
+        return Collections.unmodifiableList(Arrays.asList((T[])array));
+    }
+
+    /**
+     * Deserialize an integer, but treat empty string as zero.
+     */
+    public static int deserializeIntOrZero(String string) throws JiBXParseException {
+        if (string == null || string.length() == 0)
+            return 0;
+        try {
+            return Integer.parseInt(string);
+        } catch (NumberFormatException e) {
+            throw new JiBXParseException("can't parse integer value `" + string + "'", string, e);
+        }
+    }
+
+    /**
+     * Deserialize a double, but treat empty string as NaN.
+     */
+    public static double deserializeDoubleOrNaN(String string) throws JiBXParseException {
+        if (string == null || string.length() == 0)
+            return Double.NaN;
+        try {
+            return Double.parseDouble(string);
+        } catch (NumberFormatException e) {
+            throw new JiBXParseException("can't parse double value `" + string + "'", string, e);
+        }
     }
 
     /**

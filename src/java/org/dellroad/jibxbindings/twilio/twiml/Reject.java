@@ -14,6 +14,13 @@ public class Reject implements Verb {
 
     private RejectReason reason = RejectReason.REJECTED;
 
+    public Reject() {
+    }
+
+    public Reject(RejectReason reason) {
+        this.setReason(reason);
+    }
+
     public RejectReason getReason() {
         return this.reason;
     }

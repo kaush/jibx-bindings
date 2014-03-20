@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.twilio.twiml">
+<binding>
     <mapping name="Sms" class="org.dellroad.jibxbindings.twilio.twiml.Sms">
         <value name="to" style="attribute" get-method="getTo" set-method="setTo" usage="optional"/>
         <value name="from" style="attribute" get-method="getFrom" set-method="setFrom" usage="optional"/>
         <value name="action" style="attribute" get-method="getAction" set-method="setAction" usage="optional"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <value name="method" style="attribute" get-method="getMethod" set-method="setMethod" usage="optional"/>
         <value name="statusCallback" style="attribute" get-method="getStatusCallback" set-method="setStatusCallback"
-          usage="optional"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
-          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+          usage="optional" deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <value style="text" get-method="getText" set-method="setText"/>
     </mapping>
 </binding>

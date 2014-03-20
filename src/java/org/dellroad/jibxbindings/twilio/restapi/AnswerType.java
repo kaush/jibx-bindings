@@ -8,13 +8,12 @@
 package org.dellroad.jibxbindings.twilio.restapi;
 
 import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * Type of thing that answered a call.
  */
-public enum AnswerType implements XMLEnum {
+public enum AnswerType {
     HUMAN("human"),
     MACHINE("machine");
 
@@ -25,12 +24,12 @@ public enum AnswerType implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
     }
 
     public static AnswerType deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, AnswerType.values());
+        return ParseUtil.deserializeEnumOrNull(string, AnswerType.class);
     }
 }
 

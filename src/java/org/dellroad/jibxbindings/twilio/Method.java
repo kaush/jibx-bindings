@@ -21,7 +21,7 @@ public enum Method {
      * Deserialize normally but allow empty string to mean null.
      */
     public static Method deserialize(String string) throws JiBXParseException {
-        return ParseUtil.deserializeEnum(string, Method.values());
+        return ParseUtil.deserializeEnumOrNull(string, Method.class);
     }
 }
 

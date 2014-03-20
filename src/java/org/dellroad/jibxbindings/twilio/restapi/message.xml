@@ -3,7 +3,7 @@
 <!-- $Id$ -->
 <binding>
     <include path="subresourceUris.xml"/>
-    <mapping name="Transcription" class="org.dellroad.jibxbindings.twilio.restapi.Transcription" ordered="false" flexible="true">
+    <mapping name="Message" class="org.dellroad.jibxbindings.twilio.restapi.Message" ordered="false" flexible="true">
 
         <!-- Resource -->
         <value name="DateCreated" get-method="getDateCreated" set-method="setDateCreated"
@@ -23,16 +23,23 @@
         <!-- SidAccountResource -->
         <value name="Sid" get-method="getSid" set-method="setSid"/>
 
-        <!-- Transcription -->
+        <!-- Message -->
+        <value name="DateSent" get-method="getDateSent" set-method="setDateSent" usage="optional"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
+        <value name="To" get-method="getTo" set-method="setTo"/>
+        <value name="From" get-method="getFrom" set-method="setFrom"/>
+        <value name="Body" get-method="getBody" set-method="setBody"/>
+        <value name="NumSegments" get-method="getNumSegments" set-method="setNumSegments" usage="optional"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeIntOrZero"/>
+        <value name="NumMedia" get-method="getNumMedia" set-method="setNumMedia" usage="optional"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeIntOrZero"/>
         <value name="Status" get-method="getStatus" set-method="setStatus"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeEnumToString"
-          deserializer="org.dellroad.jibxbindings.twilio.restapi.TranscriptionStatus.deserializeXML"/>
-        <value name="Type" get-method="getType" set-method="setType"
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.SMSStatus.deserializeXML"/>
+        <value name="Direction" get-method="getDirection" set-method="setDirection"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeEnumToString"
-          deserializer="org.dellroad.jibxbindings.twilio.restapi.TranscriptionType.deserializeXML"/>
-        <value name="RecordingSid" get-method="getRecordingSid" set-method="setRecordingSid"/>
-        <value name="Duration" get-method="getDuration" set-method="setDuration"/>
-        <value name="TranscriptionText" get-method="getTranscriptionText" set-method="setTranscriptionText"/>
+          deserializer="org.dellroad.jibxbindings.twilio.restapi.SMSDirection.deserializeXML"/>
         <value name="Price" get-method="getPrice" set-method="setPrice" usage="optional"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleOrNaN"/>
         <value name="PriceUnit" get-method="getPriceUnit" set-method="setPriceUnit" usage="optional"/>

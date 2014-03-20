@@ -19,6 +19,13 @@ public class Redirect implements Verb {
     private Method method = Method.POST;
     private URI target;
 
+    public Redirect() {
+    }
+
+    public Redirect(URI target) {
+        this.setTarget(target);
+    }
+
     public Method getMethod() {
         return this.method;
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding name="binding" package="org.dellroad.jibxbindings.twilio.twiml">
+<binding name="twilioTwiML" package="org.dellroad.jibxbindings.twilio.twiml">
 
     <include path="conference.xml"/>
     <include path="dial.xml"/>
@@ -18,4 +18,3 @@
     <include path="sms.xml"/>
 
 </binding>
-

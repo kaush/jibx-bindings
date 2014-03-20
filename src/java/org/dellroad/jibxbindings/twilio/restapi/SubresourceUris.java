@@ -24,6 +24,8 @@ public class SubresourceUris {
     private URI recordings;
     private URI sandbox;
     private URI smsMessages;
+    private URI messages;
+    private URI media;
     private URI transcriptions;
     private URI participants;
 
@@ -88,6 +90,20 @@ public class SubresourceUris {
     }
     public void setSMSMessages(URI smsMessages) {
         this.smsMessages = smsMessages;
+    }
+
+    public URI getMessages() {
+        return this.messages;
+    }
+    public void setMessages(URI messages) {
+        this.messages = messages;
+    }
+
+    public URI getMedia() {
+        return this.media;
+    }
+    public void setMedia(URI media) {
+        this.media = media;
     }
 
     public URI getTranscriptions() {

@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency org="org.apache.log4j" name="log4j" rev="1.2.15" conf="javac,test->default"/>
-        <dependency org="net.sourceforge.jibx" name="jibx" rev="1.2.3" conf="base->runtime-xpp3,extras;bind->bind"/>
+        <dependency org="net.sourceforge.jibx" name="jibx" rev="1.2.5" conf="base->runtime-xpp3,extras;bind->bind"/>
         <dependency org="org.testng" name="testng" rev="6.2+" conf="test->default"/>
     </dependencies>
 
