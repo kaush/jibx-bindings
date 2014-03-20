@@ -8,6 +8,8 @@
 package org.dellroad.jibxbindings.twilio.twiml;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -16,6 +18,17 @@ import java.util.List;
 public class Response {
 
     private List<Verb> verbs = new ArrayList<Verb>();
+
+    public Response() {
+    }
+
+    public Response(Collection<? extends Verb> verbs) {
+        this.verbs.addAll(verbs);
+    }
+
+    public Response(Verb... verbs) {
+        this(Arrays.asList(verbs));
+    }
 
     /**
      * Get the {@link Verb}s contained in this response.

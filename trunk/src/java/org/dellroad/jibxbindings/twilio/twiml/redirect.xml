@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.twilio.twiml">
+<binding>
     <mapping name="Redirect" class="org.dellroad.jibxbindings.twilio.twiml.Redirect">
         <value name="method" style="attribute" get-method="getMethod" set-method="setMethod" usage="optional"/>
         <value style="text" get-method="getTarget" set-method="setTarget" usage="optional"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
     </mapping>
 </binding>

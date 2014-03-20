@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.twilio.restapi">
+<binding>
     <include path="call.xml"/>
     <include path="page.xml"/>
     <mapping name="Calls" class="org.dellroad.jibxbindings.twilio.restapi.Calls">

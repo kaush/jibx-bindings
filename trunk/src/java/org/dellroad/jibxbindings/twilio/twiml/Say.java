@@ -19,6 +19,19 @@ public class Say implements GatherVerb {
     private int loop = DEFAULT_LOOP;
     private String text;
 
+    public Say() {
+    }
+
+    public Say(String text) {
+        this.setText(text);
+    }
+
+    public Say(String text, Language language, Voice voice) {
+        this(text);
+        this.setLanguage(language);
+        this.setVoice(voice);
+    }
+
     public Voice getVoice() {
         return this.voice;
     }

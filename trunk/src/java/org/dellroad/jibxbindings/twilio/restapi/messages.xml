@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding>
+    <include path="message.xml"/>
+    <include path="page.xml"/>
+    <mapping name="Messages" class="org.dellroad.jibxbindings.twilio.restapi.Messages">
+        <structure map-as="page"/>
+        <collection get-method="getMessages" set-method="setMessages" create-type="java.util.ArrayList"
+          item-type="org.dellroad.jibxbindings.twilio.restapi.Message"/>
+    </mapping>
+</binding>

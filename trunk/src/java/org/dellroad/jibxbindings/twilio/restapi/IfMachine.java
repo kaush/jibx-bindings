@@ -8,16 +8,15 @@
 package org.dellroad.jibxbindings.twilio.restapi;
 
 /**
- * Account status.
+ * {@code IfMachine} paramter for outgoing dialing.
  */
-public enum AccountStatus {
-    ACTIVE("active"),
-    SUSPENDED("suspended"),
-    CLOSED("closed");
+public enum IfMachine {
+    CONTINUE("Continue"),
+    HANGUP("Hangup");
 
     private final String xmlName;
 
-    private AccountStatus(String xmlName) {
+    private IfMachine(String xmlName) {
         this.xmlName = xmlName;
     }
 

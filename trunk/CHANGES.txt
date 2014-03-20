@@ -1,7 +1,6 @@
-Version Next
+Version 1.0.69 Released March 20, 2014
 
-    - Added new language codes
-    - Added "canceled" call status
+    - Many updates and fixes to Twilio bindings
 
 Version 1.0.62 Released April 11 2013
 

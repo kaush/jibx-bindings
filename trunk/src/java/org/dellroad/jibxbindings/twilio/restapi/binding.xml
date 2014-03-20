@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding name="binding" package="org.dellroad.jibxbindings.twilio.restapi">
+<binding name="twilioRestAPI" package="org.dellroad.jibxbindings.twilio.restapi">
 
     <include path="account.xml"/>
     <include path="accounts.xml"/>
@@ -13,6 +13,8 @@
     <include path="conferences.xml"/>
     <include path="incomingPhoneNumber.xml"/>
     <include path="incomingPhoneNumbers.xml"/>
+    <include path="message.xml"/>
+    <include path="messages.xml"/>
     <include path="notification.xml"/>
     <include path="notifications.xml"/>
     <include path="outgoingCallerId.xml"/>

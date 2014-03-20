@@ -7,14 +7,10 @@
 
 package org.dellroad.jibxbindings.twilio.restapi;
 
-import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
-import org.jibx.runtime.JiBXParseException;
-
 /**
  * Account type.
  */
-public enum AccountType implements XMLEnum {
+public enum AccountType {
     TRIAL("Trial"),
     FULL("Full");
 
@@ -25,12 +21,8 @@ public enum AccountType implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
-    }
-
-    public static AccountType deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, AccountType.values());
     }
 }
 

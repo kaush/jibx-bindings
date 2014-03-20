@@ -18,6 +18,13 @@ public class Number {
     private URI url;
     private String number;
 
+    public Number() {
+    }
+
+    public Number(String number) {
+        this.setNumber(number);
+    }
+
     public String getSendDigits() {
         return this.sendDigits;
     }

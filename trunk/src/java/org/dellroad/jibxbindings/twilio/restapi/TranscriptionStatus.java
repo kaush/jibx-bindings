@@ -8,13 +8,12 @@
 package org.dellroad.jibxbindings.twilio.restapi;
 
 import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * Transcription statuses.
  */
-public enum TranscriptionStatus implements XMLEnum {
+public enum TranscriptionStatus {
     IN_PROGRESS("in-progress"),
     COMPLETED("completed"),
     FAILED("failed");
@@ -26,12 +25,12 @@ public enum TranscriptionStatus implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
     }
 
     public static TranscriptionStatus deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, TranscriptionStatus.values());
+        return ParseUtil.deserializeEnumOrNull(string, TranscriptionStatus.class);
     }
 }
 

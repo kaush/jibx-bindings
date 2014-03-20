@@ -5,16 +5,15 @@
  * $Id$
  */
 
-package org.dellroad.jibxbindings.twilio.restapi;
+package org.dellroad.jibxbindings.twilio.twiml;
 
 import org.dellroad.jibxbindings.ParseUtil;
-import org.dellroad.jibxbindings.XMLEnum;
 import org.jibx.runtime.JiBXParseException;
 
 /**
  * Call statuses.
  */
-public enum CallStatus implements XMLEnum {
+public enum CallStatus {
     QUEUED("queued", false),
     RINGING("ringing", false),
     IN_PROGRESS("in-progress", false),
@@ -40,12 +39,12 @@ public enum CallStatus implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
     }
 
     public static CallStatus deserializeXML(String string) throws JiBXParseException {
-        return ParseUtil.deserializeXMLEnum(string, CallStatus.values());
+        return ParseUtil.deserializeEnumOrNull(string, CallStatus.class);
     }
 }
 

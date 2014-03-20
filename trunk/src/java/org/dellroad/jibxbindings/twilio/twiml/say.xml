@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.twilio.twiml">
+<binding>
     <mapping name="Say" class="org.dellroad.jibxbindings.twilio.twiml.Say">
         <value name="voice" style="attribute" get-method="getVoice" set-method="setVoice"
-          enum-value-method="getXMLName" usage="optional"/>
+          enum-value-method="toString" usage="optional"/>
         <value name="language" style="attribute" get-method="getLanguage" set-method="setLanguage"
-          enum-value-method="getXMLName" usage="optional"/>
+          enum-value-method="toString" usage="optional"/>
         <value name="loop" style="attribute" get-method="getLoop" set-method="setLoop" usage="optional"/>
         <value style="text" get-method="getText" set-method="setText"/>
     </mapping>

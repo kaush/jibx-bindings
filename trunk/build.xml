@@ -183,6 +183,9 @@
         </copy>
     </target>
 
+    <!-- Release -->
+    <target name="release" description="Build release time stuff" depends="clean, jars, publish"/>
+
     <!-- Default target -->
     <target name="build" depends="clean, jars, reports"/>
 

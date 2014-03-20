@@ -19,6 +19,16 @@ public class RestException implements TwilioResponseContent {
     private int code;
     private URI moreInfo;
 
+    public RestException() {
+    }
+
+    public RestException(int status, String message, int code, URI moreInfo) {
+        this.status = status;
+        this.message = message;
+        this.code = code;
+        this.moreInfo = moreInfo;
+    }
+
     public int getStatus() {
         return this.status;
     }

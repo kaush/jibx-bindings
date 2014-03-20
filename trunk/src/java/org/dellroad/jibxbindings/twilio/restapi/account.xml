@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.twilio.restapi">
+<binding>
     <include path="subresourceUris.xml"/>
     <mapping name="Account" class="org.dellroad.jibxbindings.twilio.restapi.Account" ordered="false" flexible="true">
 
@@ -13,7 +13,6 @@
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeRFC5322Timestamp"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeRFC5322Timestamp"/>
         <value name="Uri" get-method="getURI" set-method="setURI"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
         <structure name="SubresourceUris" map-as="subresourceUris" get-method="getSubresourceUris" set-method="setSubresourceUris"
           usage="optional"/>
@@ -21,12 +20,8 @@
         <!-- Account -->
         <value name="Sid" get-method="getSid" set-method="setSid"/>
         <value name="FriendlyName" get-method="getFriendlyName" set-method="setFriendlyName"/>
-        <value name="Status" get-method="getStatus" set-method="setStatus"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
-          deserializer="org.dellroad.jibxbindings.twilio.restapi.AccountStatus.deserializeXML"/>
-        <value name="Type" get-method="getType" set-method="setType"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeXMLEnum"
-          deserializer="org.dellroad.jibxbindings.twilio.restapi.AccountType.deserializeXML"/>
+        <value name="Status" get-method="getStatus" set-method="setStatus" enum-value-method="toString"/>
+        <value name="Type" get-method="getType" set-method="setType" enum-value-method="toString"/>
         <value name="AuthToken" get-method="getAuthToken" set-method="setAuthToken"/>
     </mapping>
 </binding>

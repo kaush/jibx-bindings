@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- $Id$ -->
-<binding package="org.dellroad.jibxbindings.twilio.restapi">
+<binding>
     <mapping abstract="true" type-name="page" class="org.dellroad.jibxbindings.twilio.restapi.Page">
         <value name="page" style="attribute" get-method="getPage" set-method="setPage" usage="optional"/>
         <value name="numpages" style="attribute" get-method="getNumPages" set-method="setNumPages" usage="optional"/>
@@ -10,19 +10,14 @@
         <value name="start" style="attribute" get-method="getStart" set-method="setStart" usage="optional"/>
         <value name="end" style="attribute" get-method="getEnd" set-method="setEnd" usage="optional"/>
         <value name="uri" style="attribute" get-method="getURI" set-method="setURI"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="firstPageURI" style="attribute" get-method="getFirstPageURI" set-method="setFirstPageURI"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="nextPageURI" style="attribute" get-method="getNextPageURI" set-method="setNextPageURI"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="previousPageURI" style="attribute" get-method="getPreviousPageURI" set-method="setPreviousPageURI"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
         <value name="lastPageURI" style="attribute" get-method="getLastPageURI" set-method="setLastPageURI"
-          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI" usage="optional"/>
     </mapping>
 </binding>

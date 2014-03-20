@@ -7,12 +7,13 @@
 
 package org.dellroad.jibxbindings.twilio.twiml;
 
-import org.dellroad.jibxbindings.XMLEnum;
+import org.dellroad.jibxbindings.ParseUtil;
+import org.jibx.runtime.JiBXParseException;
 
 /**
  * Specifies the reason for a <code>&lt;Reject&gt;</code>.
  */
-public enum RejectReason implements XMLEnum {
+public enum RejectReason {
     REJECTED("rejected"),
     BUSY("busy");
 
@@ -23,8 +24,12 @@ public enum RejectReason implements XMLEnum {
     }
 
     @Override
-    public String getXMLName() {
+    public String toString() {
         return this.xmlName;
+    }
+
+    public static RejectReason deserializeXML(String string) throws JiBXParseException {
+        return ParseUtil.deserializeEnumOrNull(string, RejectReason.class);
     }
 }
 
