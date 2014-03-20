@@ -1,4 +1,4 @@
-Version 1.0.69 Released March 20, 2014
+Version 1.0.70 Released March 20, 2014
 
     - Many updates and fixes to Twilio bindings
 
