@@ -19,7 +19,8 @@ public enum SMSStatus {
     SENT("sent"),
     RECEIVING("receiving"),
     RECEIVED("received"),
-    FAILED("failed");
+    FAILED("failed"),
+    DELIVERED("delivered");
 
     private final String xmlName;
 
