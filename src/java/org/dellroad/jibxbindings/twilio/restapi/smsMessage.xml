@@ -39,6 +39,8 @@
         <value name="Price" get-method="getPrice" set-method="setPrice" usage="optional"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeDoubleOrNaN"/>
         <value name="PriceUnit" get-method="getPriceUnit" set-method="setPriceUnit" usage="optional"/>
+        <value name="ErrorCode" get-method="getErrorCode" set-method="setErrorCode" usage="optional"/>
+        <value name="ErrorMessage" get-method="getErrorMessage" set-method="setErrorMessage" usage="optional"/>
         <value name="ApiVersion" get-method="getAPIVersion" set-method="setAPIVersion" enum-value-method="toString"/>
     </mapping>
 </binding>
