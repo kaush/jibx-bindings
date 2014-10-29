@@ -22,6 +22,8 @@ public class SMSMessage extends SidAccountResource implements TwilioResponseCont
     private SMSDirection direction;
     private double price;
     private String priceUnit;
+    private int errorCode;
+    private String errorMessage;
     private APIVersion apiVersion;
 
     public Date getDateSent() {
@@ -78,6 +80,20 @@ public class SMSMessage extends SidAccountResource implements TwilioResponseCont
     }
     public void setPriceUnit(String priceUnit) {
         this.priceUnit = priceUnit;
+    }
+
+    public int getErrorCode() {
+        return this.errorCode;
+    }
+    public void setErrorCode(int errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public String getErrorMessage() {
+        return this.errorMessage;
+    }
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
     }
 
     /**
