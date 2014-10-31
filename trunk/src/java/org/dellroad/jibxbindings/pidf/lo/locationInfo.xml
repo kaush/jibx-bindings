@@ -9,13 +9,20 @@
     <include path="gml/gmlObject.xml"/>
 
     <!-- We would like to say flexible="true" here but JiBX barfs, see http://jira.codehaus.org/browse/JIBX-402 -->
-    <mapping abstract="true" type-name="gp:locationInfo" class="org.dellroad.jibxbindings.pidf.lo.LocationInfo"
-      ordered="false">
+    <mapping abstract="true" type-name="gp:locationInfo" class="org.dellroad.jibxbindings.pidf.lo.LocationInfo" ordered="false">
         <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" prefix="ca"/>
+        <namespace uri="urn:ietf:params:xml:schema:geopriv:conf" prefix="conf"/>
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv:conf" prefix="xconf"/>
         <namespace uri="http://www.opengis.net/gml" prefix="gml"/>
         <structure name="civicAddress" ns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
           field="civicAddress" map-as="ca:civicAddress" usage="optional"/>
         <structure field="gmlObject" usage="optional"/>
+        <value name="confidence" ns="urn:ietf:params:xml:schema:geopriv:conf" field="confidence"
+          usage="optional" default="NaN" test-method="isConfidencePresent"/>
+
+        <!-- This is the wrong namespace but some vendors use it due to a typo in draft-thomson-geopriv-confidence-04 -->
+        <value name="confidence" ns="urn:ietf:params:xml:ns:pidf:geopriv:conf" field="confidence"
+          usage="optional" default="NaN" test-method="isConfidencePresent"/>
     </mapping>
 </binding>
 
