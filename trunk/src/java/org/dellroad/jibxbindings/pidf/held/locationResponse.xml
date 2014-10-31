@@ -6,7 +6,8 @@
   xmlns:pidf="urn:ietf:params:xml:ns:pidf">
     <include path="../presence.xml"/>
     <include path="locationUriSet.xml"/>
-    <mapping abstract="true" type-name="held:locationResponse" class="org.dellroad.jibxbindings.pidf.held.LocationResponse">
+    <mapping abstract="true" type-name="held:locationResponse" class="org.dellroad.jibxbindings.pidf.held.LocationResponse"
+      ordered="false" flexible="true">
         <namespace uri="urn:ietf:params:xml:ns:geopriv:held" default="elements" prefix="held"/>
         <structure name="locationUriSet" field="locationUriSet" map-as="held:locationUriSet" usage="optional"/>
         <structure name="presence" ns="urn:ietf:params:xml:ns:pidf" field="presence" map-as="pidf:presence" usage="optional"/>

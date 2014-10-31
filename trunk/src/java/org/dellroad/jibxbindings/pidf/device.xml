@@ -7,7 +7,7 @@
   xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10">
     <include path="langContent.xml"/>
     <include path="lo/geoPriv.xml"/>
-    <mapping abstract="true" type-name="dm:device" class="org.dellroad.jibxbindings.pidf.Device">
+    <mapping abstract="true" type-name="dm:device" class="org.dellroad.jibxbindings.pidf.Device" ordered="false" flexible="true">
         <namespace uri="urn:ietf:params:xml:ns:pidf:data-model" default="elements" prefix="dm"/>
         <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" prefix="gp"/>
         <structure name="geopriv" ns="urn:ietf:params:xml:ns:pidf:geopriv10" field="geoPriv" map-as="gp:geopriv" usage="optional"/>

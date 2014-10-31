@@ -3,7 +3,8 @@
 <!-- $Id$ -->
 <binding package="org.dellroad.jibxbindings.pidf.held" xmlns:held="urn:ietf:params:xml:ns:geopriv:held">
     <include path="locationType.xml"/>
-    <mapping abstract="true" type-name="held:locationRequest" class="org.dellroad.jibxbindings.pidf.held.LocationRequest">
+    <mapping abstract="true" type-name="held:locationRequest" class="org.dellroad.jibxbindings.pidf.held.LocationRequest"
+      ordered="false" flexible="true">
         <namespace uri="urn:ietf:params:xml:ns:geopriv:held" default="elements" prefix="held"/>
         <value name="responseTime" field="responseTime" usage="optional"/>
         <structure name="locationType" field="locationType" map-as="held:locationType" usage="optional"/>

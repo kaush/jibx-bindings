@@ -8,7 +8,8 @@
     <include path="locationInfo.xml"/>
     <include path="usageRules.xml"/>
     <include path="providedBy.xml"/>
-    <mapping abstract="true" type-name="gp:geopriv" class="org.dellroad.jibxbindings.pidf.lo.GeoPriv">
+    <mapping abstract="true" type-name="gp:geopriv" class="org.dellroad.jibxbindings.pidf.lo.GeoPriv"
+      ordered="false" flexible="true">
         <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10" default="elements" prefix="gp"/>
         <structure name="location-info" field="locationInfo" map-as="gp:locationInfo"/>
         <structure name="usage-rules" field="usageRules" map-as="gp:usageRules" usage="optional"/>

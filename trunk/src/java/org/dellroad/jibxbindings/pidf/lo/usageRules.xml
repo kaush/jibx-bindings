@@ -5,7 +5,8 @@
   xmlns:pidf="urn:ietf:params:xml:ns:pidf"
   xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10">
     <include path="../langContent.xml"/>
-    <mapping abstract="true" type-name="gp:usageRules" class="org.dellroad.jibxbindings.pidf.lo.UsageRules">
+    <mapping abstract="true" type-name="gp:usageRules" class="org.dellroad.jibxbindings.pidf.lo.UsageRules"
+      ordered="false" flexible="true">
         <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy" default="elements" prefix="bp"/>
         <value name="retransmission-allowed" field="retransmissionAllowed" usage="optional"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeBoolean"/>
