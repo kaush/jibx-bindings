@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<presence entity="pres:temp@held.ng911.lab:55603" xmlns="urn:ietf:params:xml:ns:pidf">
+  <tuple id="0a9999e0-1678-41d9-b0d2-d10a41a3e5e0">
+    <status>
+      <geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+        <location-info>
+          <civicAddress xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+            <country>US</country>
+            <A1>MA</A1>
+            <A2>BERKSHIRE COUNTY</A2>
+            <RD>1ST</RD>
+            <STS>ST</STS>
+            <HNO>18</HNO>
+            <NAM>DUNKIN DONUTS</NAM>
+            <PC>01201</PC>
+            <POBOX>01201</POBOX>
+          </civicAddress>
+        </location-info>
+        <usage-rules/>
+        <method>BUSN</method>
+        <provided-by>
+          <EmergencyCallDataValue xmlns="urn:ietf:params:xml:ns:EmergencyCallData">
+            <EmergencyCallData.ProviderInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo">
+              <DataProviderReference>KMOB</DataProviderReference>
+              <DataProviderString>blah blah</DataProviderString>
+              <ProviderID>KMOB</ProviderID>
+              <ProviderIDSeries>NENA</ProviderIDSeries>
+              <TypeOfProvider>TelecomProvider</TypeOfProvider>
+              <ContactURI>foobar@example.com</ContactURI>
+              <Language>EN</Language>
+              <DataProviderContact>
+                <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                  <fn>
+                    <text>Honest Abe</text>
+                  </fn>
+                  <n>
+                    <surname>Abe</surname>
+                    <given>Honest</given>
+                    <additional></additional>
+                    <prefix>Mr</prefix>
+                    <suffix></suffix>
+                  </n>
+                  <adr>
+                    <parameters>
+                      <type>
+                        <text>work</text>
+                      </type>
+                      <label>
+                        <text>Honest Abe
+        88 Cherry St.
+        Dublin OH
+        </text>
+                      </label>
+                    </parameters>
+                    <pobox></pobox>
+                    <ext></ext>
+                    <street>88 Cherry St.</street>
+                    <locality>Dublin</locality>
+                    <region>OH</region>
+                    <code></code>
+                    <country></country>
+                  </adr>
+                  <tel>
+                    <parameters>
+                      <type>
+                        <text>work</text>
+                        <text>voice</text>
+                      </type>
+                    </parameters>
+                    <uri>tel:614-555-4567</uri>
+                  </tel>
+                  <email>
+                    <parameters>
+                      <type>
+                        <text>work</text>
+                      </type>
+                    </parameters>
+                    <text>abe@whitehouse.gov</text>
+                  </email>
+                </vcard>
+              </DataProviderContact>
+            </EmergencyCallData.ProviderInfo>
+          </EmergencyCallDataValue>
+          </provided-by>
+        </geopriv>
+      </status>
+    </tuple>
+  </presence>

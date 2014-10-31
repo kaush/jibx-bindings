@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<!-- From https://tools.ietf.org/html/draft-ietf-ecrit-additional-data-24#page-13 -->
+<pidf:presence
+  xmlns:pidf="urn:ietf:params:xml:ns:pidf"
+  xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+  xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
+  xmlns:ad="urn:ietf:params:xml:ns:EmergencyCallData"
+  xmlns:pi="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  entity="pres:temp@held.ng911.lab:55603">
+  <pidf:tuple id="0a9999e0-1678-41d9-b0d2-d10a41a3e5e0">
+    <pidf:status>
+      <gp:geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+        <gp:location-info>
+          <ca:civicAddress>
+            <ca:country>US</ca:country>
+            <ca:A1>MA</ca:A1>
+            <ca:A2>BERKSHIRE COUNTY</ca:A2>
+            <ca:RD>1ST</ca:RD>
+            <ca:STS>ST</ca:STS>
+            <ca:HNO>18</ca:HNO>
+            <ca:NAM>DUNKIN DONUTS</ca:NAM>
+            <ca:PC>01201</ca:PC>
+            <ca:POBOX>01201</ca:POBOX>
+          </ca:civicAddress>
+        </gp:location-info>
+        <gp:usage-rules/>
+        <gp:method>BUSN</gp:method>
+        <gp:provided-by>
+          <ad:EmergencyCallDataValue>
+           <pi:EmergencyCallData.ProviderInfo>
+               <pi:DataProviderReference>string0987654321@example.org</pi:DataProviderReference>
+               <pi:DataProviderString>Example VoIP Provider</pi:DataProviderString>
+               <pi:ProviderID>urn:nena:companyid:ID123</pi:ProviderID>
+               <pi:ProviderIDSeries>NENA</pi:ProviderIDSeries>
+               <pi:TypeOfProvider>Telecom Provider</pi:TypeOfProvider>
+               <pi:ContactURI>tel:+1-201-555-0123</pi:ContactURI>
+               <pi:Language>EN</pi:Language>
+               <pi:DataProviderContact xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                   <vcard>
+                       <fn><text>Hannes Tschofenig</text></fn>
+                       <n>
+                           <surname>Hannes</surname>
+                           <given>Tschofenig</given>
+                           <additional/>
+                           <prefix/>
+                           <suffix>Dipl. Ing.</suffix>
+                       </n>
+                       <bday><date>--0203</date></bday>
+                       <anniversary>
+                           <date-time>20090808T1430-0500</date-time>
+                       </anniversary>
+                       <gender><sex>M</sex></gender>
+                       <lang>
+                           <parameters><pref><integer>1</integer></pref>
+                           </parameters>
+                           <language-tag>de</language-tag>
+                       </lang>
+                       <lang>
+                           <parameters><pref><integer>2</integer></pref>
+                           </parameters>
+                           <language-tag>en</language-tag>
+                       </lang>
+                       <org>
+                           <parameters><type><text>work</text></type>
+                           </parameters>
+                           <text>Example VoIP Provider</text>
+                       </org>
+                       <adr>
+                           <parameters>
+                               <type><text>work</text></type>
+                               <label><text>Hannes Tschofenig
+                                   Linnoitustie 6
+                                   Espoo , Finland
+                                   02600</text></label>
+                           </parameters>
+                           <pobox/>
+                           <ext/>
+                           <street>Linnoitustie 6</street>
+                           <locality>Espoo</locality>
+                           <region>Uusimaa</region>
+                           <code>02600</code>
+                           <country>Finland</country>
+                       </adr>
+                       <tel>
+                           <parameters>
+                               <type>
+                                   <text>work</text>
+                                   <text>voice</text>
+                               </type>
+                           </parameters>
+                           <uri>tel:+358 50 4871445</uri>
+                       </tel>
+                       <email>
+                           <parameters><type><text>work</text></type>
+                           </parameters>
+                           <text>hannes.tschofenig@nsn.com</text>
+                       </email>
+                       <geo>
+                           <parameters><type><text>work</text></type>
+                           </parameters>
+                           <uri>geo:60.210796,24.812924</uri>
+                       </geo>
+                       <key>
+                           <parameters><type><text>home</text></type>
+                           </parameters>
+                           <uri>
+                           http://www.tschofenig.priv.at/key.asc
+                           </uri>
+                       </key>
+                       <tz><text>Finland/Helsinki</text></tz>
+                       <url>
+                           <parameters><type><text>home</text></type>
+                           </parameters>
+                           <uri>http://www.tschofenig.priv.at</uri>
+                       </url>
+                   </vcard>
+               </pi:DataProviderContact>
+           </pi:EmergencyCallData.ProviderInfo>
+          </ad:EmergencyCallDataValue>
+        </gp:provided-by>
+      </gp:geopriv>
+    </pidf:status>
+  </pidf:tuple>
+</pidf:presence>
