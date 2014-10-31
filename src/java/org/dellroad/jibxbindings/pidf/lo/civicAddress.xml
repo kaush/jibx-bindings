@@ -3,7 +3,8 @@
 <!-- $Id$ -->
 <binding package="org.dellroad.jibxbindings.pidf.lo" xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
     <include path="caValue.xml"/>
-    <mapping abstract="true" type-name="ca:civicAddress" class="org.dellroad.jibxbindings.pidf.lo.CivicAddress" ordered="false">
+    <mapping abstract="true" type-name="ca:civicAddress" class="org.dellroad.jibxbindings.pidf.lo.CivicAddress"
+      ordered="false" flexible="true">
         <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" default="elements" prefix="ca"/>
         <value name="country" field="country" usage="optional"
           deserializer="org.dellroad.jibxbindings.pidf.lo.CivicAddress.deserializeCountry"/>
