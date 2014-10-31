@@ -2,7 +2,8 @@
 
 <!-- $Id$ -->
 <binding>
-    <mapping abstract="true" type-name="capabilities" class="org.dellroad.jibxbindings.twilio.restapi.Capabilities">
+    <mapping abstract="true" type-name="capabilities" class="org.dellroad.jibxbindings.twilio.restapi.Capabilities"
+      ordered="false" flexible="true">
         <value name="Voice" get-method="isVoice" set-method="setVoice" usage="optional"/>
         <value name="SMS" get-method="isSMS" set-method="setSMS" usage="optional"/>
     </mapping>
