@@ -1,6 +1,9 @@
 Version Next
 
-    - Add support for <ErrorCode> and <ErrorMessage> in <SMSMessage>.
+    - Add support for <ErrorCode> and <ErrorMessage> in Twilio <SMSMessage>.
+    - Add <EmergencyCallData> mappings for PIDF-LO (draft-ietf-ecrit-additional-data-24).
+    - Add support for <confidence> in PIDF-LO (draft-thomson-geopriv-confidence-04).
+    - Add marshaller/unmarshaller for xCard (vCard in XML).
 
 Version 1.0.70 Released March 20, 2014
 

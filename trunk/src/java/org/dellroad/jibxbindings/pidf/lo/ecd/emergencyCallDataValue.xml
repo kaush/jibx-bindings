@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo.ecd"
+  xmlns:ad="urn:ietf:params:xml:ns:EmergencyCallData"
+  xmlns:svc="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo"
+  xmlns:dev="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo"
+  xmlns:sub="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo"
+  xmlns:pi="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo"
+  xmlns:com="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
+    <include path="providerInfo.xml"/>
+    <include path="serviceInfo.xml"/>
+    <include path="deviceInfo.xml"/>
+    <include path="subscriberInfo.xml"/>
+    <include path="comment.xml"/>
+    <mapping abstract="true" type-name="ad:emergencyCallDataValue"
+      class="org.dellroad.jibxbindings.pidf.lo.ecd.EmergencyCallDataValue">
+        <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo" prefix="pi"/>
+        <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo" prefix="dev"/>
+        <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo" prefix="sub"/>
+        <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:Comment" prefix="com"/>
+        <collection field="providerInfos" create-type="java.util.ArrayList">
+            <structure name="EmergencyCallData.ProviderInfo" ns="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo"
+              map-as="pi:providerInfo"/>
+        </collection>
+        <collection field="serviceInfos" create-type="java.util.ArrayList">
+            <structure name="EmergencyCallData.ServiceInfo" ns="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo"
+              map-as="svc:serviceInfo"/>
+        </collection>
+        <collection field="deviceInfos" create-type="java.util.ArrayList">
+            <structure name="EmergencyCallData.DeviceInfo" ns="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo"
+              map-as="dev:deviceInfo"/>
+        </collection>
+        <collection field="subscriberInfos" create-type="java.util.ArrayList">
+            <structure name="EmergencyCallData.SubscriberInfo" ns="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo"
+              map-as="sub:subscriberInfo"/>
+        </collection>
+        <collection field="comments" create-type="java.util.ArrayList">
+            <structure name="EmergencyCallData.Comment" ns="urn:ietf:params:xml:ns:EmergencyCallData:Comment"
+              map-as="com:comment"/>
+        </collection>
+    </mapping>
+</binding>
+

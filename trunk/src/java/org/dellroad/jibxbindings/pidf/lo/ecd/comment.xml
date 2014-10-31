@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo.ecd"
+  xmlns:pidf="urn:ietf:params:xml:ns:pidf"
+  xmlns:com="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
+    <include path="../../langContent.xml"/>
+    <mapping abstract="true" type-name="com:comment" class="org.dellroad.jibxbindings.pidf.lo.ecd.Comment">
+        <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:Comment" default="elements" prefix="com"/>
+        <value name="DataProviderReference" field="dataProviderReference"/>
+        <collection field="comments" create-type="java.util.ArrayList">
+            <structure name="Comment" map-as="pidf:langContent"/>
+        </collection>
+    </mapping>
+</binding>

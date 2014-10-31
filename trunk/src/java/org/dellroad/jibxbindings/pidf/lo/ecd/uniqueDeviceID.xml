@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo.ecd"
+  xmlns:dev="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo">
+    <mapping abstract="true" type-name="dev:uniqueDeviceID" class="org.dellroad.jibxbindings.pidf.lo.ecd.UniqueDeviceID">
+        <value style="attribute" name="TypeOfDeviceID" field="typeOfDeviceID"/>
+        <value style="text" field="content"/>
+    </mapping>
+</binding>

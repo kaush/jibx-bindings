@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo.ecd"
+  xmlns:ad="urn:ietf:params:xml:ns:EmergencyCallData">
+    <mapping abstract="true" type-name="ad:emergencyCallDataReference"
+      class="org.dellroad.jibxbindings.pidf.lo.ecd.EmergencyCallDataReference">
+        <value style="attribute" name="purpose" field="purpose"/>
+        <value style="attribute" name="ref" field="ref"
+          serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
+          deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
+    </mapping>
+</binding>
