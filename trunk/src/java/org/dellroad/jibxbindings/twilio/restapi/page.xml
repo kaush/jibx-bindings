@@ -2,7 +2,7 @@
 
 <!-- $Id$ -->
 <binding>
-    <mapping abstract="true" type-name="page" class="org.dellroad.jibxbindings.twilio.restapi.Page">
+    <mapping abstract="true" type-name="page" class="org.dellroad.jibxbindings.twilio.restapi.Page" ordered="false" flexible="true">
         <value name="page" style="attribute" get-method="getPage" set-method="setPage" usage="optional"/>
         <value name="numpages" style="attribute" get-method="getNumPages" set-method="setNumPages" usage="optional"/>
         <value name="pagesize" style="attribute" get-method="getPageSize" set-method="setPageSize" usage="optional"/>
