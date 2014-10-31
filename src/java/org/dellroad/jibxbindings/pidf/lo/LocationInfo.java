@@ -16,6 +16,7 @@ public class LocationInfo {
 
     private CivicAddress civicAddress;
     private GMLObject gmlObject;
+    private float confidence = Float.NaN;
 
     public CivicAddress getCivicAddress() {
         return this.civicAddress;
@@ -29,6 +30,19 @@ public class LocationInfo {
     }
     public void setGMLObject(GMLObject gmlObject) {
         this.gmlObject = gmlObject;
+    }
+
+    public float getConfidence() {
+        return this.confidence;
+    }
+    public void setConfidence(float confidence) {
+        this.confidence = confidence;
+    }
+
+    // JiBX
+
+    public boolean isConfidencePresent() {
+        return !Float.isNaN(this.confidence);
     }
 }
 
