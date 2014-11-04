@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<presence
+  entity="pres:temp@held.ng911.lab:55603"
+  xmlns:conf="urn:ietf:params:xml:ns:geopriv:conf"
+  xmlns="urn:ietf:params:xml:ns:pidf">
+  <tuple id="0a9999e0-1678-41d9-b0d2-d10a41a3e5e0">
+    <status>
+      <geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+        <location-info>
+          <civicAddress xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+            <country>US</country>
+            <A1>MA</A1>
+            <A2>BERKSHIRE COUNTY</A2>
+            <RD>1ST</RD>
+            <STS>ST</STS>
+            <HNO>18</HNO>
+            <NAM>DUNKIN DONUTS</NAM>
+            <PC>01201</PC>
+            <POBOX>01201</POBOX>
+          </civicAddress>
+          <conf:confidence pdf="rectangular">67</conf:confidence>
+        </location-info>
+        <usage-rules/>
+        <method>BUSN</method>
+      </geopriv>
+    </status>
+  </tuple>
+</presence>

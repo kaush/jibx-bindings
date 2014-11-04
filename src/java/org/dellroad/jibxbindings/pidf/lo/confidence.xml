@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- $Id$ -->
+<binding package="org.dellroad.jibxbindings.pidf.lo"
+  xmlns:conf="urn:ietf:params:xml:ns:geopriv:conf">
+    <mapping abstract="true" type-name="conf:confidence" class="org.dellroad.jibxbindings.pidf.lo.Confidence">
+        <namespace uri="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" prefix="ca"/>
+        <value style="attribute" name="pdf" field="probabilityDensityFunction" usage="optional" enum-value-method="getXMLValue"/>
+        <value style="text" field="value"
+          serializer="org.dellroad.jibxbindings.pidf.lo.Confidence.serializeConfidenceValue"
+          deserializer="org.dellroad.jibxbindings.pidf.lo.Confidence.deserializeConfidenceValue"/>
+    </mapping>
+</binding>
+
