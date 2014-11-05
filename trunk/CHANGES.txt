@@ -1,4 +1,4 @@
-Version 1.0.84 Released November 5, 2014
+Version 1.0.88 Released November 5, 2014
 
     - Add support for <ErrorCode> and <ErrorMessage> in Twilio <SMSMessage>.
     - Add <EmergencyCallData> mappings for PIDF-LO (draft-ietf-ecrit-additional-data-24).
