@@ -1,6 +1,14 @@
 #summary Where to download jibx-bindings
 
-You can download *jibx-bindings* here:
+You can download *jibx-bindings* version *1.0.88* here:
+  * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-core-1.0.88.jar jibx-bindings-core-1.0.88.jar]
+  * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-twilio-1.0.88.jar jibx-bindings-twilio-1.0.88.jar]
+  * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-pidf-1.0.88.jar jibx-bindings-pidf-1.0.88.jar]
+  * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-vcard-1.0.88.jar jibx-bindings-vcard-1.0.88.jar]
+  * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-sources-1.0.88.zip jibx-bindings-sources-1.0.88.zip]
+  * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-javadocs-1.0.88.zip jibx-bindings-javadocs-1.0.88.zip]
+
+You can download *jibx-bindings* version *1.0.70* here:
   * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-core-1.0.70.jar jibx-bindings-core-1.0.70.jar]
   * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-twilio-1.0.70.jar jibx-bindings-twilio-1.0.70.jar]
   * [https://s3.amazonaws.com/archie-public/jibx-bindings/jibx-bindings-pidf-1.0.70.jar jibx-bindings-pidf-1.0.70.jar]
