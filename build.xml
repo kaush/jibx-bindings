@@ -90,7 +90,7 @@
         </jar>
 
         <!-- Module JARs -->
-        <antcontrib:for list="pidf,twilio" param="module">
+        <antcontrib:for list="pidf,twilio,vcard" param="module">
             <sequential>
                 <jar destfile="build/dist/${ant.project.name}-@{module}-${full.version}.jar">
                     <fileset dir="build/classes" includes="org/dellroad/jibxbindings/@{module}/**/*"/>
@@ -113,15 +113,6 @@
         <property name="jars.completed" value="true"/>
     </target>
 
-    <!-- Macro to build the JARs for a single module -->
-    <macrodef uri="urn:org.dellroad.ant" name="jars">
-        <attribute name="name" description="Binding module name"/>
-        <attribute name="packagedir" description="Java package subdirectory"/>
-        <sequential>
-
-        </sequential>
-    </macrodef>
-
     <!-- Build Javadocs -->
     <target name="javadoc" depends="javac">
         <delete dir="build/javadoc"/>
@@ -137,8 +128,9 @@
                 <pathelement path="build/classes"/>
             </additional-classpath>
             <links>
-                <link href="http://docs.oracle.com/javase/6/docs/api/"/>
+                <link href="http://docs.oracle.com/javase/7/docs/api/"/>
                 <link href="http://jibx.sourceforge.net/api/"/>
+                <link href="https://ez-vcard.googlecode.com/svn/javadocs/latest/"/>
             </links>
         </dellroad:javadoc>
     </target>
