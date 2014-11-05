@@ -45,6 +45,10 @@
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CivicAddress.java">
 </file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/Confidence.java">
+<error line="43" column="49" severity="info" message="&apos;100.0f&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="56" column="49" severity="info" message="&apos;100.0f&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/GeoPriv.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/LocationInfo.java">
@@ -52,6 +56,26 @@
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ProvidedBy.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/UsageRules.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/Comment.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/DeviceInfo.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/EmergencyCallDataReference.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/EmergencyCallDataValue.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/ProviderInfo.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/ServiceInfo.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/SubcontractorPriority.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/SubscriberInfo.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/UniqueDeviceID.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/package-info.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/AbstractGMLObjectSwitch.java">
 </file>
@@ -245,6 +269,10 @@
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/twilio/twiml/package-info.java">
 </file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/vcard/VCardMarshaller.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/vcard/package-info.java">
+</file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/ParseTestSupport.java">
 <error line="107" column="24" severity="info" message="&apos;4&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
@@ -270,6 +298,12 @@
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/held/LocationResponseTest.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/held/package-info.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/lo/ecd/ECDParseTest.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/lo/ecd/package-info.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/lo/package-info.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/test/org/dellroad/jibxbindings/pidf/package-info.java">
 </file>
