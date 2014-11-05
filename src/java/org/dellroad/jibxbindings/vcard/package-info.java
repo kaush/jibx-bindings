@@ -10,7 +10,7 @@
  *
  * @see <a href="https://ez-vcard.googlecode.com">The EZ-vCard Project</a>
  * @see <a href="https://tools.ietf.org/html/rfc6351">RFC 6351</a>
- * @see VCardMarshaller
+ * @see org.dellroad.jibxbindings.vcard.VCardMarshaller
  */
 package org.dellroad.jibxbindings.vcard;
 
