@@ -26,6 +26,7 @@ import ezvcard.io.xml.XCardDocument;
  * JiBX marshaller/unmarshaller for a single {@link VCard}.
  *
  * @see <a href="https://ez-vcard.googlecode.com">The EZ-vCard Project</a>
+ * @see <a href="https://tools.ietf.org/html/rfc6351">RFC 6351</a>
  */
 public class VCardMarshaller extends DomElementMapper {
 
