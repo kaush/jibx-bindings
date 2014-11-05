@@ -15,12 +15,43 @@
 <span class="sourceLineNo">007</span><a name="line.7"></a>
 <span class="sourceLineNo">008</span>package org.dellroad.jibxbindings.pidf.lo;<a name="line.8"></a>
 <span class="sourceLineNo">009</span><a name="line.9"></a>
-<span class="sourceLineNo">010</span>/**<a name="line.10"></a>
-<span class="sourceLineNo">011</span> * The {@code &lt;gp:provided-by&gt;} element as defined in RFC 4119.<a name="line.11"></a>
-<span class="sourceLineNo">012</span> */<a name="line.12"></a>
-<span class="sourceLineNo">013</span>public class ProvidedBy {<a name="line.13"></a>
-<span class="sourceLineNo">014</span>}<a name="line.14"></a>
+<span class="sourceLineNo">010</span>import java.util.ArrayList;<a name="line.10"></a>
+<span class="sourceLineNo">011</span>import java.util.List;<a name="line.11"></a>
+<span class="sourceLineNo">012</span><a name="line.12"></a>
+<span class="sourceLineNo">013</span>import org.dellroad.jibxbindings.pidf.lo.ecd.EmergencyCallDataReference;<a name="line.13"></a>
+<span class="sourceLineNo">014</span>import org.dellroad.jibxbindings.pidf.lo.ecd.EmergencyCallDataValue;<a name="line.14"></a>
 <span class="sourceLineNo">015</span><a name="line.15"></a>
+<span class="sourceLineNo">016</span>/**<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * The {@code &lt;gp:provided-by&gt;} element as defined in RFC 4119.<a name="line.17"></a>
+<span class="sourceLineNo">018</span> */<a name="line.18"></a>
+<span class="sourceLineNo">019</span>public class ProvidedBy {<a name="line.19"></a>
+<span class="sourceLineNo">020</span><a name="line.20"></a>
+<span class="sourceLineNo">021</span>    private String dataProviderReference;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>    private List&lt;EmergencyCallDataReference&gt; references = new ArrayList&lt;&gt;();<a name="line.22"></a>
+<span class="sourceLineNo">023</span>    private List&lt;EmergencyCallDataValue&gt; values = new ArrayList&lt;&gt;();<a name="line.23"></a>
+<span class="sourceLineNo">024</span><a name="line.24"></a>
+<span class="sourceLineNo">025</span>    public String getDataProviderReference() {<a name="line.25"></a>
+<span class="sourceLineNo">026</span>        return this.dataProviderReference;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>    }<a name="line.27"></a>
+<span class="sourceLineNo">028</span>    public void setDataProviderReference(String dataProviderReference) {<a name="line.28"></a>
+<span class="sourceLineNo">029</span>        this.dataProviderReference = dataProviderReference;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>    }<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span>    public List&lt;EmergencyCallDataReference&gt; getReferences() {<a name="line.32"></a>
+<span class="sourceLineNo">033</span>        return this.references;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>    }<a name="line.34"></a>
+<span class="sourceLineNo">035</span>    public void setReferences(List&lt;EmergencyCallDataReference&gt; references) {<a name="line.35"></a>
+<span class="sourceLineNo">036</span>        this.references = references;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>    }<a name="line.37"></a>
+<span class="sourceLineNo">038</span><a name="line.38"></a>
+<span class="sourceLineNo">039</span>    public List&lt;EmergencyCallDataValue&gt; getValues() {<a name="line.39"></a>
+<span class="sourceLineNo">040</span>        return this.values;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>    }<a name="line.41"></a>
+<span class="sourceLineNo">042</span>    public void setValues(List&lt;EmergencyCallDataValue&gt; values) {<a name="line.42"></a>
+<span class="sourceLineNo">043</span>        this.values = values;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    }<a name="line.44"></a>
+<span class="sourceLineNo">045</span>}<a name="line.45"></a>
+<span class="sourceLineNo">046</span><a name="line.46"></a>
 
 
 
