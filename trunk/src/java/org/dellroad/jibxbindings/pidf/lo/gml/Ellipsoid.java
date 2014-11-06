@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML ellipsoid.
  */
@@ -17,6 +19,19 @@ public class Ellipsoid extends Solid {
     private Measure semiMinorAxis;
     private Measure verticalAxis;
     private Measure orientation;
+
+    public Ellipsoid() {
+    }
+
+    public Ellipsoid(String gid, URI srsName, int srsDimension,
+      double[] center, Measure semiMajorAxis, Measure semiMinorAxis, Measure verticalAxis, Measure orientation) {
+        super(gid, srsName, srsDimension);
+        this.setCenter(center);
+        this.setSemiMajorAxis(semiMajorAxis);
+        this.setSemiMinorAxis(semiMinorAxis);
+        this.setVerticalAxis(verticalAxis);
+        this.setOrientation(orientation);
+    }
 
     /**
      * The center of the ellipsoid.

@@ -9,6 +9,7 @@ package org.dellroad.jibxbindings.pidf.lo.ecd;
 
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import ezvcard.VCard;
@@ -16,9 +17,8 @@ import ezvcard.VCard;
 /**
  * The {@code <pi:EmergencyCallData.ProviderInfo>} element.
  */
-public class ProviderInfo {
+public class ProviderInfo extends AbstractDataProviderReferencing {
 
-    private String dataProviderReference;                   // mandatory
     private String dataProviderString;                      // mandatory
     private String providerId;
     private String providerIdSeries;
@@ -29,11 +29,13 @@ public class ProviderInfo {
     private String subcontratorPrincipal;
     private SubcontractorPriority subcontratorPriority;
 
-    public String getDataProviderReference() {
-        return this.dataProviderReference;
+    public ProviderInfo() {
     }
-    public void setDataProviderReference(String dataProviderReference) {
-        this.dataProviderReference = dataProviderReference;
+
+    public ProviderInfo(String dataProviderReference, URI contactURI, String... languages) {
+        super(dataProviderReference);
+        this.setContactURI(contactURI);
+        this.languages.addAll(Arrays.asList(languages));
     }
 
     public String getDataProviderString() {
@@ -41,6 +43,13 @@ public class ProviderInfo {
     }
     public void setDataProviderString(String dataProviderString) {
         this.dataProviderString = dataProviderString;
+    }
+
+    public String getProviderId() {
+        return this.providerId;
+    }
+    public void setProviderId(String providerId) {
+        this.providerId = providerId;
     }
 
     public String getProviderIdSeries() {

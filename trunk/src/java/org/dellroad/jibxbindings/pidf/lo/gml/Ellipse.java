@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML ellipse.
  */
@@ -16,6 +18,18 @@ public class Ellipse extends Surface {
     private Measure semiMajorAxis;
     private Measure semiMinorAxis;
     private Measure orientation;
+
+    public Ellipse() {
+    }
+
+    public Ellipse(String gid, URI srsName, int srsDimension,
+      double[] center, Measure semiMajorAxis, Measure semiMinorAxis, Measure orientation) {
+        super(gid, srsName, srsDimension);
+        this.setCenter(center);
+        this.setSemiMajorAxis(semiMajorAxis);
+        this.setSemiMinorAxis(semiMinorAxis);
+        this.setOrientation(orientation);
+    }
 
     /**
      * The center of the ellipse.

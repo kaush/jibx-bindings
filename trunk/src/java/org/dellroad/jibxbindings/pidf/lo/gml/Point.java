@@ -14,6 +14,13 @@ public class Point extends GeometricPrimitive {
 
     private double[] pos;
 
+    public Point() {
+    }
+
+    public Point(double[] pos) {
+        this.setPos(pos);
+    }
+
     /**
      * The {@code pos} element.
      */

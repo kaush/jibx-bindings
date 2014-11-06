@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML arc band.
  */
@@ -17,6 +19,19 @@ public class ArcBand extends Surface {
     private Measure outerRadius;
     private Measure startAngle;
     private Measure openingAngle;
+
+    public ArcBand() {
+    }
+
+    public ArcBand(String gid, URI srsName, int srsDimension,
+      double[] center, Measure innerRadius, Measure outerRadius, Measure startAngle, Measure openingAngle) {
+        super(gid, srsName, srsDimension);
+        this.setCenter(center);
+        this.setInnerRadius(innerRadius);
+        this.setOuterRadius(outerRadius);
+        this.setStartAngle(startAngle);
+        this.setOpeningAngle(openingAngle);
+    }
 
     /**
      * The center of the arc band.

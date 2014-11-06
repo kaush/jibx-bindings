@@ -7,12 +7,22 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML polygon.
  */
 public class Polygon extends Surface {
 
     private LinearRing exterior;
+
+    public Polygon() {
+    }
+
+    public Polygon(String gid, URI srsName, int srsDimension, LinearRing exterior) {
+        super(gid, srsName, srsDimension);
+        this.setExterior(exterior);
+    }
 
     /**
      * The polygon's {@code <gml:exterior>}.

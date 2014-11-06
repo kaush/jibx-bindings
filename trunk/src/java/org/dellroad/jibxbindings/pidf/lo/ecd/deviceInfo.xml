@@ -6,7 +6,7 @@
     <include path="uniqueDeviceID.xml"/>
     <mapping abstract="true" type-name="dev:deviceInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.DeviceInfo">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo" default="elements" prefix="dev"/>
-        <value name="DataProviderReference" field="dataProviderReference"/>
+        <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
         <value name="DeviceClassification" field="deviceClassification" usage="optional"/>
         <value name="DeviceMfgr" field="deviceMfgr" usage="optional"/>
         <value name="DeviceModelNr" field="deviceModelNr" usage="optional"/>

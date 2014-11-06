@@ -13,9 +13,8 @@ import java.util.List;
 /**
  * The {@code <dev:EmergencyCallData.DeviceInfo>} element.
  */
-public class DeviceInfo {
+public class DeviceInfo extends AbstractDataProviderReferencing {
 
-    private String dataProviderReference;                   // mandatory
     private String deviceClassification;
     private String deviceMfgr;
     private String deviceModelNr;
@@ -23,11 +22,11 @@ public class DeviceInfo {
     private String deviceSpecificData;
     private String deviceSpecificType;
 
-    public String getDataProviderReference() {
-        return this.dataProviderReference;
+    public DeviceInfo() {
     }
-    public void setDataProviderReference(String dataProviderReference) {
-        this.dataProviderReference = dataProviderReference;
+
+    public DeviceInfo(String dataProviderReference) {
+        super(dataProviderReference);
     }
 
     public String getDeviceClassification() {

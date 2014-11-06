@@ -6,7 +6,7 @@
     <mapping abstract="true" type-name="pi:providerInfo" class="org.dellroad.jibxbindings.pidf.lo.ecd.ProviderInfo">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo" default="elements" prefix="pi"/>
         <namespace uri="urn:ietf:params:xml:ns:vcard-4.0" prefix="vc"/>
-        <value name="DataProviderReference" field="dataProviderReference"/>
+        <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
         <value name="DataProviderString" field="dataProviderString"/>
         <value name="ProviderID" field="providerId" usage="optional"/>
         <value name="ProviderIDSeries" field="providerIdSeries" usage="optional"/>

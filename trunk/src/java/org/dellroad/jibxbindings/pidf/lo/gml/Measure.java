@@ -17,6 +17,14 @@ public class Measure {
     private URI uom;
     private double value;
 
+    public Measure() {
+    }
+
+    public Measure(URI uom, double value) {
+        this.setUOM(uom);
+        this.setValue(value);
+    }
+
     /**
      * The measure's Unit of Measurement (UOM).
      *

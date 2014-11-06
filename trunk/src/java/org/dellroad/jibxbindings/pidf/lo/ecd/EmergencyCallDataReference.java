@@ -17,6 +17,14 @@ public class EmergencyCallDataReference {
     private String purpose;                     // mandatory
     private URI ref;                            // mandatory
 
+    public EmergencyCallDataReference() {
+    }
+
+    public EmergencyCallDataReference(String purpose, URI ref) {
+        this.setPurpose(purpose);
+        this.setRef(ref);
+    }
+
     public String getPurpose() {
         return this.purpose;
     }

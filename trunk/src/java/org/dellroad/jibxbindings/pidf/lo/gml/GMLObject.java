@@ -17,6 +17,10 @@ public abstract class GMLObject {
     protected GMLObject() {
     }
 
+    protected GMLObject(String gmlId) {
+        this.setGMLId(gmlId);
+    }
+
     /**
      * The id from the {@code gml:id} attribute.
      */

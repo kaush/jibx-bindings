@@ -12,24 +12,25 @@ import ezvcard.VCard;
 /**
  * The {@code <pi:EmergencyCallData.SubscriberInfo>} element.
  */
-public class SubscriberInfo {
+public class SubscriberInfo extends AbstractDataProviderReferencing {
 
     private boolean privacyRequested;                       // mandatory
-    private String dataProviderReference;                   // mandatory
     private VCard subscriberData;
+
+    public SubscriberInfo() {
+    }
+
+    public SubscriberInfo(String dataProviderReference, boolean privacyRequested, VCard subscriberData) {
+        super(dataProviderReference);
+        this.setPrivacyRequested(privacyRequested);
+        this.setSubscriberData(subscriberData);
+    }
 
     public boolean isPrivacyRequested() {
         return this.privacyRequested;
     }
     public void setPrivacyRequested(boolean privacyRequested) {
         this.privacyRequested = privacyRequested;
-    }
-
-    public String getDataProviderReference() {
-        return this.dataProviderReference;
-    }
-    public void setDataProviderReference(String dataProviderReference) {
-        this.dataProviderReference = dataProviderReference;
     }
 
     public VCard getSubscriberData() {
