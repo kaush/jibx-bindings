@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML {@code <point>} objects.
  */
@@ -17,7 +19,8 @@ public class Point extends GeometricPrimitive {
     public Point() {
     }
 
-    public Point(double[] pos) {
+    public Point(String gid, URI srsName, int srsDimension, double[] pos) {
+        super(gid, srsName, srsDimension);
         this.setPos(pos);
     }
 
