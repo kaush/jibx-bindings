@@ -21,6 +21,14 @@ public class Confidence {
     private ProbabilityDensityFunction probabilityDensityFunction = ProbabilityDensityFunction.UNKNOWN;
     private float value = Float.NaN;
 
+    public Confidence() {
+    }
+
+    public Confidence(ProbabilityDensityFunction probabilityDensityFunction, float value) {
+        this.setProbabilityDensityFunction(probabilityDensityFunction);
+        this.setValue(value);
+    }
+
     public ProbabilityDensityFunction getProbabilityDensityFunction() {
         return this.probabilityDensityFunction;
     }
