@@ -25,6 +25,12 @@ public abstract class Geometry extends GMLObject {
     protected Geometry() {
     }
 
+    protected Geometry(String gid, URI srsName, int srsDimension) {
+        this.setGid(gid);
+        this.setSrsName(srsName);
+        this.setSrsDimension(srsDimension);
+    }
+
     /**
      * The {@code gid} attribute.
      */

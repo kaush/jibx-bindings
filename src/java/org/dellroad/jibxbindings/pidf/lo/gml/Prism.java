@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML prism.
  */
@@ -14,6 +16,15 @@ public class Prism extends Solid {
 
     private Surface base;
     private Measure height;
+
+    public Prism() {
+    }
+
+    public Prism(String gid, URI srsName, int srsDimension, Surface base, Measure height) {
+        super(gid, srsName, srsDimension);
+        this.setBase(base);
+        this.setHeight(height);
+    }
 
     /**
      * The prism's {@code <gs:base>}.

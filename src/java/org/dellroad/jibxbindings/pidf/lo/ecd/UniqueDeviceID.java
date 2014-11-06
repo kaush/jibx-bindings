@@ -15,6 +15,14 @@ public class UniqueDeviceID {
     private String typeOfDeviceID;                      // mandatory
     private String content;
 
+    public UniqueDeviceID() {
+    }
+
+    public UniqueDeviceID(String typeOfDeviceID, String content) {
+        this.setTypeOfDeviceID(typeOfDeviceID);
+        this.setContent(content);
+    }
+
     public String getTypeOfDeviceID() {
         return this.typeOfDeviceID;
     }

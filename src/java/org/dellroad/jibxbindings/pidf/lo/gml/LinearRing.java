@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML linear ring.
  *
@@ -16,6 +18,14 @@ package org.dellroad.jibxbindings.pidf.lo.gml;
 public class LinearRing extends Geometry {
 
     private double[] posList;
+
+    public LinearRing() {
+    }
+
+    public LinearRing(String gid, URI srsName, int srsDimension, double[] posList) {
+        super(gid, srsName, srsDimension);
+        this.setPosList(posList);
+    }
 
     /**
      * The {@code posList} element.

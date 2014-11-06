@@ -8,7 +8,7 @@
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo" default="elements" prefix="sub"/>
         <namespace uri="urn:ietf:params:xml:ns:vcard-4.0" prefix="vc"/>
         <value style="attribute" name="privacyRequested" field="privacyRequested"/>
-        <value name="DataProviderReference" field="dataProviderReference"/>
+        <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
         <structure name="SubscriberData" usage="optional" test-method="hasSubscriberData">
             <structure name="vcard" field="subscriberData" ns="urn:ietf:params:xml:ns:vcard-4.0"
               marshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"

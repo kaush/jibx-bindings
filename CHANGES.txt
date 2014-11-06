@@ -1,3 +1,9 @@
+
+Version Next
+
+    - Add missing methods ProviderInfo.{g,s}etProviderId()
+    - Add more constructors to PIDF classes
+
 Version 1.0.88 Released November 5, 2014
 
     - Add support for <ErrorCode> and <ErrorMessage> in Twilio <SMSMessage>.

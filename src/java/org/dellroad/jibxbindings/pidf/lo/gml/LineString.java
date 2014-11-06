@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML LineStrings.
  *
@@ -16,6 +18,14 @@ package org.dellroad.jibxbindings.pidf.lo.gml;
 public class LineString extends Curve {
 
     private double[] posList;
+
+    public LineString() {
+    }
+
+    public LineString(String gid, URI srsName, int srsDimension, double[] posList) {
+        super(gid, srsName, srsDimension);
+        this.setPosList(posList);
+    }
 
     /**
      * The {@code posList} element.

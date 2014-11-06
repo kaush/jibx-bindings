@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.gml;
 
+import java.net.URI;
+
 /**
  * GML circle.
  */
@@ -14,6 +16,15 @@ public class Circle extends Surface {
 
     private double[] center;
     private Measure radius;
+
+    public Circle() {
+    }
+
+    public Circle(String gid, URI srsName, int srsDimension, double[] center, Measure radius) {
+        super(gid, srsName, srsDimension);
+        this.setCenter(center);
+        this.setRadius(radius);
+    }
 
     /**
      * The center of the circle.
