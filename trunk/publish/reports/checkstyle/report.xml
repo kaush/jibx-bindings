@@ -44,10 +44,11 @@
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CAValue.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/CivicAddress.java">
+<error line="283" column="5" severity="info" message="Executable statement count is 34 (max allowed is 30)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheck"/>
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/Confidence.java">
-<error line="43" column="49" severity="info" message="&apos;100.0f&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="56" column="49" severity="info" message="&apos;100.0f&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="51" column="49" severity="info" message="&apos;100.0f&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="64" column="49" severity="info" message="&apos;100.0f&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/GeoPriv.java">
 </file>
@@ -56,6 +57,8 @@
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ProvidedBy.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/UsageRules.java">
+</file>
+<file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/AbstractDataProviderReferencing.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/ecd/Comment.java">
 </file>
@@ -80,6 +83,7 @@
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/AbstractGMLObjectSwitch.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/ArcBand.java">
+<error line="26" column="12" severity="info" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Circle.java">
 </file>
@@ -90,6 +94,7 @@
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipse.java">
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/Ellipsoid.java">
+<error line="26" column="12" severity="info" message="More than 7 parameters (found 8)." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
 </file>
 <file name="/Users/archie/proj/jibx-bindings/trunk/src/java/org/dellroad/jibxbindings/pidf/lo/gml/GMLObject.java">
 </file>
