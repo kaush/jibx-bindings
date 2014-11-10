@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.dellroad.jibxbindings.vcard.VCardMarshaller;
+
 import ezvcard.VCard;
 
 /**
@@ -105,6 +107,16 @@ public class ProviderInfo extends AbstractDataProviderReferencing {
 
     public boolean hasDataProviderContact() {
         return this.getDataProviderContact() != null;
+    }
+
+// Cloneable
+
+    @Override
+    public ProviderInfo clone() {
+        final ProviderInfo clone = (ProviderInfo)super.clone();
+        clone.languages = this.languages != null ? new ArrayList<>(this.languages) : null;
+        clone.dataProviderContact = this.dataProviderContact != null ? VCardMarshaller.clone(this.dataProviderContact) : null;
+        return clone;
     }
 }
 

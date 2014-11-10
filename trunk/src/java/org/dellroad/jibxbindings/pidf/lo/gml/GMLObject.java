@@ -10,7 +10,7 @@ package org.dellroad.jibxbindings.pidf.lo.gml;
 /**
  * Superclass for GML objects.
  */
-public abstract class GMLObject {
+public abstract class GMLObject implements Cloneable {
 
     private String gmlId;
 
@@ -35,5 +35,16 @@ public abstract class GMLObject {
      * Apply {@link GMLObjectSwitch} visitor pattern.
      */
     public abstract void visit(GMLObjectSwitch gmlObjectSwitch);
+
+// Cloneable
+
+    @Override
+    public GMLObject clone() {
+        try {
+            return (GMLObject)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
 

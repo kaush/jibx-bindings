@@ -41,5 +41,14 @@ public class LinearRing extends Geometry {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.caseLinearRing(this);
     }
+
+// Cloneable
+
+    @Override
+    public LinearRing clone() {
+        final LinearRing clone = (LinearRing)super.clone();
+        clone.posList = this.posList != null ? this.posList.clone() : null;
+        return clone;
+    }
 }
 

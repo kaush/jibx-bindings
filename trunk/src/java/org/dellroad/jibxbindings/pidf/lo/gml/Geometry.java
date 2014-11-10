@@ -80,5 +80,15 @@ public abstract class Geometry extends GMLObject {
     public void setUomLabels(List<String> uomLabels) {
         this.uomLabels = uomLabels;
     }
+
+// Cloneable
+
+    @Override
+    public Geometry clone() {
+        final Geometry clone = (Geometry)super.clone();
+        clone.axisLabels = this.axisLabels != null ? new ArrayList<>(this.axisLabels) : null;
+        clone.uomLabels = this.uomLabels != null ? new ArrayList<>(this.uomLabels) : null;
+        return clone;
+    }
 }
 

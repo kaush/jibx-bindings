@@ -12,7 +12,7 @@ import org.dellroad.jibxbindings.pidf.Presence;
 /**
  * The {@code <held:locationResponse>} XML element.
  */
-public class LocationResponse {
+public class LocationResponse implements Cloneable {
 
     private LocationUriSet locationUriSet;
     private Presence presence;
@@ -29,6 +29,21 @@ public class LocationResponse {
     }
     public void setPresence(Presence presence) {
         this.presence = presence;
+    }
+
+// Cloneable
+
+    @Override
+    public LocationResponse clone() {
+        final LocationResponse clone;
+        try {
+            clone = (LocationResponse)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.locationUriSet = this.locationUriSet != null ? this.locationUriSet.clone() : null;
+        clone.presence = this.presence != null ? this.presence.clone() : null;
+        return clone;
     }
 }
 

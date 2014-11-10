@@ -14,7 +14,7 @@ import org.jibx.runtime.JiBXParseException;
  *
  * @see <a href="https://datatracker.ietf.org/doc/draft-ietf-geopriv-uncertainty/?include_text=1">Representation of Uncertainty and Confidence in PIDF-LO</a>
  */
-public class Confidence {
+public class Confidence implements Cloneable {
 
     public static final String UNKNOWN_VALUE = "unknown";
 
@@ -64,6 +64,19 @@ public class Confidence {
         value = Math.min(Math.max(value, 0.0f), 100.0f);
         return value;
     }
+
+// Cloneable
+
+    @Override
+    public Confidence clone() {
+        try {
+            return (Confidence)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+// ProbabilityDensityFunction
 
     /**
      * Indicates probability density function associated with a {@link Confidence} value.

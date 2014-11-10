@@ -56,5 +56,20 @@ public class Person implements Component {
     public void visit(ComponentSwitch componentSwitch) {
         componentSwitch.casePerson(this);
     }
+
+// Cloneable
+
+    @Override
+    public Person clone() {
+        final Person clone;
+        try {
+            clone = (Person)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.geoPriv = this.geoPriv != null ? this.geoPriv.clone() : null;
+        clone.note = this.note != null ? this.note.clone() : null;
+        return clone;
+    }
 }
 

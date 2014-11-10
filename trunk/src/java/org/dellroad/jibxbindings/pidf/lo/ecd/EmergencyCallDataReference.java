@@ -12,7 +12,7 @@ import java.net.URI;
 /**
  * The {@code <ad:EmergencyCallDataReference>} element.
  */
-public class EmergencyCallDataReference {
+public class EmergencyCallDataReference implements Cloneable {
 
     private String purpose;                     // mandatory
     private URI ref;                            // mandatory
@@ -37,6 +37,17 @@ public class EmergencyCallDataReference {
     }
     public void setRef(URI ref) {
         this.ref = ref;
+    }
+
+// Cloneable
+
+    @Override
+    public EmergencyCallDataReference clone() {
+        try {
+            return (EmergencyCallDataReference)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

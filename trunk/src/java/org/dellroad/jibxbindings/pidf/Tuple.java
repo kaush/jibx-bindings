@@ -68,5 +68,25 @@ public class Tuple implements Component {
     public void visit(ComponentSwitch componentSwitch) {
         componentSwitch.caseTuple(this);
     }
+
+// Cloneable
+
+    @Override
+    public Tuple clone() {
+        final Tuple clone;
+        try {
+            clone = (Tuple)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.status = this.status != null ? this.status.clone() : null;
+        clone.contact = this.contact != null ? this.contact.clone() : null;
+        if (this.notes != null) {
+            clone.notes = new ArrayList<>(this.notes.size());
+            for (LangContent note : this.notes)
+                clone.notes.add(note.clone());
+        }
+        return clone;
+    }
 }
 

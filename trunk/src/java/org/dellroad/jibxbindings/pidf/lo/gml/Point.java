@@ -38,5 +38,14 @@ public class Point extends GeometricPrimitive {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.casePoint(this);
     }
+
+// Cloneable
+
+    @Override
+    public Point clone() {
+        final Point clone = (Point)super.clone();
+        clone.pos = this.pos != null ? this.pos.clone() : null;
+        return clone;
+    }
 }
 

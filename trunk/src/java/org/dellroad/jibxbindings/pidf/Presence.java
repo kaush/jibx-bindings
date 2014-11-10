@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Top level element in the Presence Information Data Format (PIDF).
  */
-public class Presence {
+public class Presence implements Cloneable {
 
     private URI entity;
     private List<Component> components = new ArrayList<Component>();
@@ -39,6 +39,29 @@ public class Presence {
     }
     public void setNotes(List<LangContent> notes) {
         this.notes = notes;
+    }
+
+// Cloneable
+
+    @Override
+    public Presence clone() {
+        final Presence clone;
+        try {
+            clone = (Presence)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        if (this.components != null) {
+            clone.components = new ArrayList<>(this.components.size());
+            for (Component component : this.components)
+                clone.components.add(component.clone());
+        }
+        if (this.notes != null) {
+            clone.notes = new ArrayList<>(this.notes.size());
+            for (LangContent note : this.notes)
+                clone.notes.add(note.clone());
+        }
+        return clone;
     }
 }
 

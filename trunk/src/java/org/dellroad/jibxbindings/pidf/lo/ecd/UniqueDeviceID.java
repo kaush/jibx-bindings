@@ -10,7 +10,7 @@ package org.dellroad.jibxbindings.pidf.lo.ecd;
 /**
  * The {@code <dev:UniqueDeviceID>} element.
  */
-public class UniqueDeviceID {
+public class UniqueDeviceID implements Cloneable {
 
     private String typeOfDeviceID;                      // mandatory
     private String content;
@@ -35,6 +35,17 @@ public class UniqueDeviceID {
     }
     public void setContent(String content) {
         this.content = content;
+    }
+
+// Cloneable
+
+    @Override
+    public UniqueDeviceID clone() {
+        try {
+            return (UniqueDeviceID)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

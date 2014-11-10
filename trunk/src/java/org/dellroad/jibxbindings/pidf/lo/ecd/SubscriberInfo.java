@@ -7,6 +7,8 @@
 
 package org.dellroad.jibxbindings.pidf.lo.ecd;
 
+import org.dellroad.jibxbindings.vcard.VCardMarshaller;
+
 import ezvcard.VCard;
 
 /**
@@ -44,6 +46,15 @@ public class SubscriberInfo extends AbstractDataProviderReferencing {
 
     public boolean hasSubscriberData() {
         return this.getSubscriberData() != null;
+    }
+
+// Cloneable
+
+    @Override
+    public SubscriberInfo clone() {
+        final SubscriberInfo clone = (SubscriberInfo)super.clone();
+        clone.subscriberData = this.subscriberData != null ? VCardMarshaller.clone(this.subscriberData) : null;
+        return clone;
     }
 }
 

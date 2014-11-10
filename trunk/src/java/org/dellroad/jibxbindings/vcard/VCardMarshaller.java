@@ -85,5 +85,30 @@ public class VCardMarshaller extends DomElementMapper {
             throw new RuntimeException("unexpected exception", e);
         }
     }
+
+    /**
+     * Clone a {@link VCard} by converting it to XML and back.
+     * This method works around the fact that {@link VCard} does not implement {@link Cloneable}.
+     *
+     * @throws IllegalArgumentException if {@code vcard} is null
+     */
+    public static VCard clone(VCard vcard) {
+
+        // Sanity check
+        if (vcard == null)
+            throw new IllegalArgumentException("null vcard");
+
+        // Convert to XML
+        final XCardDocument xcard = new XCardDocument();
+        xcard.add(vcard);
+        final Document doc = xcard.getDocument();
+
+        // Convert from XML
+        try {
+            return new XCardDocument(doc).reader().readNext();
+        } catch (IOException e) {
+            throw new RuntimeException("unexpected exception", e);
+        }
+    }
 }
 

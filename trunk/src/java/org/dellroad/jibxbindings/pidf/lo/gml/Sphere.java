@@ -50,5 +50,15 @@ public class Sphere extends Solid {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.caseSphere(this);
     }
+
+// Cloneable
+
+    @Override
+    public Sphere clone() {
+        final Sphere clone = (Sphere)super.clone();
+        clone.center = this.center != null ? this.center.clone() : null;
+        clone.radius = this.radius != null ? this.radius.clone() : null;
+        return clone;
+    }
 }
 

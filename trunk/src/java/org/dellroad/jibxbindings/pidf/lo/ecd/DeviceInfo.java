@@ -70,5 +70,18 @@ public class DeviceInfo extends AbstractDataProviderReferencing {
     public void setDeviceSpecificType(String deviceSpecificType) {
         this.deviceSpecificType = deviceSpecificType;
     }
+
+// Cloneable
+
+    @Override
+    public DeviceInfo clone() {
+        final DeviceInfo clone = (DeviceInfo)super.clone();
+        if (this.uniqueDeviceIDs != null) {
+            clone.uniqueDeviceIDs = new ArrayList<>(this.uniqueDeviceIDs.size());
+            for (UniqueDeviceID uniqueDeviceID : this.uniqueDeviceIDs)
+                clone.uniqueDeviceIDs.add(uniqueDeviceID.clone());
+        }
+        return clone;
+    }
 }
 

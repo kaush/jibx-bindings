@@ -34,5 +34,18 @@ public class Comment extends AbstractDataProviderReferencing {
     public void setComments(List<LangContent> comments) {
         this.comments = comments;
     }
+
+// Cloneable
+
+    @Override
+    public Comment clone() {
+        final Comment clone = (Comment)super.clone();
+        if (this.comments != null) {
+            clone.comments = new ArrayList<>(this.comments.size());
+            for (LangContent comment : this.comments)
+                clone.comments.add(comment.clone());
+        }
+        return clone;
+    }
 }
 

@@ -10,7 +10,7 @@ package org.dellroad.jibxbindings.pidf.lo.ecd;
 /**
  * Support superclass.
  */
-public abstract class AbstractDataProviderReferencing {
+public abstract class AbstractDataProviderReferencing implements Cloneable {
 
     private String dataProviderReference;                   // mandatory
 
@@ -26,6 +26,17 @@ public abstract class AbstractDataProviderReferencing {
     }
     public void setDataProviderReference(String dataProviderReference) {
         this.dataProviderReference = dataProviderReference;
+    }
+
+// Cloneable
+
+    @Override
+    public AbstractDataProviderReferencing clone() {
+        try {
+            return (AbstractDataProviderReferencing)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 
