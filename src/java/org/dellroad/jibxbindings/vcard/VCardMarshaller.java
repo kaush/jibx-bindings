@@ -25,6 +25,22 @@ import ezvcard.io.xml.XCardDocument;
 /**
  * JiBX marshaller/unmarshaller for a single {@link VCard}.
  *
+ * <p>
+ * Example of use:
+ *  <pre>
+ *  &lt;mapping ... &gt;
+ *      &lt;namespace uri="urn:ietf:params:xml:ns:vcard-4.0" prefix="vc"/&gt;
+ *      ...
+ *      &lt;structure name="ContactInfo"&gt;
+ *          &lt;structure name="vcard" field="contactInfo" ns="urn:ietf:params:xml:ns:vcard-4.0"
+ *            marshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"
+ *            unmarshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"/&gt;
+ *      &lt;/structure&gt;
+ *      ...
+ *  &lt;/mapping&gt;
+ *  </pre>
+ * </p>
+ *
  * @see <a href="https://ez-vcard.googlecode.com">The EZ-vCard Project</a>
  * @see <a href="https://tools.ietf.org/html/rfc6351">RFC 6351</a>
  */
