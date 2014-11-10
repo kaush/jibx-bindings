@@ -50,5 +50,15 @@ public class Prism extends Solid {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.casePrism(this);
     }
+
+// Cloneable
+
+    @Override
+    public Prism clone() {
+        final Prism clone = (Prism)super.clone();
+        clone.base = this.base != null ? this.base.clone() : null;
+        clone.height = this.height != null ? this.height.clone() : null;
+        return clone;
+    }
 }
 

@@ -12,7 +12,7 @@ import java.net.URI;
 /**
  * GML measure objects.
  */
-public class Measure {
+public class Measure implements Cloneable {
 
     private URI uom;
     private double value;
@@ -45,6 +45,17 @@ public class Measure {
     }
     public void setValue(double value) {
         this.value = value;
+    }
+
+// Cloneable
+
+    @Override
+    public Measure clone() {
+        try {
+            return (Measure)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

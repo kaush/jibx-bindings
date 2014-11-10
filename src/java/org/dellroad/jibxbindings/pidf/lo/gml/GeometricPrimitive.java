@@ -20,5 +20,12 @@ public abstract class GeometricPrimitive extends Geometry {
     protected GeometricPrimitive(String gid, URI srsName, int srsDimension) {
         super(gid, srsName, srsDimension);
     }
+
+// Cloneable
+
+    @Override
+    public GeometricPrimitive clone() {
+        return (GeometricPrimitive)super.clone();
+    }
 }
 

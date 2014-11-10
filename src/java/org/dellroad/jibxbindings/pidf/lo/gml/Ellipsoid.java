@@ -87,5 +87,18 @@ public class Ellipsoid extends Solid {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.caseEllipsoid(this);
     }
+
+// Cloneable
+
+    @Override
+    public Ellipsoid clone() {
+        final Ellipsoid clone = (Ellipsoid)super.clone();
+        clone.center = this.center != null ? this.center.clone() : null;
+        clone.semiMajorAxis = this.semiMajorAxis != null ? this.semiMajorAxis.clone() : null;
+        clone.semiMinorAxis = this.semiMinorAxis != null ? this.semiMinorAxis.clone() : null;
+        clone.verticalAxis = this.verticalAxis != null ? this.verticalAxis.clone() : null;
+        clone.orientation = this.orientation != null ? this.orientation.clone() : null;
+        return clone;
+    }
 }
 

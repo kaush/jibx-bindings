@@ -65,5 +65,20 @@ public class Device implements Component {
     public void visit(ComponentSwitch componentSwitch) {
         componentSwitch.caseDevice(this);
     }
+
+// Cloneable
+
+    @Override
+    public Device clone() {
+        final Device clone;
+        try {
+            clone = (Device)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.geoPriv = this.geoPriv != null ? this.geoPriv.clone() : null;
+        clone.note = this.note != null ? this.note.clone() : null;
+        return clone;
+    }
 }
 

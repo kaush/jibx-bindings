@@ -12,7 +12,7 @@ import java.net.URI;
 /**
  * PIDF {@code <contact>} element.
  */
-public class Contact {
+public class Contact implements Cloneable {
 
     private URI uri;
     private float priority;
@@ -29,6 +29,17 @@ public class Contact {
     }
     public void setURI(URI uri) {
         this.uri = uri;
+    }
+
+// Cloneable
+
+    @Override
+    public Contact clone() {
+        try {
+            return (Contact)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

@@ -13,7 +13,7 @@ import org.jibx.runtime.JiBXParseException;
 /**
  * The {@code <ca:civicAddress>} element as defined in RFC 5139.
  */
-public class CivicAddress {
+public class CivicAddress implements Cloneable {
 
 // CHECKSTYLE OFF: MemberName
 // CHECKSTYLE OFF: ParameterNameCheck
@@ -276,6 +276,49 @@ public class CivicAddress {
      */
     public static String deserializeCountry(String string) throws JiBXParseException {
         return ParseUtil.deserializeMatching("[A-Z]{2}", string);
+    }
+
+// Cloneable
+
+    @Override
+    public CivicAddress clone() {
+        final CivicAddress clone;
+        try {
+            clone = (CivicAddress)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.A1 = this.A1 != null ? this.A1.clone() : null;
+        clone.A2 = this.A2 != null ? this.A2.clone() : null;
+        clone.A3 = this.A3 != null ? this.A3.clone() : null;
+        clone.A4 = this.A4 != null ? this.A4.clone() : null;
+        clone.A5 = this.A5 != null ? this.A5.clone() : null;
+        clone.A6 = this.A6 != null ? this.A6.clone() : null;
+        clone.PRM = this.PRM != null ? this.PRM.clone() : null;
+        clone.PRD = this.PRD != null ? this.PRD.clone() : null;
+        clone.RD = this.RD != null ? this.RD.clone() : null;
+        clone.STS = this.STS != null ? this.STS.clone() : null;
+        clone.POD = this.POD != null ? this.POD.clone() : null;
+        clone.POM = this.POM != null ? this.POM.clone() : null;
+        clone.RDSEC = this.RDSEC != null ? this.RDSEC.clone() : null;
+        clone.RDBR = this.RDBR != null ? this.RDBR.clone() : null;
+        clone.RDSUBBR = this.RDSUBBR != null ? this.RDSUBBR.clone() : null;
+        clone.HNO = this.HNO != null ? this.HNO.clone() : null;
+        clone.HNS = this.HNS != null ? this.HNS.clone() : null;
+        clone.LMK = this.LMK != null ? this.LMK.clone() : null;
+        clone.LOC = this.LOC != null ? this.LOC.clone() : null;
+        clone.FLR = this.FLR != null ? this.FLR.clone() : null;
+        clone.NAM = this.NAM != null ? this.NAM.clone() : null;
+        clone.PC = this.PC != null ? this.PC.clone() : null;
+        clone.BLD = this.BLD != null ? this.BLD.clone() : null;
+        clone.UNIT = this.UNIT != null ? this.UNIT.clone() : null;
+        clone.ROOM = this.ROOM != null ? this.ROOM.clone() : null;
+        clone.SEAT = this.SEAT != null ? this.SEAT.clone() : null;
+        clone.PLC = this.PLC != null ? this.PLC.clone() : null;
+        clone.PCN = this.PCN != null ? this.PCN.clone() : null;
+        clone.POBOX = this.POBOX != null ? this.POBOX.clone() : null;
+        clone.ADDCODE = this.ADDCODE != null ? this.ADDCODE.clone() : null;
+        return clone;
     }
 }
 

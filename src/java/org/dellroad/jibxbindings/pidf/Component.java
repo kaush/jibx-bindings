@@ -12,7 +12,7 @@ import org.dellroad.jibxbindings.pidf.lo.GeoPriv;
 /**
  * Implemented by types that can immediately nest inside a {@code <presence>} element.
  */
-public interface Component {
+public interface Component extends Cloneable {
 
     /**
      * Apply visitor pattern.
@@ -23,5 +23,10 @@ public interface Component {
      * Get the nested {@link GeoPriv}, if any.
      */
     GeoPriv getGeoPriv();
+
+    /**
+     * Clone this instance.
+     */
+    Component clone();
 }
 

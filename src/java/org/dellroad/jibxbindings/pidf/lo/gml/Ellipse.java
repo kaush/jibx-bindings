@@ -75,5 +75,17 @@ public class Ellipse extends Surface {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.caseEllipse(this);
     }
+
+// Cloneable
+
+    @Override
+    public Ellipse clone() {
+        final Ellipse clone = (Ellipse)super.clone();
+        clone.center = this.center != null ? this.center.clone() : null;
+        clone.semiMajorAxis = this.semiMajorAxis != null ? this.semiMajorAxis.clone() : null;
+        clone.semiMinorAxis = this.semiMinorAxis != null ? this.semiMinorAxis.clone() : null;
+        clone.orientation = this.orientation != null ? this.orientation.clone() : null;
+        return clone;
+    }
 }
 

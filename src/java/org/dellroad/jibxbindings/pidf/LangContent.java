@@ -10,7 +10,7 @@ package org.dellroad.jibxbindings.pidf;
 /**
  * Represents a string and a specified language.
  */
-public class LangContent {
+public class LangContent implements Cloneable {
 
     private String lang;
     private String content;
@@ -33,6 +33,17 @@ public class LangContent {
     }
     public void setContent(String content) {
         this.content = content;
+    }
+
+// Cloneable
+
+    @Override
+    public LangContent clone() {
+        try {
+            return (LangContent)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

@@ -12,7 +12,7 @@ import org.dellroad.jibxbindings.pidf.LangContent;
 /**
  * The {@code <gp:geopriv>} element as defined in RFC 4119.
  */
-public class GeoPriv {
+public class GeoPriv implements Cloneable {
 
     private LocationInfo locationInfo;
     private UsageRules usageRules;
@@ -45,6 +45,23 @@ public class GeoPriv {
     }
     public void setProvidedBy(ProvidedBy providedBy) {
         this.providedBy = providedBy;
+    }
+
+// Cloneable
+
+    @Override
+    public GeoPriv clone() {
+        final GeoPriv clone;
+        try {
+            clone = (GeoPriv)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.locationInfo = this.locationInfo != null ? this.locationInfo.clone() : null;
+        clone.usageRules = this.usageRules != null ? this.usageRules.clone() : null;
+        clone.method = this.method != null ? this.method.clone() : null;
+        clone.providedBy = this.providedBy != null ? this.providedBy.clone() : null;
+        return clone;
     }
 }
 

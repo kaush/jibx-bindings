@@ -15,7 +15,7 @@ import org.dellroad.jibxbindings.pidf.LangContent;
 /**
  * The {@code <gp:usage-rules>} element as defined in RFC 4119.
  */
-public class UsageRules {
+public class UsageRules implements Cloneable {
 
     private boolean retransmissionAllowed;
     private Date retentionExpiry;
@@ -48,6 +48,20 @@ public class UsageRules {
     }
     public void setNoteWell(LangContent noteWell) {
         this.noteWell = noteWell;
+    }
+
+// Cloneable
+
+    @Override
+    public UsageRules clone() {
+        final UsageRules clone;
+        try {
+            clone = (UsageRules)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.noteWell = this.noteWell != null ? this.noteWell.clone() : null;
+        return clone;
     }
 }
 

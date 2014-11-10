@@ -87,5 +87,18 @@ public class ArcBand extends Surface {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.caseArcBand(this);
     }
+
+// Cloneable
+
+    @Override
+    public ArcBand clone() {
+        final ArcBand clone = (ArcBand)super.clone();
+        clone.center = this.center != null ? this.center.clone() : null;
+        clone.innerRadius = this.innerRadius != null ? this.innerRadius.clone() : null;
+        clone.outerRadius = this.outerRadius != null ? this.outerRadius.clone() : null;
+        clone.startAngle = this.startAngle != null ? this.startAngle.clone() : null;
+        clone.openingAngle = this.openingAngle != null ? this.openingAngle.clone() : null;
+        return clone;
+    }
 }
 

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * The {@code <gp:EmergencyCallDataValue>} element.
  */
-public class EmergencyCallDataValue {
+public class EmergencyCallDataValue implements Cloneable {
 
     private List<ProviderInfo> providerInfos = new ArrayList<>();
     private List<ServiceInfo> serviceInfos = new ArrayList<>();
@@ -54,6 +54,44 @@ public class EmergencyCallDataValue {
     }
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+// Cloneable
+
+    @Override
+    public EmergencyCallDataValue clone() {
+        final EmergencyCallDataValue clone;
+        try {
+            clone = (EmergencyCallDataValue)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        if (this.providerInfos != null) {
+            clone.providerInfos = new ArrayList<>(this.providerInfos.size());
+            for (ProviderInfo providerInfo : this.providerInfos)
+                clone.providerInfos.add(providerInfo.clone());
+        }
+        if (this.serviceInfos != null) {
+            clone.serviceInfos = new ArrayList<>(this.serviceInfos.size());
+            for (ServiceInfo serviceInfo : this.serviceInfos)
+                clone.serviceInfos.add(serviceInfo.clone());
+        }
+        if (this.deviceInfos != null) {
+            clone.deviceInfos = new ArrayList<>(this.deviceInfos.size());
+            for (DeviceInfo deviceInfo : this.deviceInfos)
+                clone.deviceInfos.add(deviceInfo.clone());
+        }
+        if (this.subscriberInfos != null) {
+            clone.subscriberInfos = new ArrayList<>(this.subscriberInfos.size());
+            for (SubscriberInfo subscriberInfo : this.subscriberInfos)
+                clone.subscriberInfos.add(subscriberInfo.clone());
+        }
+        if (this.comments != null) {
+            clone.comments = new ArrayList<>(this.comments.size());
+            for (Comment comment : this.comments)
+                clone.comments.add(comment.clone());
+        }
+        return clone;
     }
 }
 

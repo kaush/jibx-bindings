@@ -41,5 +41,14 @@ public class LineString extends Curve {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.caseLineString(this);
     }
+
+// Cloneable
+
+    @Override
+    public LineString clone() {
+        final LineString clone = (LineString)super.clone();
+        clone.posList = this.posList != null ? this.posList.clone() : null;
+        return clone;
+    }
 }
 

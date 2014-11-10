@@ -38,5 +38,14 @@ public class Polygon extends Surface {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.casePolygon(this);
     }
+
+// Cloneable
+
+    @Override
+    public Polygon clone() {
+        final Polygon clone = (Polygon)super.clone();
+        clone.exterior = this.exterior != null ? this.exterior.clone() : null;
+        return clone;
+    }
 }
 

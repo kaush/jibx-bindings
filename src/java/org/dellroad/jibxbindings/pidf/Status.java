@@ -12,7 +12,7 @@ import org.dellroad.jibxbindings.pidf.lo.GeoPriv;
 /**
  * PIDF {@code <status>} element.
  */
-public class Status {
+public class Status implements Cloneable {
 
     private Basic basic;
     private GeoPriv geoPriv;
@@ -29,6 +29,20 @@ public class Status {
     }
     public void setGeoPriv(GeoPriv geoPriv) {
         this.geoPriv = geoPriv;
+    }
+
+// Cloneable
+
+    @Override
+    public Status clone() {
+        final Status clone;
+        try {
+            clone = (Status)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.geoPriv = this.geoPriv != null ? this.geoPriv.clone() : null;
+        return clone;
     }
 }
 

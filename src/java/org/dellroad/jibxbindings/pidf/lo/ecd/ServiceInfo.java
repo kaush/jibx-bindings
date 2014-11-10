@@ -49,5 +49,14 @@ public class ServiceInfo extends AbstractDataProviderReferencing {
     public void setServiceMobility(String serviceMobility) {
         this.serviceMobility = serviceMobility;
     }
+
+// Cloneable
+
+    @Override
+    public ServiceInfo clone() {
+        final ServiceInfo clone = (ServiceInfo)super.clone();
+        clone.serviceTypes = this.serviceTypes != null ? new ArrayList<>(this.serviceTypes) : null;
+        return clone;
+    }
 }
 

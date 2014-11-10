@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * The {@code <held:locationType>} XML element.
  */
-public class LocationType {
+public class LocationType implements Cloneable {
 
     /**
      * Value for the {@link #types} field meaning any type of response is acceptable.
@@ -50,6 +50,20 @@ public class LocationType {
     }
     public void setTypes(List<String> types) {
         this.types = types;
+    }
+
+// Cloneable
+
+    @Override
+    public LocationType clone() {
+        final LocationType clone;
+        try {
+            clone = (LocationType)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.types = this.types != null ? new ArrayList<>(this.types) : null;
+        return clone;
     }
 }
 

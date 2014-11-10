@@ -11,7 +11,7 @@ package org.dellroad.jibxbindings.pidf.lo;
  * One field in a {@code <ca:civicAddress>} element as defined in RFC 5139.
  * This differs from {@link org.dellroad.jibxbindings.pidf.LangContent} in that the field content is whitespace normalized.
  */
-public class CAValue {
+public class CAValue implements Cloneable {
 
     private String lang;
     private String content;
@@ -34,6 +34,17 @@ public class CAValue {
     }
     public void setContent(String content) {
         this.content = content;
+    }
+
+// Cloneable
+
+    @Override
+    public CAValue clone() {
+        try {
+            return (CAValue)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 

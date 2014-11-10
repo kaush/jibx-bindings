@@ -50,5 +50,15 @@ public class Circle extends Surface {
     public void visit(GMLObjectSwitch gmlObjectSwitch) {
         gmlObjectSwitch.caseCircle(this);
     }
+
+// Cloneable
+
+    @Override
+    public Circle clone() {
+        final Circle clone = (Circle)super.clone();
+        clone.center = this.center != null ? this.center.clone() : null;
+        clone.radius = this.radius != null ? this.radius.clone() : null;
+        return clone;
+    }
 }
 

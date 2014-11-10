@@ -20,5 +20,12 @@ public abstract class Solid extends GeometricPrimitive {
     protected Solid(String gid, URI srsName, int srsDimension) {
         super(gid, srsName, srsDimension);
     }
+
+// Cloneable
+
+    @Override
+    public Solid clone() {
+        return (Solid)super.clone();
+    }
 }
 

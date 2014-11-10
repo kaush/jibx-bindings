@@ -10,7 +10,7 @@ package org.dellroad.jibxbindings.pidf.held;
 /**
  * The {@code <held:locationRequest>} XML element.
  */
-public class LocationRequest {
+public class LocationRequest implements Cloneable {
 
     /**
      * Possible value for {@link #getResponseTime}.
@@ -46,6 +46,20 @@ public class LocationRequest {
     }
     public void setLocationType(LocationType locationType) {
         this.locationType = locationType;
+    }
+
+// Cloneable
+
+    @Override
+    public LocationRequest clone() {
+        final LocationRequest clone;
+        try {
+            clone = (LocationRequest)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        clone.locationType = this.locationType != null ? this.locationType.clone() : null;
+        return clone;
     }
 }
 

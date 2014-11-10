@@ -20,5 +20,12 @@ public abstract class Surface extends GeometricPrimitive {
     protected Surface(String gid, URI srsName, int srsDimension) {
         super(gid, srsName, srsDimension);
     }
+
+// Cloneable
+
+    @Override
+    public Surface clone() {
+        return (Surface)super.clone();
+    }
 }
 
