@@ -21,7 +21,7 @@
 <span class="sourceLineNo">013</span>/**<a name="line.13"></a>
 <span class="sourceLineNo">014</span> * The {@code &lt;gp:EmergencyCallDataValue&gt;} element.<a name="line.14"></a>
 <span class="sourceLineNo">015</span> */<a name="line.15"></a>
-<span class="sourceLineNo">016</span>public class EmergencyCallDataValue {<a name="line.16"></a>
+<span class="sourceLineNo">016</span>public class EmergencyCallDataValue implements Cloneable {<a name="line.16"></a>
 <span class="sourceLineNo">017</span><a name="line.17"></a>
 <span class="sourceLineNo">018</span>    private List&lt;ProviderInfo&gt; providerInfos = new ArrayList&lt;&gt;();<a name="line.18"></a>
 <span class="sourceLineNo">019</span>    private List&lt;ServiceInfo&gt; serviceInfos = new ArrayList&lt;&gt;();<a name="line.19"></a>
@@ -63,8 +63,46 @@
 <span class="sourceLineNo">055</span>    public void setComments(List&lt;Comment&gt; comments) {<a name="line.55"></a>
 <span class="sourceLineNo">056</span>        this.comments = comments;<a name="line.56"></a>
 <span class="sourceLineNo">057</span>    }<a name="line.57"></a>
-<span class="sourceLineNo">058</span>}<a name="line.58"></a>
-<span class="sourceLineNo">059</span><a name="line.59"></a>
+<span class="sourceLineNo">058</span><a name="line.58"></a>
+<span class="sourceLineNo">059</span>// Cloneable<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>    @Override<a name="line.61"></a>
+<span class="sourceLineNo">062</span>    public EmergencyCallDataValue clone() {<a name="line.62"></a>
+<span class="sourceLineNo">063</span>        final EmergencyCallDataValue clone;<a name="line.63"></a>
+<span class="sourceLineNo">064</span>        try {<a name="line.64"></a>
+<span class="sourceLineNo">065</span>            clone = (EmergencyCallDataValue)super.clone();<a name="line.65"></a>
+<span class="sourceLineNo">066</span>        } catch (CloneNotSupportedException e) {<a name="line.66"></a>
+<span class="sourceLineNo">067</span>            throw new RuntimeException(e);<a name="line.67"></a>
+<span class="sourceLineNo">068</span>        }<a name="line.68"></a>
+<span class="sourceLineNo">069</span>        if (this.providerInfos != null) {<a name="line.69"></a>
+<span class="sourceLineNo">070</span>            clone.providerInfos = new ArrayList&lt;&gt;(this.providerInfos.size());<a name="line.70"></a>
+<span class="sourceLineNo">071</span>            for (ProviderInfo providerInfo : this.providerInfos)<a name="line.71"></a>
+<span class="sourceLineNo">072</span>                clone.providerInfos.add(providerInfo.clone());<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        }<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        if (this.serviceInfos != null) {<a name="line.74"></a>
+<span class="sourceLineNo">075</span>            clone.serviceInfos = new ArrayList&lt;&gt;(this.serviceInfos.size());<a name="line.75"></a>
+<span class="sourceLineNo">076</span>            for (ServiceInfo serviceInfo : this.serviceInfos)<a name="line.76"></a>
+<span class="sourceLineNo">077</span>                clone.serviceInfos.add(serviceInfo.clone());<a name="line.77"></a>
+<span class="sourceLineNo">078</span>        }<a name="line.78"></a>
+<span class="sourceLineNo">079</span>        if (this.deviceInfos != null) {<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            clone.deviceInfos = new ArrayList&lt;&gt;(this.deviceInfos.size());<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            for (DeviceInfo deviceInfo : this.deviceInfos)<a name="line.81"></a>
+<span class="sourceLineNo">082</span>                clone.deviceInfos.add(deviceInfo.clone());<a name="line.82"></a>
+<span class="sourceLineNo">083</span>        }<a name="line.83"></a>
+<span class="sourceLineNo">084</span>        if (this.subscriberInfos != null) {<a name="line.84"></a>
+<span class="sourceLineNo">085</span>            clone.subscriberInfos = new ArrayList&lt;&gt;(this.subscriberInfos.size());<a name="line.85"></a>
+<span class="sourceLineNo">086</span>            for (SubscriberInfo subscriberInfo : this.subscriberInfos)<a name="line.86"></a>
+<span class="sourceLineNo">087</span>                clone.subscriberInfos.add(subscriberInfo.clone());<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        }<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        if (this.comments != null) {<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            clone.comments = new ArrayList&lt;&gt;(this.comments.size());<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            for (Comment comment : this.comments)<a name="line.91"></a>
+<span class="sourceLineNo">092</span>                clone.comments.add(comment.clone());<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        }<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        return clone;<a name="line.94"></a>
+<span class="sourceLineNo">095</span>    }<a name="line.95"></a>
+<span class="sourceLineNo">096</span>}<a name="line.96"></a>
+<span class="sourceLineNo">097</span><a name="line.97"></a>
 
 
 

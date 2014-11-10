@@ -2,12 +2,23 @@
 <testng-results skipped="0" failed="0" total="108" passed="108">
   <reporter-output>
   </reporter-output>
-  <suite name="Unit Test Suite" duration-ms="602" started-at="2014-11-05T16:31:01Z" finished-at="2014-11-05T16:31:02Z">
+  <suite name="Unit Test Suite" duration-ms="694" started-at="2014-11-10T18:38:34Z" finished-at="2014-11-10T18:38:35Z">
     <groups>
     </groups>
-    <test name="JiBX Bindings Tests" duration-ms="602" started-at="2014-11-05T16:31:01Z" finished-at="2014-11-05T16:31:02Z">
+    <test name="JiBX Bindings Tests" duration-ms="694" started-at="2014-11-10T18:38:34Z" finished-at="2014-11-10T18:38:35Z">
       <class name="org.dellroad.jibxbindings.pidf.held.LocationResponseTest">
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@4b6f1c33]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@f1c2137]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seedRandom -->
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@f1c2137]" name="setupLogging" is-config="true" duration-ms="1" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -23,18 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@4b6f1c33]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@4b6f1c33]" name="testValid" duration-ms="8" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@f1c2137]" name="testValid" duration-ms="9" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@4b6f1c33]" name="testValid" duration-ms="2" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@f1c2137]" name="testValid" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@4b6f1c33]" name="testValid" duration-ms="10" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@f1c2137]" name="testValid" duration-ms="11" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@4b6f1c33]" name="testValid" duration-ms="8" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationResponseTest@f1c2137]" name="testValid" duration-ms="7" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -80,7 +80,7 @@
         </test-method> <!-- testValid -->
       </class> <!-- org.dellroad.jibxbindings.pidf.held.LocationResponseTest -->
       <class name="org.dellroad.jibxbindings.pidf.PIDFParseTest">
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:02Z" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:02Z" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="setupLogging" is-config="true" duration-ms="1" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -107,7 +107,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="6" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -118,7 +118,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -129,7 +129,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="5" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="6" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -140,7 +140,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -151,7 +151,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="5" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="16" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +162,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -173,7 +173,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="7" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -184,7 +184,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="12" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="6" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -195,7 +195,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -206,7 +206,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -217,7 +217,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -228,7 +228,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -239,7 +239,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -250,7 +250,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="5" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -261,7 +261,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -272,7 +272,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -283,7 +283,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@711fcaf6]" name="testValid" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.PIDFParseTest@1e3c6543]" name="testValid" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -296,7 +296,18 @@
         </test-method> <!-- testValid -->
       </class> <!-- org.dellroad.jibxbindings.pidf.PIDFParseTest -->
       <class name="org.dellroad.jibxbindings.pidf.held.LocationRequestTest">
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@491238a0]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@44fd2549]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seedRandom -->
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@44fd2549]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -312,18 +323,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@491238a0]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@491238a0]" name="testValid" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@44fd2549]" name="testValid" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -334,7 +334,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@491238a0]" name="testValid" duration-ms="2" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.LocationRequestTest@44fd2549]" name="testValid" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -347,7 +347,7 @@
         </test-method> <!-- testValid -->
       </class> <!-- org.dellroad.jibxbindings.pidf.held.LocationRequestTest -->
       <class name="org.dellroad.jibxbindings.ParseUtilTest">
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="seedRandom" is-config="true" duration-ms="9" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="seedRandom" is-config="true" duration-ms="10" started-at="2014-11-10T12:38:34Z" finished-at="2014-11-10T12:38:34Z">
           <params>
             <param index="0">
               <value>
@@ -358,7 +358,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="setupLogging" is-config="true" duration-ms="1" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:34Z" finished-at="2014-11-10T12:38:34Z">
           <params>
             <param index="0">
               <value>
@@ -374,7 +374,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="24" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="26" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -390,7 +390,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -406,7 +406,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -422,7 +422,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -438,7 +438,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="0" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -454,23 +454,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2010-09-28T23:16:10+04:00]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1285701370000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="0" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="0" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -486,21 +470,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2010-09-28T19:16:10.123]]>
+                <![CDATA[2010-09-28T23:16:10+04:00]]>
               </value>
             </param>
             <param index="1">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[1285701370000]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="0" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="0" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -514,11 +500,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="0" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2010-09-28T19:16:10GMT-00:00]]>
+                <![CDATA[2010-09-28T19:16:10.123]]>
               </value>
             </param>
             <param index="1">
@@ -528,7 +514,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="0" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="0" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -542,7 +528,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="0" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2010-09-28T19:16:10GMT-00:00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRFC3339 -->
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="0" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10-09-28T19:16:10Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRFC3339 -->
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10-09-28T19:16:10Z]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRFC3339 -->
+        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@479aff01]" name="testRFC3339" duration-ms="0" started-at="2014-11-10T12:38:35Z" data-provider="rfc3339" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -556,37 +584,9 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="0" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10-09-28T19:16:10Z]]>
-              </value>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRFC3339 -->
-        <test-method status="PASS" signature="testRFC3339(java.lang.String, java.lang.Long)[pri:0, instance:org.dellroad.jibxbindings.ParseUtilTest@6ceac619]" name="testRFC3339" duration-ms="0" started-at="2014-11-05T10:31:01Z" data-provider="rfc3339" finished-at="2014-11-05T10:31:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10-09-28T19:16:10Z]]>
-              </value>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRFC3339 -->
       </class> <!-- org.dellroad.jibxbindings.ParseUtilTest -->
       <class name="org.dellroad.jibxbindings.pidf.held.ErrorTest">
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@2973cb2c]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@4ef888ea]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -597,7 +597,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@2973cb2c]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@4ef888ea]" name="setupLogging" is-config="true" duration-ms="1" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -613,7 +613,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@2973cb2c]" name="testValid" duration-ms="39" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@4ef888ea]" name="testValid" duration-ms="49" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -624,7 +624,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@2973cb2c]" name="testValid" duration-ms="1" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.held.ErrorTest@4ef888ea]" name="testValid" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -637,7 +637,7 @@
         </test-method> <!-- testValid -->
       </class> <!-- org.dellroad.jibxbindings.pidf.held.ErrorTest -->
       <class name="org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest">
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:02Z" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -653,7 +653,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:02Z" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -664,7 +664,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -675,7 +675,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -686,7 +686,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -697,7 +697,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -708,7 +708,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -719,7 +719,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -730,7 +730,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -741,7 +741,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -752,7 +752,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -763,7 +763,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -774,7 +774,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -785,7 +785,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -796,7 +796,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -807,7 +807,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -818,7 +818,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -829,7 +829,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -840,7 +840,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="8" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="6" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -851,7 +851,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -862,7 +862,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -873,7 +873,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -884,7 +884,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -895,7 +895,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -906,7 +906,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -917,7 +917,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -928,7 +928,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -939,7 +939,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="5" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -950,7 +950,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="5" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -961,7 +961,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -972,7 +972,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -983,7 +983,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -994,7 +994,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1005,7 +1005,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1016,7 +1016,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1027,7 +1027,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1038,7 +1038,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1049,7 +1049,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1060,7 +1060,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1071,7 +1071,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1082,7 +1082,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1093,7 +1093,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="0" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1104,18 +1104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[file:/Users/archie/proj/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessage-0.xml]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="0" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1126,7 +1115,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[file:/Users/archie/proj/jibx-bindings/trunk/build/test/org/dellroad/jibxbindings/twilio/restapi/smsMessage-0.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidTwilioResponse -->
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1137,7 +1137,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1148,7 +1148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1159,7 +1159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1170,7 +1170,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="4" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1181,7 +1181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1192,7 +1192,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidTwilioResponse -->
-        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@5e46167f]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validTwilioResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidTwilioResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest@270cf661]" name="testValidTwilioResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validTwilioResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1205,7 +1205,7 @@
         </test-method> <!-- testValidTwilioResponse -->
       </class> <!-- org.dellroad.jibxbindings.twilio.restapi.RestAPIParseTest -->
       <class name="org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest">
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1216,7 +1216,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:01Z" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1232,7 +1232,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="105" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="120" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1243,7 +1243,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="41" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="53" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1254,7 +1254,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="4" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1265,7 +1265,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="5" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1276,7 +1276,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="29" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="40" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1287,7 +1287,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="4" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="6" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1298,7 +1298,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="3" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="5" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1309,7 +1309,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="7" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="9" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1320,7 +1320,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="6" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:01Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="7" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1331,7 +1331,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValid -->
-        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@5133066c]" name="testValid" duration-ms="6" started-at="2014-11-05T10:31:01Z" data-provider="validCases" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValid(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest@1ee4e327]" name="testValid" duration-ms="7" started-at="2014-11-10T12:38:35Z" data-provider="validCases" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1344,7 +1344,7 @@
         </test-method> <!-- testValid -->
       </class> <!-- org.dellroad.jibxbindings.pidf.lo.ecd.ECDParseTest -->
       <class name="org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest">
-        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="seedRandom" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:02Z" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="seedRandom(java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="seedRandom" is-config="true" duration-ms="1" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1355,7 +1355,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seedRandom -->
-        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-05T10:31:02Z" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="setupLogging(java.lang.String, java.lang.String)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="setupLogging" is-config="true" duration-ms="0" started-at="2014-11-10T12:38:35Z" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1371,7 +1371,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogging -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1382,7 +1382,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1393,7 +1393,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1404,7 +1404,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="3" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="4" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1415,7 +1415,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1426,7 +1426,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1437,7 +1437,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1448,7 +1448,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1459,7 +1459,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="2" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="2" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>
@@ -1470,7 +1470,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidResponse -->
-        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@13e3cf1f]" name="testValidResponse" duration-ms="1" started-at="2014-11-05T10:31:02Z" data-provider="validResponses" finished-at="2014-11-05T10:31:02Z">
+        <test-method status="PASS" signature="testValidResponse(java.net.URL)[pri:0, instance:org.dellroad.jibxbindings.twilio.twiml.TwiMLParseTest@7fc8a9a0]" name="testValidResponse" duration-ms="1" started-at="2014-11-10T12:38:35Z" data-provider="validResponses" finished-at="2014-11-10T12:38:35Z">
           <params>
             <param index="0">
               <value>

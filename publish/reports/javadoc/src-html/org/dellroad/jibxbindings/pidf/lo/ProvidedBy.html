@@ -24,7 +24,7 @@
 <span class="sourceLineNo">016</span>/**<a name="line.16"></a>
 <span class="sourceLineNo">017</span> * The {@code &lt;gp:provided-by&gt;} element as defined in RFC 4119.<a name="line.17"></a>
 <span class="sourceLineNo">018</span> */<a name="line.18"></a>
-<span class="sourceLineNo">019</span>public class ProvidedBy {<a name="line.19"></a>
+<span class="sourceLineNo">019</span>public class ProvidedBy implements Cloneable {<a name="line.19"></a>
 <span class="sourceLineNo">020</span><a name="line.20"></a>
 <span class="sourceLineNo">021</span>    private String dataProviderReference;<a name="line.21"></a>
 <span class="sourceLineNo">022</span>    private List&lt;EmergencyCallDataReference&gt; references = new ArrayList&lt;&gt;();<a name="line.22"></a>
@@ -50,8 +50,31 @@
 <span class="sourceLineNo">042</span>    public void setValues(List&lt;EmergencyCallDataValue&gt; values) {<a name="line.42"></a>
 <span class="sourceLineNo">043</span>        this.values = values;<a name="line.43"></a>
 <span class="sourceLineNo">044</span>    }<a name="line.44"></a>
-<span class="sourceLineNo">045</span>}<a name="line.45"></a>
-<span class="sourceLineNo">046</span><a name="line.46"></a>
+<span class="sourceLineNo">045</span><a name="line.45"></a>
+<span class="sourceLineNo">046</span>// Cloneable<a name="line.46"></a>
+<span class="sourceLineNo">047</span><a name="line.47"></a>
+<span class="sourceLineNo">048</span>    @Override<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    public ProvidedBy clone() {<a name="line.49"></a>
+<span class="sourceLineNo">050</span>        final ProvidedBy clone;<a name="line.50"></a>
+<span class="sourceLineNo">051</span>        try {<a name="line.51"></a>
+<span class="sourceLineNo">052</span>            clone = (ProvidedBy)super.clone();<a name="line.52"></a>
+<span class="sourceLineNo">053</span>        } catch (CloneNotSupportedException e) {<a name="line.53"></a>
+<span class="sourceLineNo">054</span>            throw new RuntimeException(e);<a name="line.54"></a>
+<span class="sourceLineNo">055</span>        }<a name="line.55"></a>
+<span class="sourceLineNo">056</span>        if (this.references != null) {<a name="line.56"></a>
+<span class="sourceLineNo">057</span>            clone.references = new ArrayList&lt;&gt;(this.references.size());<a name="line.57"></a>
+<span class="sourceLineNo">058</span>            for (EmergencyCallDataReference reference : this.references)<a name="line.58"></a>
+<span class="sourceLineNo">059</span>                clone.references.add(reference.clone());<a name="line.59"></a>
+<span class="sourceLineNo">060</span>        }<a name="line.60"></a>
+<span class="sourceLineNo">061</span>        if (this.values != null) {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>            clone.values = new ArrayList&lt;&gt;(this.values.size());<a name="line.62"></a>
+<span class="sourceLineNo">063</span>            for (EmergencyCallDataValue value : this.values)<a name="line.63"></a>
+<span class="sourceLineNo">064</span>                clone.values.add(value.clone());<a name="line.64"></a>
+<span class="sourceLineNo">065</span>        }<a name="line.65"></a>
+<span class="sourceLineNo">066</span>        return clone;<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    }<a name="line.67"></a>
+<span class="sourceLineNo">068</span>}<a name="line.68"></a>
+<span class="sourceLineNo">069</span><a name="line.69"></a>
 
 
 
