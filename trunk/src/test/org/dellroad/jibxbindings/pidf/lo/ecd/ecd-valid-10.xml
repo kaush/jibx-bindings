@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<pidf:presence xmlns:pidf="urn:ietf:params:xml:ns:pidf" entity="pres:99969c8a-0280-4def-a329-952015765130@cluster1.test4.clj2.com">
+  <pidf:tuple xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10" xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" xmlns:conf="urn:ietf:params:xml:ns:geopriv:conf" xmlns:gml="http://www.opengis.net/gml" xmlns:bp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy" xmlns:ad="urn:ietf:params:xml:ns:EmergencyCallData" xmlns:pi="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo" xmlns:dev="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo" xmlns:sub="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo" xmlns:com="urn:ietf:params:xml:ns:EmergencyCallData:Comment" xmlns:vc="urn:ietf:params:xml:ns:vcard-4.0" xmlns:svc="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo" id="location">
+    <pidf:status>
+      <gp:geopriv>
+        <gp:location-info>
+          <ca:civicAddress>
+            <ca:A1>TN</ca:A1>
+            <ca:A3>TULLAHOMA</ca:A3>
+            <ca:RD>MAIN ST</ca:RD>
+            <ca:HNO>123</ca:HNO>
+            <ca:NAM>PUBLIC, JOHN Q</ca:NAM>
+          </ca:civicAddress>
+        </gp:location-info>
+        <gp:provided-by>
+          <ad:EmergencyCallDataValue>
+            <pi:EmergencyCallData.ProviderInfo>
+              <pi:DataProviderReference>2453807554607424443@example.com</pi:DataProviderReference>
+              <pi:DataProviderString>Happy Packetz</pi:DataProviderString>
+              <pi:ProviderID>example.com</pi:ProviderID>
+              <pi:ProviderIDSeries>domain</pi:ProviderIDSeries>
+              <pi:TypeOfProvider>Other</pi:TypeOfProvider>
+              <pi:ContactURI>tel:+19999999999</pi:ContactURI>
+              <pi:Language>EN</pi:Language>
+            </pi:EmergencyCallData.ProviderInfo>
+            <dev:EmergencyCallData.DeviceInfo>
+              <dev:DataProviderReference>2453807554607424443@example.com</dev:DataProviderReference>
+              <dev:UniqueDeviceID TypeOfDeviceID="integer">1</dev:UniqueDeviceID>
+            </dev:EmergencyCallData.DeviceInfo>
+          </ad:EmergencyCallDataValue>
+        </gp:provided-by>
+      </gp:geopriv>
+    </pidf:status>
+    <pidf:timestamp>2014-11-11T18:12:42.054Z</pidf:timestamp>
+  </pidf:tuple>
+</pidf:presence>
