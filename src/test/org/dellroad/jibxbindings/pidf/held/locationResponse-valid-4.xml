@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- $Id$ -->
+<locationResponse xmlns="urn:ietf:params:xml:ns:geopriv:held">
+  <locationUriSet expires="2014-11-07T22:26:56Z">
+    <locationURI>http://localhost/LIS/?LbyR=4d8b8144-a304-4fd6-abb1-72d635981f59</locationURI>
+  </locationUriSet>
+  <presence entity="pres:temp@localhost" xmlns="urn:ietf:params:xml:ns:pidf">
+    <tuple id="c8ebc594-d14e-4d5f-bf2d-8178faec3ceb">
+      <status>
+        <geopriv xmlns="urn:ietf:params:xml:ns:pidf:geopriv10">
+          <location-info>
+            <civicAddress xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+              <country>US</country>
+              <A1>TX</A1>
+              <A2>SMITH COUNTY</A2>
+              <PRD>W</PRD>
+              <RD>Main</RD>
+              <STS>st</STS>
+              <HNO>1234</HNO>
+              <LMK>LMK</LMK>
+              <FLR>2</FLR>
+              <NAM>John Q. Public</NAM>
+              <BLD>b5</BLD>
+              <UNIT>100</UNIT>
+            </civicAddress>
+          </location-info>
+          <usage-rules />
+          <method>COIN</method>
+          <provided-by>
+            <EmergencyCallDataValue xmlns="urn:ietf:params:xml:ns:EmergencyCallData">
+              <EmergencyCallData.ProviderInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo">
+                <DataProviderReference>9999</DataProviderReference>
+                <DataProviderString>Test Morgan</DataProviderString>
+                <ProviderID>9999</ProviderID>
+                <ProviderIDSeries>EENA</ProviderIDSeries>
+                <TypeOfProvider>LanguageTranslationProviderEmergencyServiceProvider</TypeOfProvider>
+                <ContactURI>test conract uri</ContactURI>
+                <Language>en</Language>
+                <DataProviderContact>
+                  <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                    <vcard>
+                      <fn>
+                        <text>Test Name</text>
+                      </fn>
+                      <n>
+                        <surname>Name</surname>
+                        <given>Test</given>
+                        <additional>Manager</additional>
+                        <prefix>M</prefix>
+                        <suffix>rao</suffix>
+                      </n>
+                      <org>
+                        <parameters>
+                          <type>
+                            <text>work</text>
+                          </type>
+                        </parameters>
+                        <text>Foobar</text>
+                      </org>
+                      <adr>
+                        <parameters>
+                          <type>
+                            <text>work</text>
+                          </type>
+                          <label>
+                            <text>Test Name suite 123 123 main st foobar tx 12345 us </text>
+                          </label>
+                        </parameters>
+                        <pobox></pobox>
+                        <ext>suite 223</ext>
+                        <street>123 main st</street>
+                        <locality>foobar</locality>
+                        <region>tx</region>
+                        <code>12345</code>
+                        <country>us</country>
+                      </adr>
+                      <tel>
+                        <parameters>
+                          <type>
+                            <text>work</text>
+                            <text>voice</text>
+                          </type>
+                        </parameters>
+                        <uri>tel:999-999-9999</uri>
+                      </tel>
+                      <tel>
+                        <parameters>
+                          <type>
+                            <text>cell</text>
+                            <text>voice</text>
+                          </type>
+                        </parameters>
+                        <uri>tel:999-999-9999</uri>
+                      </tel>
+                      <tel>
+                        <parameters>
+                          <type>
+                            <text>work</text>
+                            <text>fax</text>
+                          </type>
+                        </parameters>
+                        <uri>tel:999-999-9999</uri>
+                      </tel>
+                      <email>
+                        <parameters>
+                          <type>
+                            <text>work</text>
+                          </type>
+                        </parameters>
+                        <text>foobar@example.com</text>
+                      </email>
+                    </vcard>
+                  </vcards>
+                </DataProviderContact>
+              </EmergencyCallData.ProviderInfo>
+              <EmergencyCallData.Comment xmlns="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
+                <DataProviderReference>9999</DataProviderReference>
+                <Comment>Add UNIT Num</Comment>
+              </EmergencyCallData.Comment>
+              <EmergencyCallData.DeviceInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo">
+                <DataProviderReference>9999</DataProviderReference>
+                <DeviceClassification>SensorFixed</DeviceClassification>
+                <DeviceMfgr>Mgr alarm</DeviceMfgr>
+                <DeviceModelNr>23454</DeviceModelNr>
+                <UniqueDeviceID TypeOfDeviceID="ESN">2379</UniqueDeviceID>
+                <DeviceSpecificData>device specific data\</DeviceSpecificData>
+                <DeviceSpecificType>IEEE1512</DeviceSpecificType>
+              </EmergencyCallData.DeviceInfo>
+              <EmergencyCallData.ServiceInfo xmlns="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo">
+                <DataProviderReference>9999</DataProviderReference>
+                <ServiceEnvironment>Business</ServiceEnvironment>
+                <ServiceType>Remote</ServiceType>
+                <ServiceMobility>Unknown</ServiceMobility>
+              </EmergencyCallData.ServiceInfo>
+              <EmergencyCallData.SubscriberInfo privacyRequested="false" xmlns="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo">
+                <DataProviderReference>9999</DataProviderReference>
+                <SubscriberData>
+                  <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                    <vcard>
+                      <fn>
+                        <text>Joe Schmow</text>
+                      </fn>
+                      <n>
+                        <surname></surname>
+                        <given></given>
+                        <additional></additional>
+                        <prefix></prefix>
+                        <suffix></suffix>
+                      </n>
+                    </vcard>
+                  </vcards>
+                </SubscriberData>
+              </EmergencyCallData.SubscriberInfo>
+            </EmergencyCallDataValue>
+          </provided-by>
+        </geopriv>
+      </status>
+      <contact>tel:+19999999999</contact>
+    </tuple>
+  </presence>
+</locationResponse>
