@@ -46,8 +46,10 @@ public final class ParseUtil {
      * @see #serializeURI
      */
     public static URI deserializeURI(String string) throws JiBXParseException {
+
+        // Accept space characters even though they are "strongly discouraged"; see http://www.datypic.com/sc/xsd/t-xsd_anyURI.html
         try {
-            return new URI(string);
+            return new URI(string.replaceAll(" ", "%20"));
         } catch (URISyntaxException e) {
             throw new JiBXParseException("invalid URI", string, e);
         }
