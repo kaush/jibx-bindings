@@ -8,6 +8,7 @@
 package org.dellroad.jibxbindings.pidf.lo.ecd;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -54,6 +55,31 @@ public class EmergencyCallDataValue implements Cloneable {
     }
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+// JiBX
+
+    public Iterator<AbstractDataProviderReferencing> iterateInfos() {
+        final ArrayList<AbstractDataProviderReferencing> list = new ArrayList<>();
+        list.addAll(this.providerInfos);
+        list.addAll(this.serviceInfos);
+        list.addAll(this.deviceInfos);
+        list.addAll(this.subscriberInfos);
+        list.addAll(this.comments);
+        return list.iterator();
+    }
+
+    public void addInfo(AbstractDataProviderReferencing info) {
+        if (info instanceof ProviderInfo)
+            this.providerInfos.add((ProviderInfo)info);
+        if (info instanceof ServiceInfo)
+            this.serviceInfos.add((ServiceInfo)info);
+        if (info instanceof DeviceInfo)
+            this.deviceInfos.add((DeviceInfo)info);
+        if (info instanceof SubscriberInfo)
+            this.subscriberInfos.add((SubscriberInfo)info);
+        if (info instanceof Comment)
+            this.comments.add((Comment)info);
     }
 
 // Cloneable
