@@ -39,7 +39,8 @@
                <pi:ContactURI>tel:+1-201-555-0123</pi:ContactURI>
                <pi:Language>EN</pi:Language>
                <pi:DataProviderContact xmlns="urn:ietf:params:xml:ns:vcard-4.0">
-                   <vcard>
+                   <vcards>
+                     <vcard>
                        <fn><text>Hannes Tschofenig</text></fn>
                        <n>
                            <surname>Hannes</surname>
@@ -116,7 +117,8 @@
                            </parameters>
                            <uri>http://www.tschofenig.priv.at</uri>
                        </url>
-                   </vcard>
+                     </vcard>
+                   </vcards>
                </pi:DataProviderContact>
            </pi:EmergencyCallData.ProviderInfo>
           </ad:EmergencyCallDataValue>
