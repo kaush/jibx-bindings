@@ -3,7 +3,7 @@
 <!-- $Id$ -->
 <binding package="org.dellroad.jibxbindings.pidf" xmlns:pidf="urn:ietf:params:xml:ns:pidf">
     <mapping abstract="true" type-name="pidf:contact" class="org.dellroad.jibxbindings.pidf.Contact">
-        <value name="priority" field="priority" style="attribute"/>
+        <value name="priority" field="priority" usage="optional" style="attribute"/>
         <value field="uri" style="text"
           serializer="org.dellroad.jibxbindings.ParseUtil.serializeURI"
           deserializer="org.dellroad.jibxbindings.ParseUtil.deserializeURI"/>
