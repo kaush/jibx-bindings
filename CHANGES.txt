@@ -1,4 +1,10 @@
 
+Version 1.0.105 Released November 16, 2014
+
+    - Updated ECRIT to nest <vard> within <vcards>
+    - Fixed bug where PIDF <contact> "priority" was not optional
+    - Accept unencoded space characters in ParseUtil.deserializeURI()
+
 Version 1.0.95 Released November 10, 2014
 
     - Added missing methods ProviderInfo.{g,s}etProviderId()
