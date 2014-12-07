@@ -18,16 +18,8 @@ import org.dellroad.jibxbindings.pidf.lo.ecd.EmergencyCallDataValue;
  */
 public class ProvidedBy implements Cloneable {
 
-    private String dataProviderReference;
     private List<EmergencyCallDataReference> references = new ArrayList<>();
     private List<EmergencyCallDataValue> values = new ArrayList<>();
-
-    public String getDataProviderReference() {
-        return this.dataProviderReference;
-    }
-    public void setDataProviderReference(String dataProviderReference) {
-        this.dataProviderReference = dataProviderReference;
-    }
 
     public List<EmergencyCallDataReference> getReferences() {
         return this.references;

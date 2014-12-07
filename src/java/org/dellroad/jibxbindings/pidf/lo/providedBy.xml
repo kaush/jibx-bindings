@@ -8,8 +8,6 @@
     <include path="ecd/emergencyCallDataValue.xml"/>
     <mapping abstract="true" type-name="gp:providedBy" class="org.dellroad.jibxbindings.pidf.lo.ProvidedBy">
         <namespace uri="urn:ietf:params:xml:ns:EmergencyCallData" default="elements" prefix="ad"/>
-        <value name="DataProviderReference" field="dataProviderReference"
-          usage="optional"/>    <!-- draft 24 XSD says mandatory but example doesn't show it -->
         <collection field="references" create-type="java.util.ArrayList">
             <structure name="EmergencyCallDataReference" map-as="ad:emergencyCallDataReference"/>
         </collection>
