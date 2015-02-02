@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- $Id$ -->
+<presence entity="pres:5171284118658915@127.0.0.1" xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:ca="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr" xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+xmlns:gml="http://www.opengis.net/gml" xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:conf="urn:ietf:params:xml:ns:geopriv:conf"
+xmlns:gbp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy">
+  <dm:device id="3124325000">
+    <gp:geopriv>
+      <gp:location-info>
+        <ca:civicAddress xml:lang="en-US">
+          <ca:country>US</ca:country>
+          <ca:A1>TX</ca:A1>
+          <ca:PRD>N</ca:PRD>
+          <ca:RD>Main</ca:RD>
+          <ca:STS>st</ca:STS>
+          <ca:HNO>123</ca:HNO>
+          <ca:PC>12345</ca:PC>
+        </ca:civicAddress>
+        <conf:confidence>0.75</conf:confidence>
+      </gp:location-info>
+      <gp:usage-rules>
+        <gbp:retransmission-allowed>no</gbp:retransmission-allowed>
+        <gbp:retention-expiry>2011-12-02T08:38:35-05:00</gbp:retention-expiry>
+      </gp:usage-rules>
+    </gp:geopriv>
+    <dm:deviceID>3124325000</dm:deviceID>
+    <dm:timestamp>2011-12-02T08:38:35-05:00</dm:timestamp>
+  </dm:device>
+</presence>
