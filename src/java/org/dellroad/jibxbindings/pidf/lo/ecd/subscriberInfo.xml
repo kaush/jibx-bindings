@@ -10,11 +10,9 @@
         <value style="attribute" name="privacyRequested" field="privacyRequested"/>
         <value name="DataProviderReference" get-method="getDataProviderReference" set-method="setDataProviderReference"/>
         <structure name="SubscriberData" usage="optional" test-method="hasSubscriberData">
-            <structure name="vcards" ns="urn:ietf:params:xml:ns:vcard-4.0">
-                <structure name="vcard" field="subscriberData" ns="urn:ietf:params:xml:ns:vcard-4.0"
-                  marshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"
-                  unmarshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"/>
-            </structure>
+            <structure name="vcard" field="subscriberData" ns="urn:ietf:params:xml:ns:vcard-4.0"
+              marshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"
+              unmarshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"/>
         </structure>
     </mapping>
 </binding>
