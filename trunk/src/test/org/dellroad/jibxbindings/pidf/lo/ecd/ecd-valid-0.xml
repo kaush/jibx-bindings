@@ -31,8 +31,7 @@
               <ContactURI>foobar@example.com</ContactURI>
               <Language>EN</Language>
               <DataProviderContact>
-                <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
-                 <vcard>
+                <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
                   <fn>
                     <text>Honest Abe</text>
                   </fn>
@@ -80,8 +79,7 @@
                     </parameters>
                     <text>abe@whitehouse.gov</text>
                   </email>
-                 </vcard>
-                </vcards>
+                </vcard>
               </DataProviderContact>
             </EmergencyCallData.ProviderInfo>
           </EmergencyCallDataValue>

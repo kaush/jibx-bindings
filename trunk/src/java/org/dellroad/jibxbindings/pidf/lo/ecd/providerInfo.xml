@@ -18,11 +18,9 @@
             <value name="Language" type="java.lang.String"/>
         </collection>
         <structure name="DataProviderContact" usage="optional" test-method="hasDataProviderContact">
-            <structure name="vcards" ns="urn:ietf:params:xml:ns:vcard-4.0">
-                <structure name="vcard" field="dataProviderContact" ns="urn:ietf:params:xml:ns:vcard-4.0"
-                  marshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"
-                  unmarshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"/>
-            </structure>
+            <structure name="vcard" field="dataProviderContact" ns="urn:ietf:params:xml:ns:vcard-4.0"
+              marshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"
+              unmarshaller="org.dellroad.jibxbindings.vcard.VCardMarshaller"/>
         </structure>
         <value name="SubcontratorPrincipal" field="subcontratorPrincipal" usage="optional"/>
         <value name="SubcontratorPriority" field="subcontratorPriority" usage="optional" enum-value-method="getXMLValue"/>
