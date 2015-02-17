@@ -38,8 +38,7 @@
                 <ContactURI>test conract uri</ContactURI>
                 <Language>en</Language>
                 <DataProviderContact>
-                  <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
-                    <vcard>
+                    <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
                       <fn>
                         <text>Test Name</text>
                       </fn>
@@ -111,7 +110,6 @@
                         <text>foobar@example.com</text>
                       </email>
                     </vcard>
-                  </vcards>
                 </DataProviderContact>
               </EmergencyCallData.ProviderInfo>
               <EmergencyCallData.Comment xmlns="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
@@ -136,8 +134,7 @@
               <EmergencyCallData.SubscriberInfo privacyRequested="false" xmlns="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo">
                 <DataProviderReference>9999</DataProviderReference>
                 <SubscriberData>
-                  <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
-                    <vcard>
+                    <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
                       <fn>
                         <text>Joe Schmow</text>
                       </fn>
@@ -149,7 +146,6 @@
                         <suffix></suffix>
                       </n>
                     </vcard>
-                  </vcards>
                 </SubscriberData>
               </EmergencyCallData.SubscriberInfo>
             </EmergencyCallDataValue>
